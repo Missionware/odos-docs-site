@@ -1,0 +1,1273 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DataItemCollection&lt;DataItemType&gt;
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DataItemCollection&lt;DataItemType&gt;
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Client.DataItemCollection`1">
+  
+  
+  <h1 id="Mc3s_Odos_Client_DataItemCollection_1" data-uid="Mc3s.Odos.Client.DataItemCollection`1" class="text-break">Class DataItemCollection&lt;DataItemType&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html">CollectionX</a>&lt;DataItemType&gt;</div>
+    <div class="level2"><a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html">BindingListX</a>&lt;DataItemType&gt;</div>
+    <div class="level3"><a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html">DataItemList</a>&lt;DataItemType&gt;</div>
+    <div class="level4"><span class="xref">DataItemCollection&lt;DataItemType&gt;</span></div>
+      <div class="level5"><a class="xref" href="Mc3s.Odos.Client.DataItemCollection.html">DataItemCollection</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IList</span>&lt;DataItemType&gt;</div>
+    <div><span class="xref">System.Collections.Generic.ICollection</span>&lt;DataItemType&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;DataItemType&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;DataItemType&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;DataItemType&gt;</div>
+    <div><span class="xref">System.Collections.Specialized.INotifyCollectionChanged</span></div>
+    <div><span class="xref">System.ComponentModel.ICancelAddNew</span></div>
+    <div><span class="xref">System.ComponentModel.ITypedList</span></div>
+    <div><span class="xref">System.ComponentModel.IRaiseItemChangedEvents</span></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IDataItemCollection.html">IDataItemCollection</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IDataItemList.html">IDataItemList</a></div>
+    <div><span class="xref">System.ComponentModel.IBindingList</span></div>
+    <div><span class="xref">System.Collections.IList</span></div>
+    <div><span class="xref">System.Collections.ICollection</span></div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">Mc3s.Serialization.IAdvancedSerializable</span></div>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_MembersChangedEventMaxTimeThreshold">DataItemList&lt;DataItemType&gt;.MembersChangedEventMaxTimeThreshold</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_MembersChangedEventIdleTimeThreshold">DataItemList&lt;DataItemType&gt;.MembersChangedEventIdleTimeThreshold</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_MembersChangedEventCountThreshold">DataItemList&lt;DataItemType&gt;.MembersChangedEventCountThreshold</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_MemberSaveEventMaxTimeThreshold">DataItemList&lt;DataItemType&gt;.MemberSaveEventMaxTimeThreshold</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_MemberSaveEventIdleTimeThreshold">DataItemList&lt;DataItemType&gt;.MemberSaveEventIdleTimeThreshold</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_MemberSaveEventCountThreshold">DataItemList&lt;DataItemType&gt;.MemberSaveEventCountThreshold</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__parentItemWeakRef">DataItemList&lt;DataItemType&gt;._parentItemWeakRef</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__IsEnumSafe">DataItemList&lt;DataItemType&gt;._IsEnumSafe</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__Tag">DataItemList&lt;DataItemType&gt;._Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__ClassController">DataItemList&lt;DataItemType&gt;._ClassController</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_System_ComponentModel_IRaiseItemChangedEvents_RaisesItemChangedEvents">DataItemList&lt;DataItemType&gt;.IRaiseItemChangedEvents.RaisesItemChangedEvents</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_System_Collections_IEnumerable_GetEnumerator">DataItemList&lt;DataItemType&gt;.IEnumerable.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_GetEnumerator">DataItemList&lt;DataItemType&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Add__0_">DataItemList&lt;DataItemType&gt;.Add(DataItemType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Insert_System_Int32__0_">DataItemList&lt;DataItemType&gt;.Insert(Int32, DataItemType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Remove__0_">DataItemList&lt;DataItemType&gt;.Remove(DataItemType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Clear">DataItemList&lt;DataItemType&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__IsDisposed">DataItemList&lt;DataItemType&gt;._IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Dispose_System_Boolean_">DataItemList&lt;DataItemType&gt;.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Dispose">DataItemList&lt;DataItemType&gt;.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_UserCleanUpOnDispose">DataItemList&lt;DataItemType&gt;.UserCleanUpOnDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__ListID">DataItemList&lt;DataItemType&gt;._ListID</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__ClassInfo">DataItemList&lt;DataItemType&gt;._ClassInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__IsItemCreatedOnNewRow">DataItemList&lt;DataItemType&gt;._IsItemCreatedOnNewRow</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__MembersType">DataItemList&lt;DataItemType&gt;._MembersType</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__NewMemberType">DataItemList&lt;DataItemType&gt;._NewMemberType</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__IsInServer">DataItemList&lt;DataItemType&gt;._IsInServer</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__ListMembersChangedEventIdleTimeThreshold">DataItemList&lt;DataItemType&gt;._ListMembersChangedEventIdleTimeThreshold</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__ListMembersChangedEventMaxTimeThreshold">DataItemList&lt;DataItemType&gt;._ListMembersChangedEventMaxTimeThreshold</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__ListMembersChangedEventCountThreshold">DataItemList&lt;DataItemType&gt;._ListMembersChangedEventCountThreshold</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__IsListMembersChangedDefferingDisabled">DataItemList&lt;DataItemType&gt;._IsListMembersChangedDefferingDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__MemberSavedEventIdleTimeThreshold">DataItemList&lt;DataItemType&gt;._MemberSavedEventIdleTimeThreshold</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__MemberSavedEventMaxTimeThreshold">DataItemList&lt;DataItemType&gt;._MemberSavedEventMaxTimeThreshold</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__MemberSavedEventCountThreshold">DataItemList&lt;DataItemType&gt;._MemberSavedEventCountThreshold</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__IsMemberSavedDefferingDisabled">DataItemList&lt;DataItemType&gt;._IsMemberSavedDefferingDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Mc3s_Odos_Library_IDataItemList_Contains_Mc3s_Odos_Library_DataItem_">DataItemList&lt;DataItemType&gt;.IDataItemList.Contains(DataItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Mc3s_Odos_Library_IDataItemList_ContainsAny_System_Collections_Generic_IEnumerable_Mc3s_Odos_Library_DataItem__">DataItemList&lt;DataItemType&gt;.IDataItemList.ContainsAny(IEnumerable&lt;DataItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_IndexOf_System_Object___">DataItemList&lt;DataItemType&gt;.IndexOf(Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_IndexOf_System_Type_System_Object___">DataItemList&lt;DataItemType&gt;.IndexOf(Type, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_IndexOf_Mc3s_Odos_Library_DataItem_">DataItemList&lt;DataItemType&gt;.IndexOf(DataItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_IndexOf_Mc3s_Odos_Library_DataItemKey_">DataItemList&lt;DataItemType&gt;.IndexOf(DataItemKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Find_System_Object___">DataItemList&lt;DataItemType&gt;.Find(Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Find_System_Type_System_Object___">DataItemList&lt;DataItemType&gt;.Find(Type, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Find_Mc3s_Odos_Library_DataItemKey_">DataItemList&lt;DataItemType&gt;.Find(DataItemKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Contains__1_Mc3s_Odos_Library_SearchArg___">DataItemList&lt;DataItemType&gt;.Contains&lt;T&gt;(SearchArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Contains__1_System_Boolean_Mc3s_Odos_Library_SearchArg___">DataItemList&lt;DataItemType&gt;.Contains&lt;T&gt;(Boolean, SearchArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Contains_Mc3s_Odos_Library_SearchArg___">DataItemList&lt;DataItemType&gt;.Contains(SearchArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Contains_System_Boolean_System_Type_Mc3s_Odos_Library_SearchArg___">DataItemList&lt;DataItemType&gt;.Contains(Boolean, Type, SearchArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Contains_System_Boolean_Mc3s_Odos_Library_DataItemClassInfo_Mc3s_Odos_Library_SearchArg___">DataItemList&lt;DataItemType&gt;.Contains(Boolean, DataItemClassInfo, SearchArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_SearchFirst__1_Mc3s_Odos_Library_SearchArg___">DataItemList&lt;DataItemType&gt;.SearchFirst&lt;T&gt;(SearchArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_SearchFirst__1_System_Boolean_Mc3s_Odos_Library_SearchArg___">DataItemList&lt;DataItemType&gt;.SearchFirst&lt;T&gt;(Boolean, SearchArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_SearchFirst_Mc3s_Odos_Library_SearchArg___">DataItemList&lt;DataItemType&gt;.SearchFirst(SearchArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_SearchFirst_System_Boolean_System_Type_Mc3s_Odos_Library_SearchArg___">DataItemList&lt;DataItemType&gt;.SearchFirst(Boolean, Type, SearchArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_SearchFirst_System_Boolean_Mc3s_Odos_Library_DataItemClassInfo_Mc3s_Odos_Library_SearchArg___">DataItemList&lt;DataItemType&gt;.SearchFirst(Boolean, DataItemClassInfo, SearchArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Search__1_Mc3s_Odos_Library_SearchArg___">DataItemList&lt;DataItemType&gt;.Search&lt;T&gt;(SearchArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Search__1_System_Boolean_Mc3s_Odos_Library_SearchArg___">DataItemList&lt;DataItemType&gt;.Search&lt;T&gt;(Boolean, SearchArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Search_Mc3s_Odos_Library_SearchArg___">DataItemList&lt;DataItemType&gt;.Search(SearchArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Search_System_Boolean_System_Type_Mc3s_Odos_Library_SearchArg___">DataItemList&lt;DataItemType&gt;.Search(Boolean, Type, SearchArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Search_System_Boolean_Mc3s_Odos_Library_DataItemClassInfo_Mc3s_Odos_Library_SearchArg___">DataItemList&lt;DataItemType&gt;.Search(Boolean, DataItemClassInfo, SearchArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getMemberAt_System_Int32_">DataItemList&lt;DataItemType&gt;.getMemberAt(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_setMemberAt_System_Int32_Mc3s_Odos_Library_DataItem_">DataItemList&lt;DataItemType&gt;.setMemberAt(Int32, DataItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getSafeEnumerator">DataItemList&lt;DataItemType&gt;.getSafeEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getSafeEnumerator_System_Collections_Generic_IComparer_Mc3s_Odos_Library_DataItem__">DataItemList&lt;DataItemType&gt;.getSafeEnumerator(IComparer&lt;DataItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getSafeEnumerator_System_String_">DataItemList&lt;DataItemType&gt;.getSafeEnumerator(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getMembers">DataItemList&lt;DataItemType&gt;.getMembers()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getMemberKeysList">DataItemList&lt;DataItemType&gt;.getMemberKeysList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getMembersList">DataItemList&lt;DataItemType&gt;.getMembersList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getMembersList_System_Collections_Generic_IComparer_Mc3s_Odos_Library_DataItem__">DataItemList&lt;DataItemType&gt;.getMembersList(IComparer&lt;DataItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getMembersList_System_String_">DataItemList&lt;DataItemType&gt;.getMembersList(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getMembersAsHashset">DataItemList&lt;DataItemType&gt;.getMembersAsHashset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getMembersAsTypedHashset">DataItemList&lt;DataItemType&gt;.getMembersAsTypedHashset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getMembersAsDictionary">DataItemList&lt;DataItemType&gt;.getMembersAsDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getMembersAsTypedDictionary">DataItemList&lt;DataItemType&gt;.getMembersAsTypedDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_createEmptyDataItemValueSet_System_Boolean_Mc3s_Odos_Library_IFieldFilter_">DataItemList&lt;DataItemType&gt;.createEmptyDataItemValueSet(Boolean, IFieldFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_fillDataItemValueSet_System_Boolean_System_Data_DataSet_Mc3s_Odos_Library_IFieldFilter_">DataItemList&lt;DataItemType&gt;.fillDataItemValueSet(Boolean, DataSet, IFieldFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getMembersAsDataItemValueSet_System_Boolean_Mc3s_Odos_Library_IFieldFilter_">DataItemList&lt;DataItemType&gt;.getMembersAsDataItemValueSet(Boolean, IFieldFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_GetItemProperties_System_ComponentModel_PropertyDescriptor___">DataItemList&lt;DataItemType&gt;.GetItemProperties(PropertyDescriptor[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_GetListName_System_ComponentModel_PropertyDescriptor___">DataItemList&lt;DataItemType&gt;.GetListName(PropertyDescriptor[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_DataItemListSaved">DataItemList&lt;DataItemType&gt;.DataItemListSaved</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_OnDataItemListSaved_System_Object_Mc3s_Odos_Library_DataItemListSavedEventArgs_Mc3s_Odos_Library_DataItemEventDefferingMode_">DataItemList&lt;DataItemType&gt;.OnDataItemListSaved(Object, DataItemListSavedEventArgs, DataItemEventDefferingMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_DataItemListMemberSaved">DataItemList&lt;DataItemType&gt;.DataItemListMemberSaved</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_OnDataItemListMemberSaved_System_Object_Mc3s_Odos_Library_DataItemSavedEventArgs_Mc3s_Odos_Library_DataItemEventDefferingMode_">DataItemList&lt;DataItemType&gt;.OnDataItemListMemberSaved(Object, DataItemSavedEventArgs, DataItemEventDefferingMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_DataItemListMemberReferenceSaved">DataItemList&lt;DataItemType&gt;.DataItemListMemberReferenceSaved</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_OnDataItemListMemberReferenceSaved_System_Object_Mc3s_Odos_Library_DataItemSavedEventArgs_">DataItemList&lt;DataItemType&gt;.OnDataItemListMemberReferenceSaved(Object, DataItemSavedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1__ListChanged">DataItemList&lt;DataItemType&gt;._ListChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_OnListChanged_System_ComponentModel_ListChangedEventArgs_">DataItemList&lt;DataItemType&gt;.OnListChanged(ListChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_raiseListChangedEvent_System_ComponentModel_ListChangedEventArgs_">DataItemList&lt;DataItemType&gt;.raiseListChangedEvent(ListChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_loadCheck">DataItemList&lt;DataItemType&gt;.loadCheck()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getAsDataItemType_Mc3s_Odos_Library_DataItem_">DataItemList&lt;DataItemType&gt;.getAsDataItemType(DataItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getAsDataItemType_Mc3s_Odos_Library_DataItem_System_Boolean_">DataItemList&lt;DataItemType&gt;.getAsDataItemType(DataItem, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_createNewMember">DataItemList&lt;DataItemType&gt;.createNewMember()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_discardNewMember_Mc3s_Odos_Library_DataItem_">DataItemList&lt;DataItemType&gt;.discardNewMember(DataItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeGetMemberKeys">DataItemList&lt;DataItemType&gt;.unSafeGetMemberKeys()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeEnumerateMembers">DataItemList&lt;DataItemType&gt;.unSafeEnumerateMembers()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeGetMembersAsList">DataItemList&lt;DataItemType&gt;.unSafeGetMembersAsList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeGetMembersAsHashSet">DataItemList&lt;DataItemType&gt;.unSafeGetMembersAsHashSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeGetMembersAsDictionary">DataItemList&lt;DataItemType&gt;.unSafeGetMembersAsDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeGetMembersAsTypedList">DataItemList&lt;DataItemType&gt;.unSafeGetMembersAsTypedList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeGetMembersAsTypedHashSet">DataItemList&lt;DataItemType&gt;.unSafeGetMembersAsTypedHashSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeGetMembersAsTypedDictionary">DataItemList&lt;DataItemType&gt;.unSafeGetMembersAsTypedDictionary()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeFindIndex_Mc3s_Odos_Library_DataItemKey_">DataItemList&lt;DataItemType&gt;.unSafeFindIndex(DataItemKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_OnAddingNew_System_ComponentModel_AddingNewEventArgs_">DataItemList&lt;DataItemType&gt;.OnAddingNew(AddingNewEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_CancelNew_System_Int32_">DataItemList&lt;DataItemType&gt;.CancelNew(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_InsertItem_System_Int32__0_System_Boolean_">DataItemList&lt;DataItemType&gt;.InsertItem(Int32, DataItemType, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_InsertItem_System_Int32__0_">DataItemList&lt;DataItemType&gt;.InsertItem(Int32, DataItemType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_Remove__0_System_Boolean_">DataItemList&lt;DataItemType&gt;.Remove(DataItemType, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_RemoveItem_System_Int32_System_Boolean_">DataItemList&lt;DataItemType&gt;.RemoveItem(Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_RemoveItem_System_Int32_">DataItemList&lt;DataItemType&gt;.RemoveItem(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_ClearItems">DataItemList&lt;DataItemType&gt;.ClearItems()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeInitializeTypedMembers_System_Collections_Generic_ICollection__0__System_Boolean_">DataItemList&lt;DataItemType&gt;.unSafeInitializeTypedMembers(ICollection&lt;DataItemType&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeInitializeMembers_System_Collections_Generic_ICollection_Mc3s_Odos_Library_DataItem__System_Boolean_">DataItemList&lt;DataItemType&gt;.unSafeInitializeMembers(ICollection&lt;DataItem&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeResetMembers_System_Collections_Generic_ICollection_Mc3s_Odos_Library_DataItem__System_Collections_Generic_List_Mc3s_Odos_Library_DataItem___System_Collections_Generic_List_Mc3s_Odos_Library_DataItem___System_Boolean_">DataItemList&lt;DataItemType&gt;.unSafeResetMembers(ICollection&lt;DataItem&gt;, List&lt;DataItem&gt;, List&lt;DataItem&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeResetTypedMembers_System_Collections_Generic_ICollection__0__System_Collections_Generic_List__0___System_Collections_Generic_List__0___System_Boolean_">DataItemList&lt;DataItemType&gt;.unSafeResetTypedMembers(ICollection&lt;DataItemType&gt;, List&lt;DataItemType&gt;, List&lt;DataItemType&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeGetListChanges_Mc3s_Odos_Library_DataItem___System_Collections_Generic_List_Mc3s_Odos_Library_DataItem___System_Collections_Generic_List_Mc3s_Odos_Library_DataItem___">DataItemList&lt;DataItemType&gt;.unSafeGetListChanges(DataItem[], List&lt;DataItem&gt;, List&lt;DataItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_executeResetToMembers_System_Collections_Generic_ICollection_Mc3s_Odos_Library_DataItem__System_Boolean_">DataItemList&lt;DataItemType&gt;.executeResetToMembers(ICollection&lt;DataItem&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_executeResetToTypedMembers_System_Collections_Generic_ICollection__0__System_Boolean_">DataItemList&lt;DataItemType&gt;.executeResetToTypedMembers(ICollection&lt;DataItemType&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeCalculateResetChanges_System_Collections_Generic_ICollection_Mc3s_Odos_Library_DataItem__System_Collections_Generic_List_Mc3s_Odos_Library_DataItem___System_Collections_Generic_List_Mc3s_Odos_Library_DataItem___">DataItemList&lt;DataItemType&gt;.unSafeCalculateResetChanges(ICollection&lt;DataItem&gt;, List&lt;DataItem&gt;, List&lt;DataItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeCalculateTypedResetChanges_System_Collections_Generic_ICollection__0__System_Collections_Generic_List__0___System_Collections_Generic_List__0___">DataItemList&lt;DataItemType&gt;.unSafeCalculateTypedResetChanges(ICollection&lt;DataItemType&gt;, List&lt;DataItemType&gt;, List&lt;DataItemType&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeInitializeMembersWithNoEvents_System_Collections_Generic_ICollection_Mc3s_Odos_Library_DataItem__">DataItemList&lt;DataItemType&gt;.unSafeInitializeMembersWithNoEvents(ICollection&lt;DataItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_unSafeInitializeTypedMembersWithNoEvents_System_Collections_Generic_ICollection__0__">DataItemList&lt;DataItemType&gt;.unSafeInitializeTypedMembersWithNoEvents(ICollection&lt;DataItemType&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_safeResetMembers_System_Collections_Generic_ICollection_Mc3s_Odos_Library_DataItem__">DataItemList&lt;DataItemType&gt;.safeResetMembers(ICollection&lt;DataItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_safeResetMembers_System_Collections_Generic_ICollection_Mc3s_Odos_Library_DataItem__System_Collections_Generic_List_Mc3s_Odos_Library_DataItem___System_Collections_Generic_List_Mc3s_Odos_Library_DataItem___">DataItemList&lt;DataItemType&gt;.safeResetMembers(ICollection&lt;DataItem&gt;, List&lt;DataItem&gt;, List&lt;DataItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getMembersTypedList">DataItemList&lt;DataItemType&gt;.getMembersTypedList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getMembersTypedList_System_Collections_Generic_IComparer__0__">DataItemList&lt;DataItemType&gt;.getMembersTypedList(IComparer&lt;DataItemType&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemList-1.html#Mc3s_Odos_Library_DataItemList_1_getMembersTypedList_System_String_">DataItemList&lt;DataItemType&gt;.getMembersTypedList(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_onAddingNew">BindingListX&lt;DataItemType&gt;.onAddingNew</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_onListChanged">BindingListX&lt;DataItemType&gt;.onListChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_AddingNew">BindingListX&lt;DataItemType&gt;.AddingNew</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_ListChanged">BindingListX&lt;DataItemType&gt;.ListChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_CollectionChanged">BindingListX&lt;DataItemType&gt;.CollectionChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_AddNew">BindingListX&lt;DataItemType&gt;.AddNew()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_AddNewCore">BindingListX&lt;DataItemType&gt;.AddNewCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_ApplySortCore_System_ComponentModel_PropertyDescriptor_System_ComponentModel_ListSortDirection_">BindingListX&lt;DataItemType&gt;.ApplySortCore(PropertyDescriptor, ListSortDirection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_EndNew_System_Int32_">BindingListX&lt;DataItemType&gt;.EndNew(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_FindCore_System_ComponentModel_PropertyDescriptor_System_Object_">BindingListX&lt;DataItemType&gt;.FindCore(PropertyDescriptor, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_OnCollectionChanged_System_Collections_Specialized_NotifyCollectionChangedEventArgs_">BindingListX&lt;DataItemType&gt;.OnCollectionChanged(NotifyCollectionChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_RemoveSortCore">BindingListX&lt;DataItemType&gt;.RemoveSortCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_ResetBindings">BindingListX&lt;DataItemType&gt;.ResetBindings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_ResetItem_System_Int32_">BindingListX&lt;DataItemType&gt;.ResetItem(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_SetItem_System_Int32__0_">BindingListX&lt;DataItemType&gt;.SetItem(Int32, DataItemType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_System_ComponentModel_IBindingList_AddIndex_System_ComponentModel_PropertyDescriptor_">BindingListX&lt;DataItemType&gt;.IBindingList.AddIndex(PropertyDescriptor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_System_ComponentModel_IBindingList_AddNew">BindingListX&lt;DataItemType&gt;.IBindingList.AddNew()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_System_ComponentModel_IBindingList_ApplySort_System_ComponentModel_PropertyDescriptor_System_ComponentModel_ListSortDirection_">BindingListX&lt;DataItemType&gt;.IBindingList.ApplySort(PropertyDescriptor, ListSortDirection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_System_ComponentModel_IBindingList_Find_System_ComponentModel_PropertyDescriptor_System_Object_">BindingListX&lt;DataItemType&gt;.IBindingList.Find(PropertyDescriptor, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_System_ComponentModel_IBindingList_RemoveIndex_System_ComponentModel_PropertyDescriptor_">BindingListX&lt;DataItemType&gt;.IBindingList.RemoveIndex(PropertyDescriptor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_System_ComponentModel_IBindingList_RemoveSort">BindingListX&lt;DataItemType&gt;.IBindingList.RemoveSort()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_IsSortedCore">BindingListX&lt;DataItemType&gt;.IsSortedCore</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_RaiseListChangedEvents">BindingListX&lt;DataItemType&gt;.RaiseListChangedEvents</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_SortDirectionCore">BindingListX&lt;DataItemType&gt;.SortDirectionCore</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_SortPropertyCore">BindingListX&lt;DataItemType&gt;.SortPropertyCore</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_SupportsChangeNotificationCore">BindingListX&lt;DataItemType&gt;.SupportsChangeNotificationCore</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_SupportsSearchingCore">BindingListX&lt;DataItemType&gt;.SupportsSearchingCore</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_SupportsSortingCore">BindingListX&lt;DataItemType&gt;.SupportsSortingCore</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_System_ComponentModel_IBindingList_AllowEdit">BindingListX&lt;DataItemType&gt;.IBindingList.AllowEdit</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_System_ComponentModel_IBindingList_AllowNew">BindingListX&lt;DataItemType&gt;.IBindingList.AllowNew</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_System_ComponentModel_IBindingList_AllowRemove">BindingListX&lt;DataItemType&gt;.IBindingList.AllowRemove</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_System_ComponentModel_IBindingList_IsSorted">BindingListX&lt;DataItemType&gt;.IBindingList.IsSorted</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_System_ComponentModel_IBindingList_SortDirection">BindingListX&lt;DataItemType&gt;.IBindingList.SortDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_System_ComponentModel_IBindingList_SortProperty">BindingListX&lt;DataItemType&gt;.IBindingList.SortProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_System_ComponentModel_IBindingList_SupportsChangeNotification">BindingListX&lt;DataItemType&gt;.IBindingList.SupportsChangeNotification</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_System_ComponentModel_IBindingList_SupportsSearching">BindingListX&lt;DataItemType&gt;.IBindingList.SupportsSearching</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.BindingListX-1.html#Mc3s_Odos_Library_BindingListX_1_System_ComponentModel_IBindingList_SupportsSorting">BindingListX&lt;DataItemType&gt;.IBindingList.SupportsSorting</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_ADDFLAG">CollectionX&lt;DataItemType&gt;.ADDFLAG</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_Count">CollectionX&lt;DataItemType&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_Item_System_Int32_">CollectionX&lt;DataItemType&gt;.Item[Int32]</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_Items">CollectionX&lt;DataItemType&gt;.Items</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_System_Collections_IList_IsFixedSize">CollectionX&lt;DataItemType&gt;.IList.IsFixedSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_System_Collections_IList_IsReadOnly">CollectionX&lt;DataItemType&gt;.IList.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_System_Collections_IList_Item_System_Int32_">CollectionX&lt;DataItemType&gt;.IList.Item[Int32]</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_System_Collections_IList_Add_System_Object_">CollectionX&lt;DataItemType&gt;.IList.Add(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_System_Collections_IList_Contains_System_Object_">CollectionX&lt;DataItemType&gt;.IList.Contains(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_System_Collections_IList_IndexOf_System_Object_">CollectionX&lt;DataItemType&gt;.IList.IndexOf(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_System_Collections_IList_Insert_System_Int32_System_Object_">CollectionX&lt;DataItemType&gt;.IList.Insert(Int32, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_System_Collections_IList_Remove_System_Object_">CollectionX&lt;DataItemType&gt;.IList.Remove(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_System_Collections_Generic_ICollection_T__IsReadOnly">CollectionX&lt;DataItemType&gt;.ICollection&lt;DataItemType&gt;.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_System_Collections_ICollection_IsSynchronized">CollectionX&lt;DataItemType&gt;.ICollection.IsSynchronized</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_System_Collections_ICollection_SyncRoot">CollectionX&lt;DataItemType&gt;.ICollection.SyncRoot</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_System_Collections_ICollection_CopyTo_System_Array_System_Int32_">CollectionX&lt;DataItemType&gt;.ICollection.CopyTo(Array, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_Contains__0_">CollectionX&lt;DataItemType&gt;.Contains(DataItemType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_CopyTo__0___System_Int32_">CollectionX&lt;DataItemType&gt;.CopyTo(DataItemType[], Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_IndexOf__0_">CollectionX&lt;DataItemType&gt;.IndexOf(DataItemType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.CollectionX-1.html#Mc3s_Odos_Library_CollectionX_1_RemoveAt_System_Int32_">CollectionX&lt;DataItemType&gt;.RemoveAt(Int32)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Client.html">Mc3s.Odos.Client</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Client_DataItemCollection_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class DataItemCollection&lt;DataItemType&gt; : DataItemList&lt;DataItemType&gt;, IList&lt;DataItemType&gt;, ICollection&lt;DataItemType&gt;, IReadOnlyList&lt;DataItemType&gt;, IReadOnlyCollection&lt;DataItemType&gt;, IEnumerable&lt;DataItemType&gt;, INotifyCollectionChanged, ICancelAddNew, ITypedList, IRaiseItemChangedEvents, IInternalDataItemCollection, IInternalDataItemList, IDataItemCollection, IDataItemList, IBindingList, IList, ICollection, IEnumerable, IDisposable, IAdvancedSerializable, ISerializable where DataItemType : DataItem</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">DataItemType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-28">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1__ctor_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1__ctor_Mc3s_Odos_Library_IClient_Mc3s_Odos_Client_DataItemCollectionKey_Mc3s_Odos_Library_IDataItemCollectionValidatorBase_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.#ctor(Mc3s.Odos.Library.IClient,Mc3s.Odos.Client.DataItemCollectionKey,Mc3s.Odos.Library.IDataItemCollectionValidatorBase)">DataItemCollection(IClient, DataItemCollectionKey, IDataItemCollectionValidatorBase)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataItemCollection(IClient client, DataItemCollectionKey collectionKey, IDataItemCollectionValidatorBase validator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.DataItemCollectionKey.html">DataItemCollectionKey</a></td>
+        <td><span class="parametername">collectionKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidatorBase.html">IDataItemCollectionValidatorBase</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-347">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1__ctor_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1__ctor_Mc3s_Serialization_IAdvancedSerializationInfo_Mc3s_Serialization_IAdvancedStreamingContext_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.#ctor(Mc3s.Serialization.IAdvancedSerializationInfo,Mc3s.Serialization.IAdvancedStreamingContext)">DataItemCollection(IAdvancedSerializationInfo, IAdvancedStreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DataItemCollection(IAdvancedSerializationInfo info, IAdvancedStreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedSerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedStreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-373">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1__ctor_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">DataItemCollection(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DataItemCollection(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-285">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1__Client_" data-uid="Mc3s.Odos.Client.DataItemCollection`1._Client*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1__Client" data-uid="Mc3s.Odos.Client.DataItemCollection`1._Client">_Client</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IClient _Client { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-298">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1__CollectionKey_" data-uid="Mc3s.Odos.Client.DataItemCollection`1._CollectionKey*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1__CollectionKey" data-uid="Mc3s.Odos.Client.DataItemCollection`1._CollectionKey">_CollectionKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataItemCollectionKey _CollectionKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.DataItemCollectionKey.html">DataItemCollectionKey</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-300">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1__IsEditAllowed_" data-uid="Mc3s.Odos.Client.DataItemCollection`1._IsEditAllowed*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1__IsEditAllowed" data-uid="Mc3s.Odos.Client.DataItemCollection`1._IsEditAllowed">_IsEditAllowed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsEditAllowed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-299">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1__IsLoaded_" data-uid="Mc3s.Odos.Client.DataItemCollection`1._IsLoaded*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1__IsLoaded" data-uid="Mc3s.Odos.Client.DataItemCollection`1._IsLoaded">_IsLoaded</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsLoaded { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-50">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1__ObjMgr_" data-uid="Mc3s.Odos.Client.DataItemCollection`1._ObjMgr*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1__ObjMgr" data-uid="Mc3s.Odos.Client.DataItemCollection`1._ObjMgr">_ObjMgr</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IDataItemManager _ObjMgr { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemManager.html">IDataItemManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Library.DataItemList&lt;DataItemType&gt;._ObjMgr</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-297">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1__Validator_" data-uid="Mc3s.Odos.Client.DataItemCollection`1._Validator*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1__Validator" data-uid="Mc3s.Odos.Client.DataItemCollection`1._Validator">_Validator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDataItemCollectionValidatorBase _Validator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidatorBase.html">IDataItemCollectionValidatorBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-52">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1_AllowEdit_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.AllowEdit*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1_AllowEdit" data-uid="Mc3s.Odos.Client.DataItemCollection`1.AllowEdit">AllowEdit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AllowEdit { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Library.BindingListX&lt;DataItemType&gt;.AllowEdit</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-51">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1_AllowNew_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.AllowNew*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1_AllowNew" data-uid="Mc3s.Odos.Client.DataItemCollection`1.AllowNew">AllowNew</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AllowNew { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Library.DataItemList&lt;DataItemType&gt;.AllowNew</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-53">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1_AllowRemove_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.AllowRemove*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1_AllowRemove" data-uid="Mc3s.Odos.Client.DataItemCollection`1.AllowRemove">AllowRemove</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AllowRemove { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Library.BindingListX&lt;DataItemType&gt;.AllowRemove</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-60">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1_AlwaysCleanUpOnDispose_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.AlwaysCleanUpOnDispose*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1_AlwaysCleanUpOnDispose" data-uid="Mc3s.Odos.Client.DataItemCollection`1.AlwaysCleanUpOnDispose">AlwaysCleanUpOnDispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void AlwaysCleanUpOnDispose()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Library.DataItemList&lt;DataItemType&gt;.AlwaysCleanUpOnDispose()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-359">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1_GetObjectData_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.GetObjectData*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1_GetObjectData_Mc3s_Serialization_IAdvancedSerializationInfo_Mc3s_Serialization_IAdvancedStreamingContext_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.GetObjectData(Mc3s.Serialization.IAdvancedSerializationInfo,Mc3s.Serialization.IAdvancedStreamingContext)">GetObjectData(IAdvancedSerializationInfo, IAdvancedStreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GetObjectData(IAdvancedSerializationInfo info, IAdvancedStreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedSerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedStreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Library.DataItemList&lt;DataItemType&gt;.GetObjectData(Mc3s.Serialization.IAdvancedSerializationInfo, Mc3s.Serialization.IAdvancedStreamingContext)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-385">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1_GetObjectData_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.GetObjectData*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Library.DataItemList&lt;DataItemType&gt;.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-303">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemCollection_1_linkToClient_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.linkToClient*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemCollection_1_linkToClient_Mc3s_Odos_Library_IClient_" data-uid="Mc3s.Odos.Client.DataItemCollection`1.linkToClient(Mc3s.Odos.Library.IClient)">linkToClient(IClient)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void linkToClient(IClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IList&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyList&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Specialized.INotifyCollectionChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.ICancelAddNew</span>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.ITypedList</span>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.IRaiseItemChangedEvents</span>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IDataItemCollection.html">IDataItemCollection</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IDataItemList.html">IDataItemList</a>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.IBindingList</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IList</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.ICollection</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Serialization.IAdvancedSerializable</span>
+  </div>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemCollection.cs#lines-13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

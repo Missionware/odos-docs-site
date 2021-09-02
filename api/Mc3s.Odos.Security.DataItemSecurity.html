@@ -1,0 +1,617 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DataItemSecurity
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DataItemSecurity
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Security.DataItemSecurity">
+  
+  
+  <h1 id="Mc3s_Odos_Security_DataItemSecurity" data-uid="Mc3s.Odos.Security.DataItemSecurity" class="text-break">Class DataItemSecurity
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for DataItemSecurity.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity</span></div>
+    <div class="level2"><span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject</span></div>
+    <div class="level3"><span class="xref">DataItemSecurity</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity</span>&gt;</div>
+    <div><span class="xref">System.IComparable</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject</span>&gt;</div>
+    <div><span class="xref">Mc3s.Odos.Security.ISecurityObject</span></div>
+    <div><span class="xref">Mc3s.Odos.Security.ISecurityEntity</span></div>
+    <div><span class="xref">Mc3s.Odos.Security.ISecurityDisplayAs</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._EmptyObjects</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._EmptyOperations</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._EmptySecurityObjectCategories</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getLabel&lt;T&gt;(T, System.Func&lt;T, System.String&gt;, Mc3s.Odos.Security.Authorization.SecurityObjectAttribute)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getHeader&lt;T&gt;(T, System.Func&lt;T, System.String&gt;, Mc3s.Odos.Security.Authorization.SecurityObjectAttribute)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getDescription&lt;T&gt;(T, System.Func&lt;T, System.String&gt;, Mc3s.Odos.Security.Authorization.SecurityObjectAttribute)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getOrCreatePermission(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject, Mc3s.Odos.Security.ISecurityOperation, System.Collections.Generic.Dictionary&lt;System.String, Mc3s.Odos.Security.ISecurityObjectPermission&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.collectAssignedChildSecurityObjectCategories(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.isSecurityInitialized(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.setSecurityInitialized(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.initializeChildrenSecurity(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.areAllChildrenInitialized(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.registerParentSecurityObject(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.registerChildSecurityObject(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getParentSecurityObject(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getChildSecurityObjects(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getImmediateChildSecurityObjectsOfSameCategory(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getImmediateChildSecurityObjectsByCategory(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getImmediateChildSecurityObjectCategories(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.findSecurityObjectByResourceID&lt;T&gt;(System.String, Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.findSecurityObjectBySecurityName&lt;T&gt;(Mc3s.Odos.Security.IServiceSecurityObject, System.String, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.tryFindSecurityObjectBySecurityName(Mc3s.Odos.Security.IServiceSecurityObject, System.String, Mc3s.Odos.Security.ISecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.tryGetChildSecurityObjectBySecurityName(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject, System.String, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.isUnassignedPermissionOfChildObjectAuthorized(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject, Mc3s.Odos.Security.ISecurityObjectPermission)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.Equals(Mc3s.Odos.Security.Authorization.SecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._SecurityOperationType</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._SecurityDefaultAssessment</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._SecurityOperations</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._IsSecurityEnabled</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._AssignedChildSecurityObjectCategories</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._AssignedPermissions</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._RegisteredServices</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.initializeSecurity(Mc3s.Odos.Security.IServiceSecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.isSecurityInitialized(Mc3s.Odos.Security.IServiceSecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.areAllChildrenInitialized(Mc3s.Odos.Security.IServiceSecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.registerDeclarativeSecurity(Mc3s.Odos.Security.IServiceSecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.collectAssignedPermissions(Mc3s.Odos.Security.IServiceSecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.registerParentSecurityObject(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.registerChildSecurityObject(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getParentSecurityObject(Mc3s.Odos.Security.IServiceSecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getChildSecurityObjects(Mc3s.Odos.Security.IServiceSecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getOrCreatePermission(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityOperation)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.isOperationDefined(Mc3s.Odos.Security.ISecurityOperation)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.isAnyOperationDefined(System.Collections.Generic.IEnumerable&lt;Mc3s.Odos.Security.ISecurityOperation&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.isUnassignedPermissionOfChildObjectAuthorized(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObjectPermission)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.tryGetChildSecurityObjectBySecurityName(Mc3s.Odos.Security.IServiceSecurityObject, System.String, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity.getSecurityNameFromResourceID(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._label</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._header</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._description</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._securityLabel</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._securityHeader</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._securityDescription</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity.Equals(Mc3s.Odos.Security.Authorization.SecurityEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity.CompareTo(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._ResourceID</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._SecurityName</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._SecurityLabel</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._SecurityHeader</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._SecurityDescription</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._Label</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._Header</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._Description</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._SecurityDisplayOrder</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Security.html">Mc3s.Odos.Security</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Security_DataItemSecurity_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DataItemSecurity : SecurityObject, IEquatable&lt;SecurityEntity&gt;, IComparable, IEquatable&lt;SecurityObject&gt;, ISecurityObject, ISecurityEntity, ISecurityDisplayAs</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/DataItemSecurity.cs#lines-41">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_DataItemSecurity__ctor_" data-uid="Mc3s.Odos.Security.DataItemSecurity.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Security_DataItemSecurity__ctor_Mc3s_Odos_Library_DataItem_System_String_Mc3s_Odos_Security_SecurityOperationType_System_Collections_Generic_IEnumerable_Mc3s_Odos_Security_DataItemSecurityOperation__" data-uid="Mc3s.Odos.Security.DataItemSecurity.#ctor(Mc3s.Odos.Library.DataItem,System.String,Mc3s.Odos.Security.SecurityOperationType,System.Collections.Generic.IEnumerable{Mc3s.Odos.Security.DataItemSecurityOperation})">DataItemSecurity(DataItem, String, SecurityOperationType, IEnumerable&lt;DataItemSecurityOperation&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataItemSecurity(DataItem dataItem, string resourceID, SecurityOperationType securityOperationType, IEnumerable&lt;DataItemSecurityOperation&gt; definedOperations)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">dataItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.SecurityOperationType</span></td>
+        <td><span class="parametername">securityOperationType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Mc3s.Odos.Security.DataItemSecurityOperation.html">DataItemSecurityOperation</a>&gt;</td>
+        <td><span class="parametername">definedOperations</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/DataItemSecurity.cs#lines-28">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_DataItemSecurity__ChildSecurityObjectCategories" data-uid="Mc3s.Odos.Security.DataItemSecurity._ChildSecurityObjectCategories">_ChildSecurityObjectCategories</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] _ChildSecurityObjectCategories</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/DataItemSecurity.cs#lines-20">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_DataItemSecurity__SecOpsCategory" data-uid="Mc3s.Odos.Security.DataItemSecurity._SecOpsCategory">_SecOpsCategory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string _SecOpsCategory = &quot;DataItems&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/DataItemSecurity.cs#lines-21">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_DataItemSecurity__SecOpsCategoryPrefix" data-uid="Mc3s.Odos.Security.DataItemSecurity._SecOpsCategoryPrefix">_SecOpsCategoryPrefix</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string _SecOpsCategoryPrefix = &quot;DI&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/DataItemSecurity.cs#lines-62">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_DataItemSecurity__DefinedChildSecurityObjectCategories_" data-uid="Mc3s.Odos.Security.DataItemSecurity._DefinedChildSecurityObjectCategories*"></a>
+  <h4 id="Mc3s_Odos_Security_DataItemSecurity__DefinedChildSecurityObjectCategories" data-uid="Mc3s.Odos.Security.DataItemSecurity._DefinedChildSecurityObjectCategories">_DefinedChildSecurityObjectCategories</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ICollection&lt;string&gt; _DefinedChildSecurityObjectCategories { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._DefinedChildSecurityObjectCategories</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/DataItemSecurity.cs#lines-35">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_DataItemSecurity__Key_" data-uid="Mc3s.Odos.Security.DataItemSecurity._Key*"></a>
+  <h4 id="Mc3s_Odos_Security_DataItemSecurity__Key" data-uid="Mc3s.Odos.Security.DataItemSecurity._Key">_Key</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataItemKey _Key { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemKey.html">DataItemKey</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/DataItemSecurity.cs#lines-60">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_DataItemSecurity__SecurityCategory_" data-uid="Mc3s.Odos.Security.DataItemSecurity._SecurityCategory*"></a>
+  <h4 id="Mc3s_Odos_Security_DataItemSecurity__SecurityCategory" data-uid="Mc3s.Odos.Security.DataItemSecurity._SecurityCategory">_SecurityCategory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string _SecurityCategory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._SecurityCategory</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/DataItemSecurity.cs#lines-61">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_DataItemSecurity__SecurityCategoryPrefix_" data-uid="Mc3s.Odos.Security.DataItemSecurity._SecurityCategoryPrefix*"></a>
+  <h4 id="Mc3s_Odos_Security_DataItemSecurity__SecurityCategoryPrefix" data-uid="Mc3s.Odos.Security.DataItemSecurity._SecurityCategoryPrefix">_SecurityCategoryPrefix</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string _SecurityCategoryPrefix { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._SecurityCategoryPrefix</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IComparable</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Odos.Security.ISecurityObject</span>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Odos.Security.ISecurityEntity</span>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Odos.Security.ISecurityDisplayAs</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/DataItemSecurity.cs#lines-15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

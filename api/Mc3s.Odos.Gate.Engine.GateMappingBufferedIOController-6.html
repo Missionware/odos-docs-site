@@ -1,0 +1,1075 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GateMappingBufferedIOController&lt;TReadArgs, TWriteArgs, TReadResults, TWriteResults, TSubscribeResults, TUnSubscribeResults&gt;
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GateMappingBufferedIOController&lt;TReadArgs, TWriteArgs, TReadResults, TWriteResults, TSubscribeResults, TUnSubscribeResults&gt;
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6">
+  
+  
+  <h1 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6" class="text-break">Class GateMappingBufferedIOController&lt;TReadArgs, TWriteArgs, TReadResults, TWriteResults, TSubscribeResults, TUnSubscribeResults&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for GateMappingBufferedIOController.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseIOController.html">GateBaseIOController</a></div>
+    <div class="level2"><a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseMappingIOController.html">GateBaseMappingIOController</a></div>
+    <div class="level3"><a class="xref" href="Mc3s.Odos.Gate.Engine.GateMappingElementIOController.html">GateMappingElementIOController</a></div>
+    <div class="level4"><span class="xref">GateMappingBufferedIOController&lt;TReadArgs, TWriteArgs, TReadResults, TWriteResults, TSubscribeResults, TUnSubscribeResults&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mc3s.Odos.Gate.IGateIOMappingController.html">IGateIOMappingController</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Gate.IGateIOController.html">IGateIOController</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseMappingIOController.html#Mc3s_Odos_Gate_Engine_GateBaseMappingIOController_prepareKeyRead_Mc3s_Odos_Library_DataItemClassInfo_Mc3s_Odos_Library_IWhereExpression_">GateBaseMappingIOController.prepareKeyRead(DataItemClassInfo, IWhereExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseMappingIOController.html#Mc3s_Odos_Gate_Engine_GateBaseMappingIOController_prepareRead_Mc3s_Odos_Library_DataItemKeyInfo_Mc3s_Odos_Library_IFieldFilter_">GateBaseMappingIOController.prepareRead(DataItemKeyInfo, IFieldFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseMappingIOController.html#Mc3s_Odos_Gate_Engine_GateBaseMappingIOController_prepareRead_System_Collections_Generic_List_Mc3s_Odos_Library_DataItemKeyInfo__Mc3s_Odos_Library_IFieldFilter_">GateBaseMappingIOController.prepareRead(List&lt;DataItemKeyInfo&gt;, IFieldFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseMappingIOController.html#Mc3s_Odos_Gate_Engine_GateBaseMappingIOController_prepareRead_Mc3s_Odos_Library_DataItemClassInfo_Mc3s_Odos_Library_IWhereExpression_Mc3s_Odos_Library_IFieldFilter_">GateBaseMappingIOController.prepareRead(DataItemClassInfo, IWhereExpression, IFieldFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseMappingIOController.html#Mc3s_Odos_Gate_Engine_GateBaseMappingIOController_prepareSubscriptionChange_System_Collections_Generic_ICollection_Mc3s_Odos_Library_DataItemKey__">GateBaseMappingIOController.prepareSubscriptionChange(ICollection&lt;DataItemKey&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseMappingIOController.html#Mc3s_Odos_Gate_Engine_GateBaseMappingIOController_getKeyList">GateBaseMappingIOController.getKeyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseMappingIOController.html#Mc3s_Odos_Gate_Engine_GateBaseMappingIOController_getUnloadedImage">GateBaseMappingIOController.getUnloadedImage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseMappingIOController.html#Mc3s_Odos_Gate_Engine_GateBaseMappingIOController_getUnloadedImageList">GateBaseMappingIOController.getUnloadedImageList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseMappingIOController.html#Mc3s_Odos_Gate_Engine_GateBaseMappingIOController_getLoadedImage">GateBaseMappingIOController.getLoadedImage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseMappingIOController.html#Mc3s_Odos_Gate_Engine_GateBaseMappingIOController_getLoadedImageList">GateBaseMappingIOController.getLoadedImageList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseMappingIOController.html#Mc3s_Odos_Gate_Engine_GateBaseMappingIOController__TotalFieldCount">GateBaseMappingIOController._TotalFieldCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseMappingIOController.html#Mc3s_Odos_Gate_Engine_GateBaseMappingIOController__ImageMappingInfos">GateBaseMappingIOController._ImageMappingInfos</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseMappingIOController.html#Mc3s_Odos_Gate_Engine_GateBaseMappingIOController_addImageMappingInfo_Mc3s_Odos_Gate_GateImageMappingInfo_">GateBaseMappingIOController.addImageMappingInfo(GateImageMappingInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseIOController.html#Mc3s_Odos_Gate_Engine_GateBaseIOController__MapCache">GateBaseIOController._MapCache</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseIOController.html#Mc3s_Odos_Gate_Engine_GateBaseIOController__IsWriter">GateBaseIOController._IsWriter</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateBaseIOController.html#Mc3s_Odos_Gate_Engine_GateBaseIOController__FieldFilter">GateBaseIOController._FieldFilter</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Gate.Engine.html">Mc3s.Odos.Gate.Engine</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class GateMappingBufferedIOController&lt;TReadArgs, TWriteArgs, TReadResults, TWriteResults, TSubscribeResults, TUnSubscribeResults&gt; : GateMappingElementIOController, IGateIOMappingController, IGateIOController</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TReadArgs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TWriteArgs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TReadResults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TWriteResults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSubscribeResults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TUnSubscribeResults</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-27">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6__ctor_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6__ctor_Mc3s_Odos_Gate_IGateMappingCache_System_Boolean_Mc3s_Odos_Library_IFieldFilter_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.#ctor(Mc3s.Odos.Gate.IGateMappingCache,System.Boolean,Mc3s.Odos.Library.IFieldFilter)">GateMappingBufferedIOController(IGateMappingCache, Boolean, IFieldFilter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GateMappingBufferedIOController(IGateMappingCache mapCache, bool isWriter, IFieldFilter fieldFilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Gate.IGateMappingCache.html">IGateMappingCache</a></td>
+        <td><span class="parametername">mapCache</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isWriter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IFieldFilter.html">IFieldFilter</a></td>
+        <td><span class="parametername">fieldFilter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-20">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6__IOBufferCount_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6._IOBufferCount*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6__IOBufferCount" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6._IOBufferCount">_IOBufferCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int _IOBufferCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-523">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_getReadErrorMessageToLog_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.getReadErrorMessageToLog*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_getReadErrorMessageToLog__0__2_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.getReadErrorMessageToLog(`0,`2)">getReadErrorMessageToLog(TReadArgs, TReadResults)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string getReadErrorMessageToLog(TReadArgs arg, TReadResults result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TReadArgs</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TReadResults</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-533">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_getSubscribeErrorMessageToLog_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.getSubscribeErrorMessageToLog*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_getSubscribeErrorMessageToLog__0__4_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.getSubscribeErrorMessageToLog(`0,`4)">getSubscribeErrorMessageToLog(TReadArgs, TSubscribeResults)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string getSubscribeErrorMessageToLog(TReadArgs arg, TSubscribeResults result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TReadArgs</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TSubscribeResults</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-538">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_getUnSubscribeErrorMessageToLog_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.getUnSubscribeErrorMessageToLog*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_getUnSubscribeErrorMessageToLog__4__5_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.getUnSubscribeErrorMessageToLog(`4,`5)">getUnSubscribeErrorMessageToLog(TSubscribeResults, TUnSubscribeResults)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string getUnSubscribeErrorMessageToLog(TSubscribeResults arg, TUnSubscribeResults result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSubscribeResults</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TUnSubscribeResults</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-528">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_getWriteErrorMessageToLog_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.getWriteErrorMessageToLog*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_getWriteErrorMessageToLog__1__3_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.getWriteErrorMessageToLog(`1,`3)">getWriteErrorMessageToLog(TWriteArgs, TWriteResults)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string getWriteErrorMessageToLog(TWriteArgs arg, TWriteResults result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TWriteArgs</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TWriteResults</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-522">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_hasReadSucceeded_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.hasReadSucceeded*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_hasReadSucceeded__0__2_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.hasReadSucceeded(`0,`2)">hasReadSucceeded(TReadArgs, TReadResults)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool hasReadSucceeded(TReadArgs arg, TReadResults result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TReadArgs</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TReadResults</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-532">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_hasSubscribeSucceeded_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.hasSubscribeSucceeded*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_hasSubscribeSucceeded__0__4_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.hasSubscribeSucceeded(`0,`4)">hasSubscribeSucceeded(TReadArgs, TSubscribeResults)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool hasSubscribeSucceeded(TReadArgs arg, TSubscribeResults result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TReadArgs</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TSubscribeResults</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-537">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_hasUnSubscribeSucceeded_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.hasUnSubscribeSucceeded*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_hasUnSubscribeSucceeded__4__5_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.hasUnSubscribeSucceeded(`4,`5)">hasUnSubscribeSucceeded(TSubscribeResults, TUnSubscribeResults)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool hasUnSubscribeSucceeded(TSubscribeResults arg, TUnSubscribeResults result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSubscribeResults</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TUnSubscribeResults</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-527">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_hasWriteSucceeded_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.hasWriteSucceeded*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_hasWriteSucceeded__1__3_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.hasWriteSucceeded(`1,`3)">hasWriteSucceeded(TWriteArgs, TWriteResults)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool hasWriteSucceeded(TWriteArgs arg, TWriteResults result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TWriteArgs</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TWriteResults</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-521">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_readMultiple_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.readMultiple*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_readMultiple__0___" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.readMultiple(`0[])">readMultiple(TReadArgs[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract TReadResults[] readMultiple(TReadArgs[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TReadArgs[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TReadResults[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-531">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_subscribeMultiple_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.subscribeMultiple*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_subscribeMultiple__0___" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.subscribeMultiple(`0[])">subscribeMultiple(TReadArgs[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract TSubscribeResults[] subscribeMultiple(TReadArgs[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TReadArgs[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TSubscribeResults[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-39">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_tryRead_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.tryRead*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_tryRead_System_Boolean_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.tryRead(System.Boolean)">tryRead(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int tryRead(bool async)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">async</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Gate.Engine.GateMappingElementIOController.html#Mc3s_Odos_Gate_Engine_GateMappingElementIOController_tryRead_System_Boolean_">GateMappingElementIOController.tryRead(Boolean)</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-182">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_trySubscribe_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.trySubscribe*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_trySubscribe_System_Boolean_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.trySubscribe(System.Boolean)">trySubscribe(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int trySubscribe(bool async)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">async</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Gate.Engine.GateMappingElementIOController.html#Mc3s_Odos_Gate_Engine_GateMappingElementIOController_trySubscribe_System_Boolean_">GateMappingElementIOController.trySubscribe(Boolean)</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-252">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_tryUnSubscribe_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.tryUnSubscribe*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_tryUnSubscribe_System_Boolean_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.tryUnSubscribe(System.Boolean)">tryUnSubscribe(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int tryUnSubscribe(bool async)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">async</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Gate.Engine.GateMappingElementIOController.html#Mc3s_Odos_Gate_Engine_GateMappingElementIOController_tryUnSubscribe_System_Boolean_">GateMappingElementIOController.tryUnSubscribe(Boolean)</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-114">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_tryWrite_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.tryWrite*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_tryWrite_System_Boolean_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.tryWrite(System.Boolean)">tryWrite(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int tryWrite(bool async)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">async</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Gate.Engine.GateMappingElementIOController.html#Mc3s_Odos_Gate_Engine_GateMappingElementIOController_tryWrite_System_Boolean_">GateMappingElementIOController.tryWrite(Boolean)</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-536">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_unSubscribeMultiple_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.unSubscribeMultiple*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_unSubscribeMultiple__4___" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.unSubscribeMultiple(`4[])">unSubscribeMultiple(TSubscribeResults[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract TUnSubscribeResults[] unSubscribeMultiple(TSubscribeResults[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TSubscribeResults[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TUnSubscribeResults[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-526">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_writeMultiple_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.writeMultiple*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingBufferedIOController_6_writeMultiple__1___" data-uid="Mc3s.Odos.Gate.Engine.GateMappingBufferedIOController`6.writeMultiple(`1[])">writeMultiple(TWriteArgs[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract TWriteResults[] writeMultiple(TWriteArgs[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TWriteArgs[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TWriteResults[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Gate.IGateIOMappingController.html">IGateIOMappingController</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Gate.IGateIOController.html">IGateIOController</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingBufferedIOController.cs#lines-15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1036 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Blinker
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Blinker
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Client.Blinker">
+  
+  
+  <h1 id="Mc3s_Odos_Client_Blinker" data-uid="Mc3s.Odos.Client.Blinker" class="text-break">Class Blinker
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Mc3s.SharedLib.BlinkerBase</span></div>
+    <div class="level2"><span class="xref">Blinker</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.CONF_DefaultBlinkPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.CONF_DefaultLifeEventPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.AutoIDPrefix</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.DefaultMinBlinkPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.DefaultBlinkPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.DefaultMinLifeEventPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.DefaultLifeEventPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._lastAutoId</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._defaultGlobalMinBlinkPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._defaultGlobalBlinkPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._defaultGlobalMinLifeEventPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._defaultGlobalLifeEventPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._DefaultGlobalMinBlinkPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._DefaultGlobalBlinkPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._DefaultGlobalMinLifeEventPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._DefaultGlobalLifeEventPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._registrationSyncObj</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._registrations</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._activeRegistrations</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._activeRegsAreSynced</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._blinkThread</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._defaultBlinkPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._defaultLifeEventPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._closing</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._DefaultBlinkPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._DefaultLifeEventPeriod</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase._IsDisposed</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.AlwaysCleanUpOnDispose()</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.UserCleanUpOnDispose()</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.BlinkStart</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.BlinkLifeEvent</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.BlinkStop</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.onBlinkStartEvent(Mc3s.SharedLib.BlinkEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.onBlinkLifetimeReachedEvent(Mc3s.SharedLib.BlinkEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.onBlinkStopEvent(Mc3s.SharedLib.BlinkEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.startBlink&lt;ViewObjectType&gt;(System.String, ViewObjectType, Mc3s.SharedLib.BlinkDelegate&lt;ViewObjectType&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.startBlink&lt;ViewObjectType&gt;(System.String, ViewObjectType, Mc3s.SharedLib.BlinkDelegate&lt;ViewObjectType&gt;, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.startBlink&lt;ViewObjectType&gt;(System.String, ViewObjectType, Mc3s.SharedLib.BlinkDelegate&lt;ViewObjectType&gt;, System.TimeSpan, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.startBlink&lt;ViewObjectType&gt;(System.String, ViewObjectType, Mc3s.SharedLib.BlinkDelegate&lt;ViewObjectType&gt;, System.TimeSpan, System.TimeSpan, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.startBlink&lt;ViewObjectType&gt;(System.String, ViewObjectType, Mc3s.SharedLib.BlinkDelegate&lt;ViewObjectType&gt;, Mc3s.SharedLib.BlinkItem&lt;ViewObjectType&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.startBlink&lt;ViewObjectType&gt;(System.String, ViewObjectType, Mc3s.SharedLib.BlinkDelegate&lt;ViewObjectType&gt;, System.Object[], Mc3s.SharedLib.BlinkItem&lt;ViewObjectType&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.startBlink&lt;ViewObjectType&gt;(System.String, ViewObjectType, Mc3s.SharedLib.BlinkDelegate&lt;ViewObjectType&gt;, System.TimeSpan, System.Object[], Mc3s.SharedLib.BlinkItem&lt;ViewObjectType&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.startBlink&lt;ViewObjectType&gt;(System.String, ViewObjectType, Mc3s.SharedLib.BlinkDelegate&lt;ViewObjectType&gt;, System.TimeSpan, System.TimeSpan, System.Object[], Mc3s.SharedLib.BlinkItem&lt;ViewObjectType&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.stopBlink(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.stopBlink(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.stopBlink(System.String, System.Object[], Mc3s.SharedLib.IBlinkItem)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.BlinkerBase.getBlinkItem(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Client.html">Mc3s.Odos.Client</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Client_Blinker_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Blinker : BlinkerBase, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/Blinker.cs#lines-17">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_Blinker__ctor_" data-uid="Mc3s.Odos.Client.Blinker.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Client_Blinker__ctor" data-uid="Mc3s.Odos.Client.Blinker.#ctor">Blinker()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Blinker()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/Blinker.cs#lines-61">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_Blinker_startBlink_" data-uid="Mc3s.Odos.Client.Blinker.startBlink*"></a>
+  <h4 id="Mc3s_Odos_Client_Blinker_startBlink__2_System_String___0___1_Mc3s_Odos_Client_BlinkModelDelegate___0___1__" data-uid="Mc3s.Odos.Client.Blinker.startBlink``2(System.String,``0,``1,Mc3s.Odos.Client.BlinkModelDelegate{``0,``1})">startBlink&lt;ViewObjectType, ModelObjectType&gt;(String, ViewObjectType, ModelObjectType, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool startBlink&lt;ViewObjectType, ModelObjectType&gt;(string id, ViewObjectType viewObject, ModelObjectType modelObject, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt; blinkDelegate)
+    where ViewObjectType : class where ModelObjectType : DataItem</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ViewObjectType</span></td>
+        <td><span class="parametername">viewObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ModelObjectType</span></td>
+        <td><span class="parametername">modelObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.BlinkModelDelegate-2.html">BlinkModelDelegate</a>&lt;ViewObjectType, ModelObjectType&gt;</td>
+        <td><span class="parametername">blinkDelegate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">ViewObjectType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">ModelObjectType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/Blinker.cs#lines-136">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_Blinker_startBlink_" data-uid="Mc3s.Odos.Client.Blinker.startBlink*"></a>
+  <h4 id="Mc3s_Odos_Client_Blinker_startBlink__2_System_String___0___1_Mc3s_Odos_Client_BlinkModelDelegate___0___1__Mc3s_Odos_Client_BlinkModelItem___0___1___" data-uid="Mc3s.Odos.Client.Blinker.startBlink``2(System.String,``0,``1,Mc3s.Odos.Client.BlinkModelDelegate{``0,``1},Mc3s.Odos.Client.BlinkModelItem{``0,``1}@)">startBlink&lt;ViewObjectType, ModelObjectType&gt;(String, ViewObjectType, ModelObjectType, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt;, out BlinkModelItem&lt;ViewObjectType, ModelObjectType&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool startBlink&lt;ViewObjectType, ModelObjectType&gt;(string id, ViewObjectType viewObject, ModelObjectType modelObject, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt; blinkDelegate, out BlinkModelItem&lt;ViewObjectType, ModelObjectType&gt; blinkerItem)
+    where ViewObjectType : class where ModelObjectType : DataItem</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ViewObjectType</span></td>
+        <td><span class="parametername">viewObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ModelObjectType</span></td>
+        <td><span class="parametername">modelObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.BlinkModelDelegate-2.html">BlinkModelDelegate</a>&lt;ViewObjectType, ModelObjectType&gt;</td>
+        <td><span class="parametername">blinkDelegate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.BlinkModelItem-2.html">BlinkModelItem</a>&lt;ViewObjectType, ModelObjectType&gt;</td>
+        <td><span class="parametername">blinkerItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">ViewObjectType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">ModelObjectType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/Blinker.cs#lines-78">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_Blinker_startBlink_" data-uid="Mc3s.Odos.Client.Blinker.startBlink*"></a>
+  <h4 id="Mc3s_Odos_Client_Blinker_startBlink__2_System_String___0___1_Mc3s_Odos_Client_BlinkModelDelegate___0___1__System_Object___" data-uid="Mc3s.Odos.Client.Blinker.startBlink``2(System.String,``0,``1,Mc3s.Odos.Client.BlinkModelDelegate{``0,``1},System.Object[])">startBlink&lt;ViewObjectType, ModelObjectType&gt;(String, ViewObjectType, ModelObjectType, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt;, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool startBlink&lt;ViewObjectType, ModelObjectType&gt;(string id, ViewObjectType viewObject, ModelObjectType modelObject, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt; blinkDelegate, object[] arguments)
+    where ViewObjectType : class where ModelObjectType : DataItem</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ViewObjectType</span></td>
+        <td><span class="parametername">viewObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ModelObjectType</span></td>
+        <td><span class="parametername">modelObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.BlinkModelDelegate-2.html">BlinkModelDelegate</a>&lt;ViewObjectType, ModelObjectType&gt;</td>
+        <td><span class="parametername">blinkDelegate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">ViewObjectType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">ModelObjectType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/Blinker.cs#lines-153">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_Blinker_startBlink_" data-uid="Mc3s.Odos.Client.Blinker.startBlink*"></a>
+  <h4 id="Mc3s_Odos_Client_Blinker_startBlink__2_System_String___0___1_Mc3s_Odos_Client_BlinkModelDelegate___0___1__System_Object___Mc3s_Odos_Client_BlinkModelItem___0___1___" data-uid="Mc3s.Odos.Client.Blinker.startBlink``2(System.String,``0,``1,Mc3s.Odos.Client.BlinkModelDelegate{``0,``1},System.Object[],Mc3s.Odos.Client.BlinkModelItem{``0,``1}@)">startBlink&lt;ViewObjectType, ModelObjectType&gt;(String, ViewObjectType, ModelObjectType, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt;, Object[], out BlinkModelItem&lt;ViewObjectType, ModelObjectType&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool startBlink&lt;ViewObjectType, ModelObjectType&gt;(string id, ViewObjectType viewObject, ModelObjectType modelObject, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt; blinkDelegate, object[] arguments, out BlinkModelItem&lt;ViewObjectType, ModelObjectType&gt; blinkerItem)
+    where ViewObjectType : class where ModelObjectType : DataItem</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ViewObjectType</span></td>
+        <td><span class="parametername">viewObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ModelObjectType</span></td>
+        <td><span class="parametername">modelObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.BlinkModelDelegate-2.html">BlinkModelDelegate</a>&lt;ViewObjectType, ModelObjectType&gt;</td>
+        <td><span class="parametername">blinkDelegate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.BlinkModelItem-2.html">BlinkModelItem</a>&lt;ViewObjectType, ModelObjectType&gt;</td>
+        <td><span class="parametername">blinkerItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">ViewObjectType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">ModelObjectType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/Blinker.cs#lines-96">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_Blinker_startBlink_" data-uid="Mc3s.Odos.Client.Blinker.startBlink*"></a>
+  <h4 id="Mc3s_Odos_Client_Blinker_startBlink__2_System_String___0___1_Mc3s_Odos_Client_BlinkModelDelegate___0___1__System_TimeSpan_System_Object___" data-uid="Mc3s.Odos.Client.Blinker.startBlink``2(System.String,``0,``1,Mc3s.Odos.Client.BlinkModelDelegate{``0,``1},System.TimeSpan,System.Object[])">startBlink&lt;ViewObjectType, ModelObjectType&gt;(String, ViewObjectType, ModelObjectType, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt;, TimeSpan, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool startBlink&lt;ViewObjectType, ModelObjectType&gt;(string id, ViewObjectType viewObject, ModelObjectType modelObject, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt; blinkDelegate, TimeSpan blinkPeriod, object[] arguments)
+    where ViewObjectType : class where ModelObjectType : DataItem</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ViewObjectType</span></td>
+        <td><span class="parametername">viewObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ModelObjectType</span></td>
+        <td><span class="parametername">modelObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.BlinkModelDelegate-2.html">BlinkModelDelegate</a>&lt;ViewObjectType, ModelObjectType&gt;</td>
+        <td><span class="parametername">blinkDelegate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">blinkPeriod</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">ViewObjectType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">ModelObjectType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/Blinker.cs#lines-171">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_Blinker_startBlink_" data-uid="Mc3s.Odos.Client.Blinker.startBlink*"></a>
+  <h4 id="Mc3s_Odos_Client_Blinker_startBlink__2_System_String___0___1_Mc3s_Odos_Client_BlinkModelDelegate___0___1__System_TimeSpan_System_Object___Mc3s_Odos_Client_BlinkModelItem___0___1___" data-uid="Mc3s.Odos.Client.Blinker.startBlink``2(System.String,``0,``1,Mc3s.Odos.Client.BlinkModelDelegate{``0,``1},System.TimeSpan,System.Object[],Mc3s.Odos.Client.BlinkModelItem{``0,``1}@)">startBlink&lt;ViewObjectType, ModelObjectType&gt;(String, ViewObjectType, ModelObjectType, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt;, TimeSpan, Object[], out BlinkModelItem&lt;ViewObjectType, ModelObjectType&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool startBlink&lt;ViewObjectType, ModelObjectType&gt;(string id, ViewObjectType viewObject, ModelObjectType modelObject, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt; blinkDelegate, TimeSpan blinkPeriod, object[] arguments, out BlinkModelItem&lt;ViewObjectType, ModelObjectType&gt; blinkerItem)
+    where ViewObjectType : class where ModelObjectType : DataItem</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ViewObjectType</span></td>
+        <td><span class="parametername">viewObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ModelObjectType</span></td>
+        <td><span class="parametername">modelObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.BlinkModelDelegate-2.html">BlinkModelDelegate</a>&lt;ViewObjectType, ModelObjectType&gt;</td>
+        <td><span class="parametername">blinkDelegate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">blinkPeriod</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.BlinkModelItem-2.html">BlinkModelItem</a>&lt;ViewObjectType, ModelObjectType&gt;</td>
+        <td><span class="parametername">blinkerItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">ViewObjectType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">ModelObjectType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/Blinker.cs#lines-115">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_Blinker_startBlink_" data-uid="Mc3s.Odos.Client.Blinker.startBlink*"></a>
+  <h4 id="Mc3s_Odos_Client_Blinker_startBlink__2_System_String___0___1_Mc3s_Odos_Client_BlinkModelDelegate___0___1__System_TimeSpan_System_TimeSpan_System_Object___" data-uid="Mc3s.Odos.Client.Blinker.startBlink``2(System.String,``0,``1,Mc3s.Odos.Client.BlinkModelDelegate{``0,``1},System.TimeSpan,System.TimeSpan,System.Object[])">startBlink&lt;ViewObjectType, ModelObjectType&gt;(String, ViewObjectType, ModelObjectType, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt;, TimeSpan, TimeSpan, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool startBlink&lt;ViewObjectType, ModelObjectType&gt;(string id, ViewObjectType viewObject, ModelObjectType modelObject, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt; blinkDelegate, TimeSpan blinkPeriod, TimeSpan lifeEventPeriod, object[] arguments)
+    where ViewObjectType : class where ModelObjectType : DataItem</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ViewObjectType</span></td>
+        <td><span class="parametername">viewObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ModelObjectType</span></td>
+        <td><span class="parametername">modelObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.BlinkModelDelegate-2.html">BlinkModelDelegate</a>&lt;ViewObjectType, ModelObjectType&gt;</td>
+        <td><span class="parametername">blinkDelegate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">blinkPeriod</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">lifeEventPeriod</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">ViewObjectType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">ModelObjectType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/Blinker.cs#lines-190">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_Blinker_startBlink_" data-uid="Mc3s.Odos.Client.Blinker.startBlink*"></a>
+  <h4 id="Mc3s_Odos_Client_Blinker_startBlink__2_System_String___0___1_Mc3s_Odos_Client_BlinkModelDelegate___0___1__System_TimeSpan_System_TimeSpan_System_Object___Mc3s_Odos_Client_BlinkModelItem___0___1___" data-uid="Mc3s.Odos.Client.Blinker.startBlink``2(System.String,``0,``1,Mc3s.Odos.Client.BlinkModelDelegate{``0,``1},System.TimeSpan,System.TimeSpan,System.Object[],Mc3s.Odos.Client.BlinkModelItem{``0,``1}@)">startBlink&lt;ViewObjectType, ModelObjectType&gt;(String, ViewObjectType, ModelObjectType, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt;, TimeSpan, TimeSpan, Object[], out BlinkModelItem&lt;ViewObjectType, ModelObjectType&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool startBlink&lt;ViewObjectType, ModelObjectType&gt;(string id, ViewObjectType viewObject, ModelObjectType modelObject, BlinkModelDelegate&lt;ViewObjectType, ModelObjectType&gt; blinkDelegate, TimeSpan blinkPeriod, TimeSpan lifeEventPeriod, object[] arguments, out BlinkModelItem&lt;ViewObjectType, ModelObjectType&gt; blinkerItem)
+    where ViewObjectType : class where ModelObjectType : DataItem</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ViewObjectType</span></td>
+        <td><span class="parametername">viewObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ModelObjectType</span></td>
+        <td><span class="parametername">modelObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.BlinkModelDelegate-2.html">BlinkModelDelegate</a>&lt;ViewObjectType, ModelObjectType&gt;</td>
+        <td><span class="parametername">blinkDelegate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">blinkPeriod</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">lifeEventPeriod</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.BlinkModelItem-2.html">BlinkModelItem</a>&lt;ViewObjectType, ModelObjectType&gt;</td>
+        <td><span class="parametername">blinkerItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">ViewObjectType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">ModelObjectType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/Blinker.cs#lines-12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

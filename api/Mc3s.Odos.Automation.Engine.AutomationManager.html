@@ -1,0 +1,2316 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AutomationManager
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AutomationManager
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager">
+  
+  
+  <h1 id="Mc3s_Odos_Automation_Engine_AutomationManager" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager" class="text-break">Class AutomationManager
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for AutomationManager.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html">ServiceApplication</a></div>
+    <div class="level2"><a class="xref" href="Mc3s.Odos.Service.RoleManager.html">RoleManager</a></div>
+    <div class="level3"><span class="xref">AutomationManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mc3s.Odos.Client.IServiceApp.html">IServiceApp</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Client.IServiceAgent.html">IServiceAgent</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="Mc3s.Odos.Automation.Engine.IAutomationManager.html">IAutomationManager</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_ServerStartUpMode">ServiceApplication.CONF_ServerStartUpMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_AttachWait">ServiceApplication.CONF_AttachWait</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_GCCollectCount">ServiceApplication.CONF_GCCollectCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DisableLocalRelatedProcesses">ServiceApplication.CONF_DisableLocalRelatedProcesses</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_ProxyMode">ServiceApplication.CONF_ProxyMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_BackupModeID">ServiceApplication.CONF_BackupModeID</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainAssembly">ServiceApplication.CONF_DomainAssembly</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainRuntimeOnly">ServiceApplication.CONF_DomainRuntimeOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainReaderMgrAssembly">ServiceApplication.CONF_DomainReaderMgrAssembly</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainReaderMgrType">ServiceApplication.CONF_DomainReaderMgrType</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainWriterMgrAssembly">ServiceApplication.CONF_DomainWriterMgrAssembly</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainWriterMgrType">ServiceApplication.CONF_DomainWriterMgrType</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainConnectionCheckCaching">ServiceApplication.CONF_DomainConnectionCheckCaching</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainConnectionCheckInterval">ServiceApplication.CONF_DomainConnectionCheckInterval</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainDisconnectionCheckInterval">ServiceApplication.CONF_DomainDisconnectionCheckInterval</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainLoadValidationMode">ServiceApplication.CONF_DomainLoadValidationMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainDisableBreakOnLoadError">ServiceApplication.CONF_DomainDisableBreakOnLoadError</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainCommitPriority">ServiceApplication.CONF_DomainCommitPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainMandatory">ServiceApplication.CONF_DomainMandatory</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainPreload">ServiceApplication.CONF_DomainPreload</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainDBSyncMode">ServiceApplication.CONF_DomainDBSyncMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_DomainDBSyncCommandFileSuffix">ServiceApplication.CONF_DomainDBSyncCommandFileSuffix</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_ClientManagerMaxBulkDataSize">ServiceApplication.CONF_ClientManagerMaxBulkDataSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_ClientManagerCheckupInterval">ServiceApplication.CONF_ClientManagerCheckupInterval</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_EnableAuditing">ServiceApplication.CONF_EnableAuditing</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_EnableOPCGate">ServiceApplication.CONF_EnableOPCGate</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_EnableSNMPGate">ServiceApplication.CONF_EnableSNMPGate</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_ServerMgmtProcessName">ServiceApplication.ServerMgmtProcessName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_ServerManagerProcessName">ServiceApplication.ServerManagerProcessName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_AuditManagerProcessName">ServiceApplication.AuditManagerProcessName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_OPCManagerProcessName">ServiceApplication.OPCManagerProcessName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_SNMPManagerProcessName">ServiceApplication.SNMPManagerProcessName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_SERVER_ROLE_ID">ServiceApplication.CONF_SERVER_ROLE_ID</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_PROXY_ROLE_ID">ServiceApplication.CONF_PROXY_ROLE_ID</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_BACKUPSERVER_ROLE_PREFIX">ServiceApplication.CONF_BACKUPSERVER_ROLE_PREFIX</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_CONF_BACKUPPROXY_ROLE_PREFIX">ServiceApplication.CONF_BACKUPPROXY_ROLE_PREFIX</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_ROLE_SETTING_TAG">ServiceApplication.ROLE_SETTING_TAG</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_ROLE_SETTING_HASHEDTAG">ServiceApplication.ROLE_SETTING_HASHEDTAG</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_SPH_SERVICE_INITIALIZED_ID">ServiceApplication.SPH_SERVICE_INITIALIZED_ID</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_SPH_SERVICE_TERMINATING_ID">ServiceApplication.SPH_SERVICE_TERMINATING_ID</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_SPH_SERVER_CHILDREN_PROCESSES_STARTED_ID">ServiceApplication.SPH_SERVER_CHILDREN_PROCESSES_STARTED_ID</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_DefaultServerStartUpMode">ServiceApplication.DefaultServerStartUpMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_DefaultAttachWait">ServiceApplication.DefaultAttachWait</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_DefaultGCCollectCount">ServiceApplication.DefaultGCCollectCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_DefaultDisableLocalRelatedProcesses">ServiceApplication.DefaultDisableLocalRelatedProcesses</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_ServiceCreated">ServiceApplication.ServiceCreated</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_raiseServiceCreated_Mc3s_Odos_Service_ServiceApplicationArgs_">ServiceApplication.raiseServiceCreated(ServiceApplicationArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_ServiceInitialized">ServiceApplication.ServiceInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_raiseServiceInitialized_Mc3s_Odos_Service_ServiceApplicationArgs_">ServiceApplication.raiseServiceInitialized(ServiceApplicationArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_startServiceApplication__1_Mc3s_Odos_Client_IServiceStartupInfo___0__">ServiceApplication.startServiceApplication&lt;T&gt;(IServiceStartupInfo&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_stopServiceApplication__1_Mc3s_Odos_Client_IServiceStartupInfo___0__">ServiceApplication.stopServiceApplication&lt;T&gt;(IServiceStartupInfo&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_pauseServiceApplication__1_Mc3s_Odos_Client_IServiceStartupInfo___0__System_TimeSpan_">ServiceApplication.pauseServiceApplication&lt;T&gt;(IServiceStartupInfo&lt;T&gt;, TimeSpan)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_resumeServiceApplication__1_Mc3s_Odos_Client_IServiceStartupInfo___0__">ServiceApplication.resumeServiceApplication&lt;T&gt;(IServiceStartupInfo&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_cleanUpServiceApplication_Mc3s_Odos_Client_IServiceStartupInfo_">ServiceApplication.cleanUpServiceApplication(IServiceStartupInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication__IsDisposed">ServiceApplication._IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_Dispose_System_Boolean_">ServiceApplication.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_Dispose">ServiceApplication.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_AlwaysCleanUpOnDispose">ServiceApplication.AlwaysCleanUpOnDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_UserCleanUpOnDispose">ServiceApplication.UserCleanUpOnDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_ServiceStarted">ServiceApplication.ServiceStarted</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_OnServiceStarted">ServiceApplication.OnServiceStarted()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_ServiceStopped">ServiceApplication.ServiceStopped</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_OnServiceStopped">ServiceApplication.OnServiceStopped()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication__ID">ServiceApplication._ID</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication__WorkerThread">ServiceApplication._WorkerThread</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication__CancellationToken">ServiceApplication._CancellationToken</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication__StartupInfo">ServiceApplication._StartupInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication__RoleHashTags">ServiceApplication._RoleHashTags</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication__IsServiceStarted">ServiceApplication._IsServiceStarted</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication__IsServiceListening">ServiceApplication._IsServiceListening</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication__StartedAt">ServiceApplication._StartedAt</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication__SuppressDisplayLife">ServiceApplication._SuppressDisplayLife</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_LinkStartup_Mc3s_Odos_Client_IServiceStartupInfo_">ServiceApplication.LinkStartup(IServiceStartupInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_Pause_System_TimeSpan_">ServiceApplication.Pause(TimeSpan)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_Resume">ServiceApplication.Resume()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_waitOnPauseEvent">ServiceApplication.waitOnPauseEvent()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Automation.Engine.html">Mc3s.Odos.Automation.Engine</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Automation_Engine_AutomationManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class AutomationManager : RoleManager, IServiceApp, IServiceAgent, IDisposable, IAutomationManager</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-31">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_CONF_AutomationAgentName" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.CONF_AutomationAgentName">CONF_AutomationAgentName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONF_AutomationAgentName = &quot;name&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-29">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_CONF_AutomationAgentNode" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.CONF_AutomationAgentNode">CONF_AutomationAgentNode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONF_AutomationAgentNode = &quot;agent&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-35">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_CONF_AutomationCleanUpInterval" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.CONF_AutomationCleanUpInterval">CONF_AutomationCleanUpInterval</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONF_AutomationCleanUpInterval = &quot;cleanupinterval&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-36">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_CONF_AutomationCleanUpOlderThan" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.CONF_AutomationCleanUpOlderThan">CONF_AutomationCleanUpOlderThan</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONF_AutomationCleanUpOlderThan = &quot;cleanupolderthan&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-24">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_CONF_AutomationInternalMode" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.CONF_AutomationInternalMode">CONF_AutomationInternalMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONF_AutomationInternalMode = &quot;internalmode&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-28">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_CONF_AutomationListenAtNode" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.CONF_AutomationListenAtNode">CONF_AutomationListenAtNode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONF_AutomationListenAtNode = &quot;listenat&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-34">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_CONF_AutomationLogSubDir" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.CONF_AutomationLogSubDir">CONF_AutomationLogSubDir</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONF_AutomationLogSubDir = &quot;logsubdir&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-26">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_CONF_AutomationManagedByNode" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.CONF_AutomationManagedByNode">CONF_AutomationManagedByNode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONF_AutomationManagedByNode = &quot;managedby&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-27">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_CONF_AutomationPersistToNode" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.CONF_AutomationPersistToNode">CONF_AutomationPersistToNode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONF_AutomationPersistToNode = &quot;persistto&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-32">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_CONF_AutomationQueueTo" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.CONF_AutomationQueueTo">CONF_AutomationQueueTo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONF_AutomationQueueTo = &quot;queueto&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-33">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_CONF_AutomationSaveAs" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.CONF_AutomationSaveAs">CONF_AutomationSaveAs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONF_AutomationSaveAs = &quot;saveas&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-37">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_CONF_AutomationTriggerCount" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.CONF_AutomationTriggerCount">CONF_AutomationTriggerCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONF_AutomationTriggerCount = &quot;triggercount&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-39">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_CONF_AutomationTriggerIdleTime" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.CONF_AutomationTriggerIdleTime">CONF_AutomationTriggerIdleTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONF_AutomationTriggerIdleTime = &quot;triggeridletime&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-38">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_CONF_AutomationTriggerMaxTime" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.CONF_AutomationTriggerMaxTime">CONF_AutomationTriggerMaxTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONF_AutomationTriggerMaxTime = &quot;triggermaxtime&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-41">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_DEF_AutomationInitLockPrefix" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.DEF_AutomationInitLockPrefix">DEF_AutomationInitLockPrefix</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DEF_AutomationInitLockPrefix = &quot;AUTOMATION LOCK:&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-54">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_DefaultAutomationCleanUpInterval" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.DefaultAutomationCleanUpInterval">DefaultAutomationCleanUpInterval</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double DefaultAutomationCleanUpInterval = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-55">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_DefaultAutomationCleanUpOlderThan" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.DefaultAutomationCleanUpOlderThan">DefaultAutomationCleanUpOlderThan</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double DefaultAutomationCleanUpOlderThan = 30</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-49">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_DefaultAutomationInternalMode" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.DefaultAutomationInternalMode">DefaultAutomationInternalMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const AutomationInternalMode DefaultAutomationInternalMode = AutomationInternalMode.AllInternal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Automation.Engine.AutomationInternalMode.html">AutomationInternalMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-53">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_DefaultAutomationLogSubDir" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.DefaultAutomationLogSubDir">DefaultAutomationLogSubDir</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DefaultAutomationLogSubDir = &quot;TXN_DATA&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-50">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_DefaultAutomationTriggerCount" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.DefaultAutomationTriggerCount">DefaultAutomationTriggerCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DefaultAutomationTriggerCount = 5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-52">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_DefaultAutomationTriggerIdleTime" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.DefaultAutomationTriggerIdleTime">DefaultAutomationTriggerIdleTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DefaultAutomationTriggerIdleTime = 15</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-51">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_DefaultAutomationTriggerMaxTime" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.DefaultAutomationTriggerMaxTime">DefaultAutomationTriggerMaxTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DefaultAutomationTriggerMaxTime = 60</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-46">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_SPH_AGENTS_POST_CONNECT_ID" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.SPH_AGENTS_POST_CONNECT_ID">SPH_AGENTS_POST_CONNECT_ID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SPH_AGENTS_POST_CONNECT_ID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-45">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_SPH_AGENTS_PRE_CONNECT_ID" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.SPH_AGENTS_PRE_CONNECT_ID">SPH_AGENTS_PRE_CONNECT_ID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SPH_AGENTS_PRE_CONNECT_ID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-44">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_SPH_AGENTS_THREADS_STARTED_ID" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.SPH_AGENTS_THREADS_STARTED_ID">SPH_AGENTS_THREADS_STARTED_ID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SPH_AGENTS_THREADS_STARTED_ID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-156">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager__AutomationInternalMode_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._AutomationInternalMode*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager__AutomationInternalMode" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._AutomationInternalMode">_AutomationInternalMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutomationInternalMode _AutomationInternalMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Automation.Engine.AutomationInternalMode.html">AutomationInternalMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-203">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager__AutomationListenAgentConfs_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._AutomationListenAgentConfs*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager__AutomationListenAgentConfs" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._AutomationListenAgentConfs">_AutomationListenAgentConfs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;Dictionary&lt;string, string&gt;&gt; _AutomationListenAgentConfs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-201">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager__AutomationListenAgents_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._AutomationListenAgents*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager__AutomationListenAgents" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._AutomationListenAgents">_AutomationListenAgents</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;AutomationListenAgent&gt; _AutomationListenAgents { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Mc3s.Odos.Automation.Engine.AutomationListenAgent.html">AutomationListenAgent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-202">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager__AutomationPersistAgentConfs_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._AutomationPersistAgentConfs*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager__AutomationPersistAgentConfs" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._AutomationPersistAgentConfs">_AutomationPersistAgentConfs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;Dictionary&lt;string, string&gt;&gt; _AutomationPersistAgentConfs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-200">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager__AutomationPersistAgents_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._AutomationPersistAgents*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager__AutomationPersistAgents" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._AutomationPersistAgents">_AutomationPersistAgents</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;AutomationPersistAgent&gt; _AutomationPersistAgents { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Mc3s.Odos.Automation.Engine.AutomationPersistAgent.html">AutomationPersistAgent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-352">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager__Client_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._Client*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager__Client" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._Client">_Client</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IClient _Client { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-158">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager__IsActive_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._IsActive*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager__IsActive" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._IsActive">_IsActive</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsActive { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-196">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager__Library_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._Library*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager__Library" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._Library">_Library</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _Library { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-186">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager__ListenedDomainCount_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._ListenedDomainCount*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager__ListenedDomainCount" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._ListenedDomainCount">_ListenedDomainCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int _ListenedDomainCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-176">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager__PersistableDomainCount_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._PersistableDomainCount*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager__PersistableDomainCount" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._PersistableDomainCount">_PersistableDomainCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int _PersistableDomainCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-197">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager__Protocol_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._Protocol*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager__Protocol" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._Protocol">_Protocol</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _Protocol { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-198">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager__ServerDns_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._ServerDns*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager__ServerDns" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._ServerDns">_ServerDns</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _ServerDns { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-199">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager__ServerPort_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._ServerPort*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager__ServerPort" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._ServerPort">_ServerPort</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int _ServerPort { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-157">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager__StartedAgentCount_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._StartedAgentCount*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager__StartedAgentCount" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager._StartedAgentCount">_StartedAgentCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int _StartedAgentCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-355">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_addRequiredDomain_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.addRequiredDomain*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_addRequiredDomain_Mc3s_Odos_Client_DataItemDomainFactory_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.addRequiredDomain(Mc3s.Odos.Client.DataItemDomainFactory)">addRequiredDomain(DataItemDomainFactory)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void addRequiredDomain(DataItemDomainFactory dFactory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html">DataItemDomainFactory</a></td>
+        <td><span class="parametername">dFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-359">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_addRequiredDomain_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.addRequiredDomain*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_addRequiredDomain_Mc3s_Odos_Library_DomainLoadInfo_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.addRequiredDomain(Mc3s.Odos.Library.DomainLoadInfo)">addRequiredDomain(DomainLoadInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void addRequiredDomain(DomainLoadInfo dInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DomainLoadInfo.html">DomainLoadInfo</a></td>
+        <td><span class="parametername">dInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-62">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_cleanUpOldTxnLogs_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.cleanUpOldTxnLogs*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_cleanUpOldTxnLogs_System_IO_DirectoryInfo_System_TimeSpan_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.cleanUpOldTxnLogs(System.IO.DirectoryInfo,System.TimeSpan)">cleanUpOldTxnLogs(DirectoryInfo, TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void cleanUpOldTxnLogs(DirectoryInfo logDir, TimeSpan cleanUpOlderThan)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.DirectoryInfo</span></td>
+        <td><span class="parametername">logDir</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">cleanUpOlderThan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-665">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_connectClient_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.connectClient*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_connectClient" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.connectClient">connectClient()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void connectClient()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-91">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_getAgentID_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getAgentID*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_getAgentID_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getAgentID(System.Collections.Generic.Dictionary{System.String,System.String})">getAgentID(Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string getAgentID(Dictionary&lt;string, string&gt; configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-83">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_getAgentName_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getAgentName*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_getAgentName_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getAgentName(System.Collections.Generic.Dictionary{System.String,System.String})">getAgentName(Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string getAgentName(Dictionary&lt;string, string&gt; configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-99">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_getAgentType_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getAgentType*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_getAgentType_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getAgentType(System.Collections.Generic.Dictionary{System.String,System.String})">getAgentType(Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string getAgentType(Dictionary&lt;string, string&gt; configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-616">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_getAutomationClientCreateDelegate_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getAutomationClientCreateDelegate*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_getAutomationClientCreateDelegate" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getAutomationClientCreateDelegate">getAutomationClientCreateDelegate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract CreateAutomationClient getAutomationClientCreateDelegate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Automation.Engine.CreateAutomationClient.html">CreateAutomationClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-521">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_getConsoleOutput_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getConsoleOutput*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_getConsoleOutput_System_String_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getConsoleOutput(System.String)">getConsoleOutput(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string getConsoleOutput(string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-107">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_getLibrary_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getLibrary*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_getLibrary_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getLibrary(System.Collections.Generic.Dictionary{System.String,System.String})">getLibrary(Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string getLibrary(Dictionary&lt;string, string&gt; configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-632">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_getListenAtAgent_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getListenAtAgent*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_getListenAtAgent_System_String_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getListenAtAgent(System.String)">getListenAtAgent(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutomationListenAgent getListenAtAgent(string ID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Automation.Engine.AutomationListenAgent.html">AutomationListenAgent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-597">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_getListenedDomains_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getListenedDomains*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_getListenedDomains" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getListenedDomains">getListenedDomains()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Dictionary&lt;string, DomainLoadInfo&gt; getListenedDomains()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Mc3s.Odos.Library.DomainLoadInfo.html">DomainLoadInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-576">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_getMandatoryDomains_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getMandatoryDomains*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_getMandatoryDomains" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getMandatoryDomains">getMandatoryDomains()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Dictionary&lt;string, DomainLoadInfo&gt; getMandatoryDomains()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Mc3s.Odos.Library.DomainLoadInfo.html">DomainLoadInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-583">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_getPersistableDomains_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getPersistableDomains*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_getPersistableDomains" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getPersistableDomains">getPersistableDomains()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Dictionary&lt;string, DomainLoadInfo&gt; getPersistableDomains()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Mc3s.Odos.Library.DomainLoadInfo.html">DomainLoadInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-622">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_getPersistToAgent_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getPersistToAgent*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_getPersistToAgent_System_String_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getPersistToAgent(System.String)">getPersistToAgent(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutomationPersistAgent getPersistToAgent(string ID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Automation.Engine.AutomationPersistAgent.html">AutomationPersistAgent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-115">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_getProtocol_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getProtocol*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_getProtocol_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getProtocol(System.Collections.Generic.Dictionary{System.String,System.String})">getProtocol(Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string getProtocol(Dictionary&lt;string, string&gt; configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-365">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_getRequiredDomains_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getRequiredDomains*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_getRequiredDomains" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getRequiredDomains">getRequiredDomains()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ICollection&lt;DomainLoadInfo&gt; getRequiredDomains()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Mc3s.Odos.Library.DomainLoadInfo.html">DomainLoadInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-123">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_getServerDN_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getServerDN*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_getServerDN_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getServerDN(System.Collections.Generic.Dictionary{System.String,System.String})">getServerDN(Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string getServerDN(Dictionary&lt;string, string&gt; configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-131">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_getServerPort_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getServerPort*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_getServerPort_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.getServerPort(System.Collections.Generic.Dictionary{System.String,System.String})">getServerPort(Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string getServerPort(Dictionary&lt;string, string&gt; configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-210">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_Initialize_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.Initialize*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_Initialize" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Initialize()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_Initialize">ServiceApplication.Initialize()</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-644">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_initializeClientObjMgr_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.initializeClientObjMgr*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_initializeClientObjMgr_Mc3s_Odos_Client_ClientStartupConfig_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.initializeClientObjMgr(Mc3s.Odos.Client.ClientStartupConfig)">initializeClientObjMgr(ClientStartupConfig)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void initializeClientObjMgr(ClientStartupConfig clientStartupConfig)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.ClientStartupConfig.html">ClientStartupConfig</a></td>
+        <td><span class="parametername">clientStartupConfig</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-590">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_isDomainToBeListened_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.isDomainToBeListened*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_isDomainToBeListened_Mc3s_Odos_Library_DomainLoadInfo_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.isDomainToBeListened(Mc3s.Odos.Library.DomainLoadInfo)">isDomainToBeListened(DomainLoadInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool isDomainToBeListened(DomainLoadInfo dInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DomainLoadInfo.html">DomainLoadInfo</a></td>
+        <td><span class="parametername">dInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-680">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_saveChanges_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.saveChanges*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_saveChanges" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.saveChanges">saveChanges()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool saveChanges()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-638">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_setListenAtAgent_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.setListenAtAgent*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_setListenAtAgent_Mc3s_Odos_Automation_Engine_AutomationListenAgent_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.setListenAtAgent(Mc3s.Odos.Automation.Engine.AutomationListenAgent)">setListenAtAgent(AutomationListenAgent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setListenAtAgent(AutomationListenAgent agent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Automation.Engine.AutomationListenAgent.html">AutomationListenAgent</a></td>
+        <td><span class="parametername">agent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-628">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_setPersistToAgent_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.setPersistToAgent*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_setPersistToAgent_Mc3s_Odos_Automation_Engine_AutomationPersistAgent_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.setPersistToAgent(Mc3s.Odos.Automation.Engine.AutomationPersistAgent)">setPersistToAgent(AutomationPersistAgent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setPersistToAgent(AutomationPersistAgent agent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Automation.Engine.AutomationPersistAgent.html">AutomationPersistAgent</a></td>
+        <td><span class="parametername">agent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-312">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_Start_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.Start*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_Start" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Start()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_Start">ServiceApplication.Start()</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-320">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Automation_Engine_AutomationManager_Stop_" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.Stop*"></a>
+  <h4 id="Mc3s_Odos_Automation_Engine_AutomationManager_Stop" data-uid="Mc3s.Odos.Automation.Engine.AutomationManager.Stop">Stop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Stop()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Service.ServiceApplication.html#Mc3s_Odos_Service_ServiceApplication_Stop">ServiceApplication.Stop()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Client.IServiceApp.html">IServiceApp</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Client.IServiceAgent.html">IServiceAgent</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Automation.Engine.IAutomationManager.html">IAutomationManager</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Automation/Engine/AutomationManager.cs#lines-19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

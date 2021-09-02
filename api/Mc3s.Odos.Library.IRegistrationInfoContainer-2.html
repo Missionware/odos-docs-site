@@ -1,0 +1,800 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IRegistrationInfoContainer&lt;TKey, TValue&gt;
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IRegistrationInfoContainer&lt;TKey, TValue&gt;
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2">
+  
+  
+  <h1 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2" class="text-break">Interface IRegistrationInfoContainer&lt;TKey, TValue&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoContainer.html#Mc3s_Odos_Library_IRegistrationInfoContainer__IsSubscriptionRegistrationEnabled">IRegistrationInfoContainer._IsSubscriptionRegistrationEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoContainer.html#Mc3s_Odos_Library_IRegistrationInfoContainer__MaxSubscribers">IRegistrationInfoContainer._MaxSubscribers</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoContainer.html#Mc3s_Odos_Library_IRegistrationInfoContainer__ContainerIndex">IRegistrationInfoContainer._ContainerIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoContainer.html#Mc3s_Odos_Library_IRegistrationInfoContainer__ObjMgr">IRegistrationInfoContainer._ObjMgr</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoContainer.html#Mc3s_Odos_Library_IRegistrationInfoContainer_createRegistrationMonitorStruct">IRegistrationInfoContainer.createRegistrationMonitorStruct()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ISafeContainer.html#Mc3s_Odos_Library_ISafeContainer__LockID">ISafeContainer._LockID</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ISafeContainer.html#Mc3s_Odos_Library_ISafeContainer__IsEnumerationSafe">ISafeContainer._IsEnumerationSafe</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ISafeContainer.html#Mc3s_Odos_Library_ISafeContainer__IsDisposed">ISafeContainer._IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ISafeContainer.html#Mc3s_Odos_Library_ISafeContainer__IsItemInitializationManaged">ISafeContainer._IsItemInitializationManaged</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ISafeContainer.html#Mc3s_Odos_Library_ISafeContainer__IsItemFinalizationManaged">ISafeContainer._IsItemFinalizationManaged</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ISafeContainer.html#Mc3s_Odos_Library_ISafeContainer__ItemsCount">ISafeContainer._ItemsCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ISafeContainer.html#Mc3s_Odos_Library_ISafeContainer_getReadLock_Mc3s_SharedLib_LockInfo__">ISafeContainer.getReadLock(LockInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ISafeContainer.html#Mc3s_Odos_Library_ISafeContainer_getUpgradeableReadLock_Mc3s_SharedLib_LockInfo__">ISafeContainer.getUpgradeableReadLock(LockInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ISafeContainer.html#Mc3s_Odos_Library_ISafeContainer_getWriteLock_Mc3s_SharedLib_LockInfo__">ISafeContainer.getWriteLock(LockInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ISafeContainer.html#Mc3s_Odos_Library_ISafeContainer_releaseReadLock_Mc3s_SharedLib_LockInfo_">ISafeContainer.releaseReadLock(LockInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ISafeContainer.html#Mc3s_Odos_Library_ISafeContainer_releaseUpgradeableReadLock_Mc3s_SharedLib_LockInfo_">ISafeContainer.releaseUpgradeableReadLock(LockInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ISafeContainer.html#Mc3s_Odos_Library_ISafeContainer_releaseWriteLock_Mc3s_SharedLib_LockInfo_">ISafeContainer.releaseWriteLock(LockInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ISafeContainer.html#Mc3s_Odos_Library_ISafeContainer_cleanUp_System_Boolean_">ISafeContainer.cleanUp(Boolean)</a>
+    </div>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoProvider-2.html#Mc3s_Odos_Library_IRegistrationInfoProvider_2_getContainer_Mc3s_Odos_Library_IRegistrationInfoContainer__0__1___">IRegistrationInfoProvider&lt;TKey, TValue&gt;.getContainer(IRegistrationInfoContainer&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoProvider-2.html#Mc3s_Odos_Library_IRegistrationInfoProvider_2_getRegisteredSubscribers_System_Collections_Generic_ICollection_Mc3s_Odos_Library_IRegistrationSubscriber__0__1____">IRegistrationInfoProvider&lt;TKey, TValue&gt;.getRegisteredSubscribers(ICollection&lt;IRegistrationSubscriber&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoProvider-2.html#Mc3s_Odos_Library_IRegistrationInfoProvider_2_addSubscriber_Mc3s_Odos_Library_IRegistrationSubscriber__0__1__">IRegistrationInfoProvider&lt;TKey, TValue&gt;.addSubscriber(IRegistrationSubscriber&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoProvider-2.html#Mc3s_Odos_Library_IRegistrationInfoProvider_2_removeSubscriber_Mc3s_Odos_Library_IRegistrationSubscriber__0__1__">IRegistrationInfoProvider&lt;TKey, TValue&gt;.removeSubscriber(IRegistrationSubscriber&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoProvider-2.html#Mc3s_Odos_Library_IRegistrationInfoProvider_2_isAnySubscriberRegistered__0_">IRegistrationInfoProvider&lt;TKey, TValue&gt;.isAnySubscriberRegistered(TKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoProvider-2.html#Mc3s_Odos_Library_IRegistrationInfoProvider_2_isAnyOtherSubscriberRegistered__0_Mc3s_Odos_Library_IRegistrationSubscriber__0__1__">IRegistrationInfoProvider&lt;TKey, TValue&gt;.isAnyOtherSubscriberRegistered(TKey, IRegistrationSubscriber&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoProvider-2.html#Mc3s_Odos_Library_IRegistrationInfoProvider_2_areAllOtherSubscribersUnRegistered__0_Mc3s_Odos_Library_IRegistrationSubscriber__0__1__">IRegistrationInfoProvider&lt;TKey, TValue&gt;.areAllOtherSubscribersUnRegistered(TKey, IRegistrationSubscriber&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoProvider-2.html#Mc3s_Odos_Library_IRegistrationInfoProvider_2_isSubscriberRegistered__0_Mc3s_Odos_Library_IRegistrationSubscriber__0__1__">IRegistrationInfoProvider&lt;TKey, TValue&gt;.isSubscriberRegistered(TKey, IRegistrationSubscriber&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoProvider-2.html#Mc3s_Odos_Library_IRegistrationInfoProvider_2_registerSubscriber__0_Mc3s_Odos_Library_IRegistrationSubscriber__0__1__">IRegistrationInfoProvider&lt;TKey, TValue&gt;.registerSubscriber(TKey, IRegistrationSubscriber&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoProvider-2.html#Mc3s_Odos_Library_IRegistrationInfoProvider_2_unRegisterSubscriber__0_Mc3s_Odos_Library_IRegistrationSubscriber__0__1__">IRegistrationInfoProvider&lt;TKey, TValue&gt;.unRegisterSubscriber(TKey, IRegistrationSubscriber&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoProvider-2.html#Mc3s_Odos_Library_IRegistrationInfoProvider_2_registerAllSubscribers__0_">IRegistrationInfoProvider&lt;TKey, TValue&gt;.registerAllSubscribers(TKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoProvider-2.html#Mc3s_Odos_Library_IRegistrationInfoProvider_2_unRegisterAllSubscribers__0_">IRegistrationInfoProvider&lt;TKey, TValue&gt;.unRegisterAllSubscribers(TKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoProvider-2.html#Mc3s_Odos_Library_IRegistrationInfoProvider_2_killSubscriber_Mc3s_Odos_Library_IRegistrationSubscriber__0__1__">IRegistrationInfoProvider&lt;TKey, TValue&gt;.killSubscriber(IRegistrationSubscriber&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoProvider-2.html#Mc3s_Odos_Library_IRegistrationInfoProvider_2_getRegisteredItems_Mc3s_Odos_Library_IRegistrationSubscriber__0__1__">IRegistrationInfoProvider&lt;TKey, TValue&gt;.getRegisteredItems(IRegistrationSubscriber&lt;TKey, TValue&gt;)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Library.html">Mc3s.Odos.Library</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IRegistrationInfoContainer&lt;TKey, TValue&gt; : IRegistrationInfoContainer, ISafeContainer, IDisposable, IRegistrationInfoProvider&lt;TKey, TValue&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-511">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_IRegistrationInfoContainer_2__RegistrationSubscribers_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2._RegistrationSubscribers*"></a>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2__RegistrationSubscribers" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2._RegistrationSubscribers">_RegistrationSubscribers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IRegistrationSubscriber&lt;TKey, TValue&gt;[] _RegistrationSubscribers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IRegistrationSubscriber-2.html">IRegistrationSubscriber</a>&lt;TKey, TValue&gt;[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-520">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_clearAllItems_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.clearAllItems*"></a>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_clearAllItems" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.clearAllItems">clearAllItems()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void clearAllItems()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-519">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_containsItem_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.containsItem*"></a>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_containsItem__0_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.containsItem(`0)">containsItem(TKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool containsItem(TKey regKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">regKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-521">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_getAllItems_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.getAllItems*"></a>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_getAllItems" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.getAllItems">getAllItems()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;IRegistrationInfo&lt;TKey, TValue&gt;&gt; getAllItems()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mc3s.Odos.Library.IRegistrationInfo-2.html">IRegistrationInfo</a>&lt;TKey, TValue&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-516">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_getItem_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.getItem*"></a>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_getItem__0_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.getItem(`0)">getItem(TKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TValue getItem(TKey regKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">regKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-523">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_getKeyValuePairs_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.getKeyValuePairs*"></a>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_getKeyValuePairs" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.getKeyValuePairs">getKeyValuePairs()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;TuppleObject&lt;TKey, TValue&gt;&gt; getKeyValuePairs()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Mc3s.SharedLib.TuppleObject</span>&lt;TKey, TValue&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-514">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_getOrCreateItem_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.getOrCreateItem*"></a>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_getOrCreateItem_Mc3s_SharedLib_FindOrCreateResult___0_System_Func__1_System_Boolean__System_Func__0__1__" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.getOrCreateItem(Mc3s.SharedLib.FindOrCreateResult@,`0,System.Func{`1,System.Boolean},System.Func{`0,`1})">getOrCreateItem(out FindOrCreateResult, TKey, Func&lt;TValue, Boolean&gt;, Func&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TValue getOrCreateItem(out FindOrCreateResult result, TKey regKey, Func&lt;TValue, bool&gt; isValidFunc, Func&lt;TKey, TValue&gt; createFunc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.SharedLib.FindOrCreateResult</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">regKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TValue, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">isValidFunc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">createFunc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-515">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_getValidItem_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.getValidItem*"></a>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_getValidItem__0_System_Func__1_System_Boolean__" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.getValidItem(`0,System.Func{`1,System.Boolean})">getValidItem(TKey, Func&lt;TValue, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TValue getValidItem(TKey regKey, Func&lt;TValue, bool&gt; isValidFunc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">regKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TValue, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">isValidFunc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-522">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_getValidItems_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.getValidItems*"></a>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_getValidItems_System_Func__1_System_Boolean__" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.getValidItems(System.Func{`1,System.Boolean})">getValidItems(Func&lt;TValue, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;TValue&gt; getValidItems(Func&lt;TValue, bool&gt; isValidFunc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TValue, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">isValidFunc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;TValue&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-527">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_raiseRegistrationSubscribersChanged_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.raiseRegistrationSubscribersChanged*"></a>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_raiseRegistrationSubscribersChanged_Mc3s_Odos_Library_IRegistrationSubscriber__0__1__System_Boolean_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.raiseRegistrationSubscribersChanged(Mc3s.Odos.Library.IRegistrationSubscriber{`0,`1},System.Boolean)">raiseRegistrationSubscribersChanged(IRegistrationSubscriber&lt;TKey, TValue&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void raiseRegistrationSubscribersChanged(IRegistrationSubscriber&lt;TKey, TValue&gt; subscriber, bool isAdded)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IRegistrationSubscriber-2.html">IRegistrationSubscriber</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">subscriber</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isAdded</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-528">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_raiseRegistrationSubscriptionChanged_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.raiseRegistrationSubscriptionChanged*"></a>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_raiseRegistrationSubscriptionChanged_Mc3s_Odos_Library_IRegistrationSubscriber__0__1__Mc3s_Odos_Library_IRegistrationInfo__0__1__System_Boolean_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.raiseRegistrationSubscriptionChanged(Mc3s.Odos.Library.IRegistrationSubscriber{`0,`1},Mc3s.Odos.Library.IRegistrationInfo{`0,`1},System.Boolean)">raiseRegistrationSubscriptionChanged(IRegistrationSubscriber&lt;TKey, TValue&gt;, IRegistrationInfo&lt;TKey, TValue&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void raiseRegistrationSubscriptionChanged(IRegistrationSubscriber&lt;TKey, TValue&gt; subscriber, IRegistrationInfo&lt;TKey, TValue&gt; item, bool isAdded)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IRegistrationSubscriber-2.html">IRegistrationSubscriber</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">subscriber</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IRegistrationInfo-2.html">IRegistrationInfo</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isAdded</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-518">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_removeItem_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.removeItem*"></a>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_removeItem__0_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.removeItem(`0)">removeItem(TKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void removeItem(TKey regKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">regKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-524">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_resetToKeyValuePairs_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.resetToKeyValuePairs*"></a>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_resetToKeyValuePairs_System_Collections_Generic_IEnumerable_Mc3s_SharedLib_TuppleObject__0__1___" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.resetToKeyValuePairs(System.Collections.Generic.IEnumerable{Mc3s.SharedLib.TuppleObject{`0,`1}})">resetToKeyValuePairs(IEnumerable&lt;TuppleObject&lt;TKey, TValue&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void resetToKeyValuePairs(IEnumerable&lt;TuppleObject&lt;TKey, TValue&gt;&gt; values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Mc3s.SharedLib.TuppleObject</span>&lt;TKey, TValue&gt;&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-517">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_setItem_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.setItem*"></a>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_setItem__0__1_" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.setItem(`0,`1)">setItem(TKey, TValue)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void setItem(TKey regKey, TValue regItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">regKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">regItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-507">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_RegistrationSubscribersChanged" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.RegistrationSubscribersChanged">RegistrationSubscribersChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;RegistrationSubscribersChangedEventArgs&lt;TKey, TValue&gt;&gt; RegistrationSubscribersChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Mc3s.Odos.Library.RegistrationSubscribersChangedEventArgs-2.html">RegistrationSubscribersChangedEventArgs</a>&lt;TKey, TValue&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-508">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Library_IRegistrationInfoContainer_2_RegistrationSubscriptionChanged" data-uid="Mc3s.Odos.Library.IRegistrationInfoContainer`2.RegistrationSubscriptionChanged">RegistrationSubscriptionChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;RegistrationSubscriptionChangedEventArgs&lt;TKey, TValue&gt;&gt; RegistrationSubscriptionChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Mc3s.Odos.Library.RegistrationSubscriptionChangedEventArgs-2.html">RegistrationSubscriptionChangedEventArgs</a>&lt;TKey, TValue&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Declarations.cs#lines-504" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

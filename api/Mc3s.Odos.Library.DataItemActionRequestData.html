@@ -1,0 +1,622 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DataItemActionRequestData
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DataItemActionRequestData
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Library.DataItemActionRequestData">
+  
+  
+  <h1 id="Mc3s_Odos_Library_DataItemActionRequestData" data-uid="Mc3s.Odos.Library.DataItemActionRequestData" class="text-break">Class DataItemActionRequestData
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for DataItemActionRequestData.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Mc3s.SharedLib.RequestData</span></div>
+    <div class="level2"><span class="xref">DataItemActionRequestData</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Mc3s.Serialization.IAdvancedSerializable</span></div>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.SER_PayloadBytes</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.getAsBytes(Mc3s.SharedLib.RequestData)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildFromBytes(System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildFromBytesAndUnWrap(System.Byte[], System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TOut&gt;(System.Func&lt;TOut&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TOut&gt;(System.Func&lt;TIn1, TOut&gt;, TIn1)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TOut&gt;(System.Func&lt;TIn1, TIn2, TOut&gt;, TIn1, TIn2)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TOut&gt;, TIn1, TIn2, TIn3)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TOut&gt;, TIn1, TIn2, TIn3, TIn4)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TOut&gt;, TIn1, TIn2, TIn3, TIn4, TIn5)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TOut&gt;, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TOut&gt;, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TOut&gt;, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TOut&gt;, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TOut&gt;, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TOut&gt;, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TOut&gt;, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TOut&gt;, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TOut&gt;, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TIn15, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TIn15, TOut&gt;, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TIn15)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TIn15, TIn16, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TIn15, TIn16, TOut&gt;, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TIn15, TIn16)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFromDelegate(System.Delegate, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TOut&gt;(System.Func&lt;TOut&gt;, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TOut&gt;(System.Func&lt;TIn1, TOut&gt;, System.Boolean, TIn1)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TOut&gt;(System.Func&lt;TIn1, TIn2, TOut&gt;, System.Boolean, TIn1, TIn2)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TOut&gt;, System.Boolean, TIn1, TIn2, TIn3)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TOut&gt;, System.Boolean, TIn1, TIn2, TIn3, TIn4)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TOut&gt;, System.Boolean, TIn1, TIn2, TIn3, TIn4, TIn5)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TOut&gt;, System.Boolean, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TOut&gt;, System.Boolean, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TOut&gt;, System.Boolean, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TOut&gt;, System.Boolean, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TOut&gt;, System.Boolean, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TOut&gt;, System.Boolean, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TOut&gt;, System.Boolean, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TOut&gt;, System.Boolean, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TOut&gt;, System.Boolean, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TIn15, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TIn15, TOut&gt;, System.Boolean, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TIn15)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFor&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TIn15, TIn16, TOut&gt;(System.Func&lt;TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TIn15, TIn16, TOut&gt;, System.Boolean, TIn1, TIn2, TIn3, TIn4, TIn5, TIn6, TIn7, TIn8, TIn9, TIn10, TIn11, TIn12, TIn13, TIn14, TIn15, TIn16)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFromDelegate(System.Delegate, System.Boolean, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFromMethod(System.Reflection.MethodInfo, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.buildRequestDataFromMethod(System.Reflection.MethodInfo, System.Boolean, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._ID</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._IsCoupled</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._Issued</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._ContainsOrderedParameters</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._ContainsNamedParameters</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._AreMissingNamedParametersDefaulted</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._ContainsInfos</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._RequestSent</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._RequestReceived</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._ReplySent</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._ReplyReceived</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._OrderedParameters</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._NamedParameters</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._Infos</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._IsReply</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._Reply</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._ReturnType</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData._Exception</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.serializeObjectToBytes(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.deSerializeObjectFromBytes(System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.GetInfo(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.SetInfo(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.setException(System.Exception)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.setReturnType(Mc3s.SharedLib.TypeInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.SetOrderedParameter(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.SetNamedParameter(System.String, System.Type, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.GetParameterValues(System.Reflection.MethodInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.GetRequestedAction(System.String, System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.GetRequestedAction(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.ExecuteRequestedActionOn(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.ExecuteRequestedActionOn(System.Object, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.extractReplyData()</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.SyncWithReply(Mc3s.SharedLib.RequestData)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.SharedLib.RequestData.SyncWithReplyPayload(Mc3s.SharedLib.ReplyDataPayload)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Library.html">Mc3s.Odos.Library</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Library_DataItemActionRequestData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class DataItemActionRequestData : RequestData, IAdvancedSerializable, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemActionRequestData.cs#lines-65">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataItemActionRequestData__ctor_" data-uid="Mc3s.Odos.Library.DataItemActionRequestData.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_DataItemActionRequestData__ctor_Mc3s_Serialization_IAdvancedSerializationInfo_Mc3s_Serialization_IAdvancedStreamingContext_" data-uid="Mc3s.Odos.Library.DataItemActionRequestData.#ctor(Mc3s.Serialization.IAdvancedSerializationInfo,Mc3s.Serialization.IAdvancedStreamingContext)">DataItemActionRequestData(IAdvancedSerializationInfo, IAdvancedStreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DataItemActionRequestData(IAdvancedSerializationInfo info, IAdvancedStreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedSerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedStreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemActionRequestData.cs#lines-81">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataItemActionRequestData__ctor_" data-uid="Mc3s.Odos.Library.DataItemActionRequestData.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_DataItemActionRequestData__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Mc3s.Odos.Library.DataItemActionRequestData.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">DataItemActionRequestData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DataItemActionRequestData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemActionRequestData.cs#lines-48">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataItemActionRequestData__Key_" data-uid="Mc3s.Odos.Library.DataItemActionRequestData._Key*"></a>
+  <h4 id="Mc3s_Odos_Library_DataItemActionRequestData__Key" data-uid="Mc3s.Odos.Library.DataItemActionRequestData._Key">_Key</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataItemKey _Key { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemKey.html">DataItemKey</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemActionRequestData.cs#lines-18">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataItemActionRequestData_buildDataItemRequestDataFromMethod_" data-uid="Mc3s.Odos.Library.DataItemActionRequestData.buildDataItemRequestDataFromMethod*"></a>
+  <h4 id="Mc3s_Odos_Library_DataItemActionRequestData_buildDataItemRequestDataFromMethod_System_Reflection_MethodInfo_Mc3s_Odos_Library_DataItem_System_Object___" data-uid="Mc3s.Odos.Library.DataItemActionRequestData.buildDataItemRequestDataFromMethod(System.Reflection.MethodInfo,Mc3s.Odos.Library.DataItem,System.Object[])">buildDataItemRequestDataFromMethod(MethodInfo, DataItem, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DataItemActionRequestData buildDataItemRequestDataFromMethod(MethodInfo mInfo, DataItem dataItem, params object[] parameterValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reflection.MethodInfo</span></td>
+        <td><span class="parametername">mInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">dataItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">parameterValues</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemActionRequestData.html">DataItemActionRequestData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemActionRequestData.cs#lines-72">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataItemActionRequestData_GetObjectData_" data-uid="Mc3s.Odos.Library.DataItemActionRequestData.GetObjectData*"></a>
+  <h4 id="Mc3s_Odos_Library_DataItemActionRequestData_GetObjectData_Mc3s_Serialization_IAdvancedSerializationInfo_Mc3s_Serialization_IAdvancedStreamingContext_" data-uid="Mc3s.Odos.Library.DataItemActionRequestData.GetObjectData(Mc3s.Serialization.IAdvancedSerializationInfo,Mc3s.Serialization.IAdvancedStreamingContext)">GetObjectData(IAdvancedSerializationInfo, IAdvancedStreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GetObjectData(IAdvancedSerializationInfo info, IAdvancedStreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedSerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedStreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.SharedLib.RequestData.GetObjectData(Mc3s.Serialization.IAdvancedSerializationInfo, Mc3s.Serialization.IAdvancedStreamingContext)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemActionRequestData.cs#lines-88">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataItemActionRequestData_GetObjectData_" data-uid="Mc3s.Odos.Library.DataItemActionRequestData.GetObjectData*"></a>
+  <h4 id="Mc3s_Odos_Library_DataItemActionRequestData_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Mc3s.Odos.Library.DataItemActionRequestData.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.SharedLib.RequestData.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Mc3s.Serialization.IAdvancedSerializable</span>
+  </div>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemActionRequestData.cs#lines-12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

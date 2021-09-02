@@ -1,0 +1,589 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DataOnServer
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DataOnServer
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Library.DataOnServer">
+  
+  
+  <h1 id="Mc3s_Odos_Library_DataOnServer" data-uid="Mc3s.Odos.Library.DataOnServer" class="text-break">Class DataOnServer
+  </h1>
+  <div class="markdown level0 summary"><p>DataOnServer is a data structure sent back to clients when reconnecting.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DataOnServer</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Mc3s.Serialization.IAdvancedSerializable</span></div>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Library.html">Mc3s.Odos.Library</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Library_DataOnServer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+[TransmittedType]
+public class DataOnServer : IAdvancedSerializable, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataOnServer.cs#lines-41">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataOnServer__ctor_" data-uid="Mc3s.Odos.Library.DataOnServer.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_DataOnServer__ctor_Mc3s_Odos_Library_ConnectedClientSyncState_System_Int64_" data-uid="Mc3s.Odos.Library.DataOnServer.#ctor(Mc3s.Odos.Library.ConnectedClientSyncState,System.Int64)">DataOnServer(ConnectedClientSyncState, Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataOnServer(ConnectedClientSyncState clientState, long transID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.ConnectedClientSyncState.html">ConnectedClientSyncState</a></td>
+        <td><span class="parametername">clientState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">transID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataOnServer.cs#lines-52">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataOnServer__ctor_" data-uid="Mc3s.Odos.Library.DataOnServer.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_DataOnServer__ctor_Mc3s_Serialization_IAdvancedSerializationInfo_Mc3s_Serialization_IAdvancedStreamingContext_" data-uid="Mc3s.Odos.Library.DataOnServer.#ctor(Mc3s.Serialization.IAdvancedSerializationInfo,Mc3s.Serialization.IAdvancedStreamingContext)">DataOnServer(IAdvancedSerializationInfo, IAdvancedStreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DataOnServer(IAdvancedSerializationInfo info, IAdvancedStreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedSerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedStreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataOnServer.cs#lines-68">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataOnServer__ctor_" data-uid="Mc3s.Odos.Library.DataOnServer.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_DataOnServer__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Mc3s.Odos.Library.DataOnServer.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">DataOnServer(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DataOnServer(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataOnServer.cs#lines-17">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Library_DataOnServer_SER_ClientState" data-uid="Mc3s.Odos.Library.DataOnServer.SER_ClientState">SER_ClientState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SER_ClientState = &quot;0&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataOnServer.cs#lines-19">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Library_DataOnServer_SER_DataItemOnServerData" data-uid="Mc3s.Odos.Library.DataOnServer.SER_DataItemOnServerData">SER_DataItemOnServerData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SER_DataItemOnServerData = &quot;2&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataOnServer.cs#lines-18">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Library_DataOnServer_SER_TransID" data-uid="Mc3s.Odos.Library.DataOnServer.SER_TransID">SER_TransID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SER_TransID = &quot;1&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataOnServer.cs#lines-32">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataOnServer__ClientState_" data-uid="Mc3s.Odos.Library.DataOnServer._ClientState*"></a>
+  <h4 id="Mc3s_Odos_Library_DataOnServer__ClientState" data-uid="Mc3s.Odos.Library.DataOnServer._ClientState">_ClientState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConnectedClientSyncState _ClientState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.ConnectedClientSyncState.html">ConnectedClientSyncState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataOnServer.cs#lines-34">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataOnServer__DataItemOnServerData_" data-uid="Mc3s.Odos.Library.DataOnServer._DataItemOnServerData*"></a>
+  <h4 id="Mc3s_Odos_Library_DataOnServer__DataItemOnServerData" data-uid="Mc3s.Odos.Library.DataOnServer._DataItemOnServerData">_DataItemOnServerData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;DataItemOnServerData&gt; _DataItemOnServerData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItemOnServerData.html">DataItemOnServerData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataOnServer.cs#lines-29">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataOnServer__HasAnyData_" data-uid="Mc3s.Odos.Library.DataOnServer._HasAnyData*"></a>
+  <h4 id="Mc3s_Odos_Library_DataOnServer__HasAnyData" data-uid="Mc3s.Odos.Library.DataOnServer._HasAnyData">_HasAnyData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _HasAnyData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataOnServer.cs#lines-33">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataOnServer__TransID_" data-uid="Mc3s.Odos.Library.DataOnServer._TransID*"></a>
+  <h4 id="Mc3s_Odos_Library_DataOnServer__TransID" data-uid="Mc3s.Odos.Library.DataOnServer._TransID">_TransID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long _TransID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataOnServer.cs#lines-89">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataOnServer_addDataItemOnServer_" data-uid="Mc3s.Odos.Library.DataOnServer.addDataItemOnServer*"></a>
+  <h4 id="Mc3s_Odos_Library_DataOnServer_addDataItemOnServer_Mc3s_Odos_Library_DataItemOnServerData_" data-uid="Mc3s.Odos.Library.DataOnServer.addDataItemOnServer(Mc3s.Odos.Library.DataItemOnServerData)">addDataItemOnServer(DataItemOnServerData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void addDataItemOnServer(DataItemOnServerData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemOnServerData.html">DataItemOnServerData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataOnServer.cs#lines-93">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataOnServer_addDataItemOnServer_" data-uid="Mc3s.Odos.Library.DataOnServer.addDataItemOnServer*"></a>
+  <h4 id="Mc3s_Odos_Library_DataOnServer_addDataItemOnServer_System_Collections_Generic_ICollection_Mc3s_Odos_Library_DataItemOnServerData__" data-uid="Mc3s.Odos.Library.DataOnServer.addDataItemOnServer(System.Collections.Generic.ICollection{Mc3s.Odos.Library.DataItemOnServerData})">addDataItemOnServer(ICollection&lt;DataItemOnServerData&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void addDataItemOnServer(ICollection&lt;DataItemOnServerData&gt; data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItemOnServerData.html">DataItemOnServerData</a>&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataOnServer.cs#lines-60">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataOnServer_GetObjectData_" data-uid="Mc3s.Odos.Library.DataOnServer.GetObjectData*"></a>
+  <h4 id="Mc3s_Odos_Library_DataOnServer_GetObjectData_Mc3s_Serialization_IAdvancedSerializationInfo_Mc3s_Serialization_IAdvancedStreamingContext_" data-uid="Mc3s.Odos.Library.DataOnServer.GetObjectData(Mc3s.Serialization.IAdvancedSerializationInfo,Mc3s.Serialization.IAdvancedStreamingContext)">GetObjectData(IAdvancedSerializationInfo, IAdvancedStreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetObjectData(IAdvancedSerializationInfo info, IAdvancedStreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedSerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedStreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataOnServer.cs#lines-76">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataOnServer_GetObjectData_" data-uid="Mc3s.Odos.Library.DataOnServer.GetObjectData*"></a>
+  <h4 id="Mc3s_Odos_Library_DataOnServer_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Mc3s.Odos.Library.DataOnServer.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Mc3s.Serialization.IAdvancedSerializable</span>
+  </div>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataOnServer.cs#lines-11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

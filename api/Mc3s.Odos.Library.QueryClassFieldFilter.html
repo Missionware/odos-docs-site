@@ -1,0 +1,801 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class QueryClassFieldFilter
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class QueryClassFieldFilter
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter">
+  
+  
+  <h1 id="Mc3s_Odos_Library_QueryClassFieldFilter" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter" class="text-break">Class QueryClassFieldFilter
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for QueryFieldFilter.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">QueryClassFieldFilter</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mc3s.Odos.Library.IFieldFilter.html">IFieldFilter</a></div>
+    <div><span class="xref">Mc3s.Serialization.IAdvancedSerializable</span></div>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Library.html">Mc3s.Odos.Library</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Library_QueryClassFieldFilter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+[TransmittedType]
+public class QueryClassFieldFilter : IFieldFilter, IAdvancedSerializable, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-38">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter__ctor_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter__ctor_Mc3s_Odos_Library_DataItemClassInfo_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.#ctor(Mc3s.Odos.Library.DataItemClassInfo)">QueryClassFieldFilter(DataItemClassInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryClassFieldFilter(DataItemClassInfo classInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">classInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-43">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter__ctor_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter__ctor_Mc3s_Odos_Library_DataItemClassInfo_System_Collections_Generic_ICollection_Mc3s_Odos_Library_DataItemField__" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.#ctor(Mc3s.Odos.Library.DataItemClassInfo,System.Collections.Generic.ICollection{Mc3s.Odos.Library.DataItemField})">QueryClassFieldFilter(DataItemClassInfo, ICollection&lt;DataItemField&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryClassFieldFilter(DataItemClassInfo classInfo, ICollection&lt;DataItemField&gt; dItemFields)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">classInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a>&gt;</td>
+        <td><span class="parametername">dItemFields</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-55">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter__ctor_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter__ctor_Mc3s_Serialization_IAdvancedSerializationInfo_Mc3s_Serialization_IAdvancedStreamingContext_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.#ctor(Mc3s.Serialization.IAdvancedSerializationInfo,Mc3s.Serialization.IAdvancedStreamingContext)">QueryClassFieldFilter(IAdvancedSerializationInfo, IAdvancedStreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected QueryClassFieldFilter(IAdvancedSerializationInfo info, IAdvancedStreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedSerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedStreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-81">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter__ctor_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">QueryClassFieldFilter(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected QueryClassFieldFilter(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-31">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter__ClassInfo_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter._ClassInfo*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter__ClassInfo" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter._ClassInfo">_ClassInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataItemClassInfo _ClassInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-113">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter_FieldNames_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.FieldNames*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter_FieldNames" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.FieldNames">FieldNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;string&gt; FieldNames { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-112">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter_HasFields_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.HasFields*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter_HasFields" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.HasFields">HasFields</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasFields { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-140">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter_AddField_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.AddField*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter_AddField_Mc3s_Odos_Library_DataItemField_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.AddField(Mc3s.Odos.Library.DataItemField)">AddField(DataItemField)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddField(DataItemField field)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td><span class="parametername">field</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-144">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter_AddField_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.AddField*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter_AddField_Mc3s_Odos_Library_DataItemField_System_Object_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.AddField(Mc3s.Odos.Library.DataItemField,System.Object)">AddField(DataItemField, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddField(DataItemField field, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td><span class="parametername">field</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-153">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter_AddFieldName_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.AddFieldName*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter_AddFieldName_Mc3s_Odos_Library_DataItemClassInfo_System_String_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.AddFieldName(Mc3s.Odos.Library.DataItemClassInfo,System.String)">AddFieldName(DataItemClassInfo, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFieldName(DataItemClassInfo classInfo, string fieldName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">classInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-157">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter_AddFieldName_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.AddFieldName*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter_AddFieldName_Mc3s_Odos_Library_DataItemClassInfo_System_String_System_Object_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.AddFieldName(Mc3s.Odos.Library.DataItemClassInfo,System.String,System.Object)">AddFieldName(DataItemClassInfo, String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFieldName(DataItemClassInfo classInfo, string fieldName, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">classInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-188">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter_buildQueryString_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.buildQueryString*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter_buildQueryString" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.buildQueryString">buildQueryString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string buildQueryString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-168">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter_Contains_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.Contains*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter_Contains_Mc3s_Odos_Library_DataItemField_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.Contains(Mc3s.Odos.Library.DataItemField)">Contains(DataItemField)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(DataItemField field)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td><span class="parametername">field</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-129">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter_getFields_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.getFields*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter_getFields_Mc3s_Odos_Library_DataItemClassInfo_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.getFields(Mc3s.Odos.Library.DataItemClassInfo)">getFields(DataItemClassInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;DataItemField&gt; getFields(DataItemClassInfo classInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">classInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-68">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter_GetObjectData_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.GetObjectData*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter_GetObjectData_Mc3s_Serialization_IAdvancedSerializationInfo_Mc3s_Serialization_IAdvancedStreamingContext_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.GetObjectData(Mc3s.Serialization.IAdvancedSerializationInfo,Mc3s.Serialization.IAdvancedStreamingContext)">GetObjectData(IAdvancedSerializationInfo, IAdvancedStreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetObjectData(IAdvancedSerializationInfo info, IAdvancedStreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedSerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedStreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-94">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter_GetObjectData_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.GetObjectData*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-178">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter_GetValue_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.GetValue*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter_GetValue_Mc3s_Odos_Library_DataItemClassInfo_System_String_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.GetValue(Mc3s.Odos.Library.DataItemClassInfo,System.String)">GetValue(DataItemClassInfo, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetValue(DataItemClassInfo classInfo, string fieldName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">classInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-174">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_QueryClassFieldFilter_GetValue_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.GetValue*"></a>
+  <h4 id="Mc3s_Odos_Library_QueryClassFieldFilter_GetValue_Mc3s_Odos_Library_DataItemField_" data-uid="Mc3s.Odos.Library.QueryClassFieldFilter.GetValue(Mc3s.Odos.Library.DataItemField)">GetValue(DataItemField)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetValue(DataItemField field)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td><span class="parametername">field</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IFieldFilter.html">IFieldFilter</a>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Serialization.IAdvancedSerializable</span>
+  </div>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/QueryFieldFilter.cs#lines-12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

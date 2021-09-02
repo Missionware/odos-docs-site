@@ -1,0 +1,1068 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PersistedList&lt;TItem&gt;
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PersistedList&lt;TItem&gt;
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Library.PersistedList`1">
+  
+  
+  <h1 id="Mc3s_Odos_Library_PersistedList_1" data-uid="Mc3s.Odos.Library.PersistedList`1" class="text-break">Class PersistedList&lt;TItem&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Collections.ObjectModel.Collection</span>&lt;TItem&gt;</div>
+    <div class="level2"><span class="xref">System.ComponentModel.BindingList</span>&lt;TItem&gt;</div>
+    <div class="level3"><span class="xref">PersistedList&lt;TItem&gt;</span></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.ByteList.html">ByteList</a></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.CharList.html">CharList</a></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.DateTimeList.html">DateTimeList</a></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.DecimalList.html">DecimalList</a></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.DoubleList.html">DoubleList</a></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.FloatList.html">FloatList</a></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.Int16List.html">Int16List</a></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.Int64List.html">Int64List</a></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.IntList.html">IntList</a></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.SByteList.html">SByteList</a></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.SingleList.html">SingleList</a></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.StringList.html">StringList</a></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.TimeSpanList.html">TimeSpanList</a></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.UInt16List.html">UInt16List</a></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.UInt32List.html">UInt32List</a></div>
+      <div class="level4"><a class="xref" href="Mc3s.Odos.Library.UInt64List.html">UInt64List</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IList</span>&lt;TItem&gt;</div>
+    <div><span class="xref">System.Collections.Generic.ICollection</span>&lt;TItem&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;TItem&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;TItem&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TItem&gt;</div>
+    <div><span class="xref">System.ComponentModel.IBindingList</span></div>
+    <div><span class="xref">System.Collections.IList</span></div>
+    <div><span class="xref">System.Collections.ICollection</span></div>
+    <div><span class="xref">System.ComponentModel.ICancelAddNew</span></div>
+    <div><span class="xref">System.ComponentModel.IRaiseItemChangedEvents</span></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IPersistableList.html">IPersistableList</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IPersistableTypedList.html">IPersistableTypedList</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IPersistableAsString.html">IPersistableAsString</a></div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.AddNew()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.AddNewCore()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.ApplySortCore(System.ComponentModel.PropertyDescriptor, System.ComponentModel.ListSortDirection)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.CancelNew(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.ClearItems()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.EndNew(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.FindCore(System.ComponentModel.PropertyDescriptor, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.InsertItem(System.Int32, TItem)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.OnAddingNew(System.ComponentModel.AddingNewEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.OnListChanged(System.ComponentModel.ListChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.RemoveItem(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.RemoveSortCore()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.ResetBindings()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.ResetItem(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.SetItem(System.Int32, TItem)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IBindingList.AddIndex(System.ComponentModel.PropertyDescriptor)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IBindingList.AddNew()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IBindingList.ApplySort(System.ComponentModel.PropertyDescriptor, System.ComponentModel.ListSortDirection)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IBindingList.Find(System.ComponentModel.PropertyDescriptor, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IBindingList.RemoveIndex(System.ComponentModel.PropertyDescriptor)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IBindingList.RemoveSort()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.AllowEdit</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.AllowNew</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.AllowRemove</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.IsSortedCore</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.RaiseListChangedEvents</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.SortDirectionCore</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.SortPropertyCore</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.SupportsChangeNotificationCore</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.SupportsSearchingCore</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.SupportsSortingCore</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IBindingList.AllowEdit</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IBindingList.AllowNew</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IBindingList.AllowRemove</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IBindingList.IsSorted</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IBindingList.SortDirection</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IBindingList.SortProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IBindingList.SupportsChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IBindingList.SupportsSearching</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IBindingList.SupportsSorting</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.System.ComponentModel.IRaiseItemChangedEvents.RaisesItemChangedEvents</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.AddingNew</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.BindingList&lt;TItem&gt;.ListChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.System.Collections.IList.get_Item(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.System.Collections.IList.set_Item(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.Add(TItem)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.Clear()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.Contains(TItem)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.CopyTo(TItem[], System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.GetEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.IndexOf(TItem)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.Insert(System.Int32, TItem)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.Remove(TItem)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.RemoveAt(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.System.Collections.ICollection.CopyTo(System.Array, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.System.Collections.IEnumerable.GetEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.System.Collections.IList.Add(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.System.Collections.IList.Contains(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.System.Collections.IList.IndexOf(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.System.Collections.IList.Insert(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.System.Collections.IList.Remove(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.Count</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.Item[System.Int32]</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.Items</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.System.Collections.Generic.ICollection&lt;TItem&gt;.IsReadOnly</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.System.Collections.ICollection.IsSynchronized</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.System.Collections.ICollection.SyncRoot</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.System.Collections.IList.IsFixedSize</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.System.Collections.IList.IsReadOnly</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.ObjectModel.Collection&lt;TItem&gt;.System.Collections.IList.Item[System.Int32]</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Library.html">Mc3s.Odos.Library</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Library_PersistedList_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+[TransmittedType]
+public abstract class PersistedList&lt;TItem&gt; : BindingList&lt;TItem&gt;, IList&lt;TItem&gt;, ICollection&lt;TItem&gt;, IReadOnlyList&lt;TItem&gt;, IReadOnlyCollection&lt;TItem&gt;, IEnumerable&lt;TItem&gt;, IBindingList, IList, ICollection, ICancelAddNew, IRaiseItemChangedEvents, IPersistableList, IPersistableTypedList, IPersistableAsString, IEnumerable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-104">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1__PersistableString_" data-uid="Mc3s.Odos.Library.PersistedList`1._PersistableString*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1__PersistableString" data-uid="Mc3s.Odos.Library.PersistedList`1._PersistableString">_PersistableString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _PersistableString { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-105">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_Separator_" data-uid="Mc3s.Odos.Library.PersistedList`1.Separator*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_Separator" data-uid="Mc3s.Odos.Library.PersistedList`1.Separator">Separator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Separator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-106">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_TypeOfElements_" data-uid="Mc3s.Odos.Library.PersistedList`1.TypeOfElements*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_TypeOfElements" data-uid="Mc3s.Odos.Library.PersistedList`1.TypeOfElements">TypeOfElements</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type TypeOfElements { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-91">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_AddRange_" data-uid="Mc3s.Odos.Library.PersistedList`1.AddRange*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_AddRange_System_Collections_Generic_IEnumerable__0__" data-uid="Mc3s.Odos.Library.PersistedList`1.AddRange(System.Collections.Generic.IEnumerable{`0})">AddRange(IEnumerable&lt;TItem&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRange(IEnumerable&lt;TItem&gt; data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TItem&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-51">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_convertItemToString_" data-uid="Mc3s.Odos.Library.PersistedList`1.convertItemToString*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_convertItemToString_System_Object_" data-uid="Mc3s.Odos.Library.PersistedList`1.convertItemToString(System.Object)">convertItemToString(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string convertItemToString(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-55">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_convertStringToItem_" data-uid="Mc3s.Odos.Library.PersistedList`1.convertStringToItem*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_convertStringToItem_System_String_" data-uid="Mc3s.Odos.Library.PersistedList`1.convertStringToItem(System.String)">convertStringToItem(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object convertStringToItem(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-117">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_convertToSeparatedString_" data-uid="Mc3s.Odos.Library.PersistedList`1.convertToSeparatedString*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_convertToSeparatedString" data-uid="Mc3s.Odos.Library.PersistedList`1.convertToSeparatedString">convertToSeparatedString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string convertToSeparatedString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-31">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_getFrom_" data-uid="Mc3s.Odos.Library.PersistedList`1.getFrom*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_getFrom_System_Type_System_Collections_ICollection_" data-uid="Mc3s.Odos.Library.PersistedList`1.getFrom(System.Type,System.Collections.ICollection)">getFrom(Type, ICollection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IPersistableList getFrom(Type listType, ICollection strItemCollection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">listType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.ICollection</span></td>
+        <td><span class="parametername">strItemCollection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IPersistableList.html">IPersistableList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-19">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_getFrom_" data-uid="Mc3s.Odos.Library.PersistedList`1.getFrom*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_getFrom_System_Type_System_String_" data-uid="Mc3s.Odos.Library.PersistedList`1.getFrom(System.Type,System.String)">getFrom(Type, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IPersistableList getFrom(Type listType, string separatedStr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">listType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">separatedStr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IPersistableList.html">IPersistableList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-25">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_getFrom_" data-uid="Mc3s.Odos.Library.PersistedList`1.getFrom*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_getFrom_System_Type_System_String___" data-uid="Mc3s.Odos.Library.PersistedList`1.getFrom(System.Type,System.String[])">getFrom(Type, String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IPersistableList getFrom(Type listType, string[] strItemList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">listType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">strItemList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IPersistableList.html">IPersistableList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-109">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_getItemAt_" data-uid="Mc3s.Odos.Library.PersistedList`1.getItemAt*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_getItemAt_System_Int32_" data-uid="Mc3s.Odos.Library.PersistedList`1.getItemAt(System.Int32)">getItemAt(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object getItemAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-174">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_isEqualPerMember_" data-uid="Mc3s.Odos.Library.PersistedList`1.isEqualPerMember*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_isEqualPerMember_Mc3s_Odos_Library_IPersistableTypedList_" data-uid="Mc3s.Odos.Library.PersistedList`1.isEqualPerMember(Mc3s.Odos.Library.IPersistableTypedList)">isEqualPerMember(IPersistableTypedList)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool isEqualPerMember(IPersistableTypedList list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IPersistableTypedList.html">IPersistableTypedList</a></td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-162">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_resetFrom_" data-uid="Mc3s.Odos.Library.PersistedList`1.resetFrom*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_resetFrom_System_Collections_ICollection_" data-uid="Mc3s.Odos.Library.PersistedList`1.resetFrom(System.Collections.ICollection)">resetFrom(ICollection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void resetFrom(ICollection strItemCollection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ICollection</span></td>
+        <td><span class="parametername">strItemCollection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-136">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_resetFrom_" data-uid="Mc3s.Odos.Library.PersistedList`1.resetFrom*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_resetFrom_System_String_" data-uid="Mc3s.Odos.Library.PersistedList`1.resetFrom(System.String)">resetFrom(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void resetFrom(string separatedStr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">separatedStr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-150">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_resetFrom_" data-uid="Mc3s.Odos.Library.PersistedList`1.resetFrom*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_resetFrom_System_String___" data-uid="Mc3s.Odos.Library.PersistedList`1.resetFrom(System.String[])">resetFrom(String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void resetFrom(string[] strItemList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">strItemList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-113">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_setItemAt_" data-uid="Mc3s.Odos.Library.PersistedList`1.setItemAt*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_setItemAt_System_Int32_System_Object_" data-uid="Mc3s.Odos.Library.PersistedList`1.setItemAt(System.Int32,System.Object)">setItemAt(Int32, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setItemAt(int index, object item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-65">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedList_1_ToString_" data-uid="Mc3s.Odos.Library.PersistedList`1.ToString*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedList_1_ToString" data-uid="Mc3s.Odos.Library.PersistedList`1.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IList&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyList&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.IBindingList</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IList</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.ICollection</span>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.ICancelAddNew</span>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.IRaiseItemChangedEvents</span>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IPersistableList.html">IPersistableList</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IPersistableTypedList.html">IPersistableTypedList</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IPersistableAsString.html">IPersistableAsString</a>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedLists.cs#lines-13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

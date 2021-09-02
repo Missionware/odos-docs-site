@@ -1,0 +1,766 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DataItemReferenceListValidator
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DataItemReferenceListValidator
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator">
+  
+  
+  <h1 id="Mc3s_Odos_Library_DataItemReferenceListValidator" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator" class="text-break">Class DataItemReferenceListValidator
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for DataItemReferenceListValidator.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html">DataItemCollectionValidator</a></div>
+    <div class="level2"><span class="xref">DataItemReferenceListValidator</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidator.html">IDataItemCollectionValidator</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidator-1.html">IDataItemCollectionValidator</a>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a>&gt;</div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidatorBase.html">IDataItemCollectionValidatorBase</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IWhereExpression.html">IWhereExpression</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IWhereOperand.html">IWhereOperand</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IWhereText.html">IWhereText</a></div>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">Mc3s.Serialization.IAdvancedSerializable</span></div>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_SER_IncludeSubClasses">DataItemCollectionValidator.SER_IncludeSubClasses</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_SER_IsFindFirst">DataItemCollectionValidator.SER_IsFindFirst</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_SER_FieldLoadMode">DataItemCollectionValidator.SER_FieldLoadMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_SER_PreferredQueryExecutionScope">DataItemCollectionValidator.SER_PreferredQueryExecutionScope</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_SER_LoadReferences">DataItemCollectionValidator.SER_LoadReferences</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_SER_IncludedDomainNames">DataItemCollectionValidator.SER_IncludedDomainNames</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_SER_ReadInfo">DataItemCollectionValidator.SER_ReadInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_SER_FieldFilter">DataItemCollectionValidator.SER_FieldFilter</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_SER_FieldSorter">DataItemCollectionValidator.SER_FieldSorter</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_SER_QueryExpression">DataItemCollectionValidator.SER_QueryExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_SER_WhereExpression">DataItemCollectionValidator.SER_WhereExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_SER_AssemblyFullName">DataItemCollectionValidator.SER_AssemblyFullName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_SER_TypeFullName">DataItemCollectionValidator.SER_TypeFullName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_buildHierarchyFilterExpressionFor_Mc3s_Odos_Library_DataItem_">DataItemCollectionValidator.buildHierarchyFilterExpressionFor(DataItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_buildHierarchyRootFilterExpression_Mc3s_Odos_Library_DataItemClassInfo_">DataItemCollectionValidator.buildHierarchyRootFilterExpression(DataItemClassInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_findHierarchyFilterExpression_Mc3s_Odos_Library_IWhereExpression_">DataItemCollectionValidator.findHierarchyFilterExpression(IWhereExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_hierarchyFilterExpressionFinder_Mc3s_Odos_Library_IWhereExpression_">DataItemCollectionValidator.hierarchyFilterExpressionFinder(IWhereExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_getHierarchyLevelKey_Mc3s_Odos_Library_IWhereExpression_">DataItemCollectionValidator.getHierarchyLevelKey(IWhereExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_DEF_Version">DataItemCollectionValidator.DEF_Version</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_DEF_IsTypeDominant">DataItemCollectionValidator.DEF_IsTypeDominant</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_DEF_IsNot">DataItemCollectionValidator.DEF_IsNot</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_DEF_IsClientOnly">DataItemCollectionValidator.DEF_IsClientOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_DEF_HasWhere">DataItemCollectionValidator.DEF_HasWhere</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_DEF_PreferredQueryExecutionScope">DataItemCollectionValidator.DEF_PreferredQueryExecutionScope</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_DEF_IsForceLoader">DataItemCollectionValidator.DEF_IsForceLoader</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_DEF_FieldLoadMode">DataItemCollectionValidator.DEF_FieldLoadMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_DEF_DoLoadListMemberReferences">DataItemCollectionValidator.DEF_DoLoadListMemberReferences</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_DEF_FieldFilter">DataItemCollectionValidator.DEF_FieldFilter</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_DEF_FieldSorter">DataItemCollectionValidator.DEF_FieldSorter</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_DEF_OverallExpression">DataItemCollectionValidator.DEF_OverallExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_DEF_ClientExpression">DataItemCollectionValidator.DEF_ClientExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_DEF_WhereExpression">DataItemCollectionValidator.DEF_WhereExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_DEF_QueryExpression">DataItemCollectionValidator.DEF_QueryExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__classInfo">DataItemCollectionValidator._classInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__includeSubClasses">DataItemCollectionValidator._includeSubClasses</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__label">DataItemCollectionValidator._label</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__header">DataItemCollectionValidator._header</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__description">DataItemCollectionValidator._description</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__version">DataItemCollectionValidator._version</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__fieldLoadMode">DataItemCollectionValidator._fieldLoadMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__preferredQueryExecutionScope">DataItemCollectionValidator._preferredQueryExecutionScope</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__loadReferences">DataItemCollectionValidator._loadReferences</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__includedDomainNames">DataItemCollectionValidator._includedDomainNames</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__readInfo">DataItemCollectionValidator._readInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__fieldFilter">DataItemCollectionValidator._fieldFilter</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__fieldSorter">DataItemCollectionValidator._fieldSorter</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__overallExpression">DataItemCollectionValidator._overallExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__clientExpression">DataItemCollectionValidator._clientExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__whereExpression">DataItemCollectionValidator._whereExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__queryExpression">DataItemCollectionValidator._queryExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_PropertyChanged">DataItemCollectionValidator.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_OnPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_">DataItemCollectionValidator.OnPropertyChanged(Object, PropertyChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__IsTypeDominant">DataItemCollectionValidator._IsTypeDominant</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__IsNot">DataItemCollectionValidator._IsNot</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__IsSetToNull">DataItemCollectionValidator._IsSetToNull</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_getQuery_Mc3s_Odos_Library_QueryTextType_Mc3s_Odos_Library_IQueryHelper_Mc3s_Odos_Library_DataItemClassInfo_">DataItemCollectionValidator.getQuery(QueryTextType, IQueryHelper, DataItemClassInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_canExpressionValidateIn_Mc3s_Odos_Library_QueryExecutionScope_Mc3s_Odos_Library_DataItemClassInfo_">DataItemCollectionValidator.canExpressionValidateIn(QueryExecutionScope, DataItemClassInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_getQueryInExpression_Mc3s_Odos_Library_QueryTextType_Mc3s_Odos_Library_IQueryHelper_Mc3s_Odos_Library_DataItemClassInfo_Mc3s_Odos_Library_WhereOperator_Mc3s_Odos_Library_IWhereOperand_">DataItemCollectionValidator.getQueryInExpression(QueryTextType, IQueryHelper, DataItemClassInfo, WhereOperator, IWhereOperand)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_getDataType_Mc3s_Odos_Library_DataItemClassInfo_">DataItemCollectionValidator.getDataType(DataItemClassInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_getDataValue_Mc3s_Odos_Library_DataItem_">DataItemCollectionValidator.getDataValue(DataItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_findExpression_Mc3s_Odos_Library_IWhereExpressionComparisonHandler_">DataItemCollectionValidator.findExpression(IWhereExpressionComparisonHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_IsValidExpressionChanged">DataItemCollectionValidator.IsValidExpressionChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__ClassInfo">DataItemCollectionValidator._ClassInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__IncludeSubClasses">DataItemCollectionValidator._IncludeSubClasses</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__IsFindFirst">DataItemCollectionValidator._IsFindFirst</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__Label">DataItemCollectionValidator._Label</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__Header">DataItemCollectionValidator._Header</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__Description">DataItemCollectionValidator._Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__Version">DataItemCollectionValidator._Version</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__HasWhere">DataItemCollectionValidator._HasWhere</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__PreferredQueryExecutionScope">DataItemCollectionValidator._PreferredQueryExecutionScope</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__IsForceLoader">DataItemCollectionValidator._IsForceLoader</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__FieldLoadMode">DataItemCollectionValidator._FieldLoadMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__DoLoadListMemberReferences">DataItemCollectionValidator._DoLoadListMemberReferences</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__IsClientOnly">DataItemCollectionValidator._IsClientOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__FieldFilter">DataItemCollectionValidator._FieldFilter</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__FieldSorter">DataItemCollectionValidator._FieldSorter</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__OverallExpression">DataItemCollectionValidator._OverallExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__ClientExpression">DataItemCollectionValidator._ClientExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__WhereExpression">DataItemCollectionValidator._WhereExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator__QueryExpression">DataItemCollectionValidator._QueryExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_GetOverallExpressionText_Mc3s_Odos_Library_IDataItemManager_">DataItemCollectionValidator.GetOverallExpressionText(IDataItemManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_GetOverallExpressionCmdText_Mc3s_Odos_Library_IDataItemManager_">DataItemCollectionValidator.GetOverallExpressionCmdText(IDataItemManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_createCollection_Mc3s_Odos_Library_IClient_Mc3s_Odos_Client_DataItemCollectionKey_">DataItemCollectionValidator.createCollection(IClient, DataItemCollectionKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_getQuery_Mc3s_Odos_Library_IDataItemManager_Mc3s_Odos_Library_QueryTextType_">DataItemCollectionValidator.getQuery(IDataItemManager, QueryTextType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_runIsValid_Mc3s_Odos_Library_DataItem_">DataItemCollectionValidator.runIsValid(DataItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_includeDomain_Mc3s_Odos_Library_DataItemDomain_">DataItemCollectionValidator.includeDomain(DataItemDomain)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_getValidClassInfosPerDomain_Mc3s_Odos_Library_IDataItemManager_System_Boolean_">DataItemCollectionValidator.getValidClassInfosPerDomain(IDataItemManager, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_getValidClassInfos_System_Boolean_">DataItemCollectionValidator.getValidClassInfos(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_buildKey">DataItemCollectionValidator.buildKey()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_getReadInfo_System_String_">DataItemCollectionValidator.getReadInfo(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_setReadInfo_System_String_System_Object_">DataItemCollectionValidator.setReadInfo(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_OnIsValidExpressionChanged_System_Object_System_EventArgs_">DataItemCollectionValidator.OnIsValidExpressionChanged(Object, EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_raiseIsValidExpressionChanged">DataItemCollectionValidator.raiseIsValidExpressionChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_buildOverallExpression">DataItemCollectionValidator.buildOverallExpression()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_addToWhereExpression_Mc3s_Odos_Library_IWhereExpression_">DataItemCollectionValidator.addToWhereExpression(IWhereExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_addToWhereExpression_Mc3s_Odos_Library_IWhereExpression_Mc3s_Odos_Library_WhereLogicator_">DataItemCollectionValidator.addToWhereExpression(IWhereExpression, WhereLogicator)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_addToQueryExpression_Mc3s_Odos_Library_IWhereExpression_">DataItemCollectionValidator.addToQueryExpression(IWhereExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_addToQueryExpression_Mc3s_Odos_Library_IWhereExpression_Mc3s_Odos_Library_WhereLogicator_">DataItemCollectionValidator.addToQueryExpression(IWhereExpression, WhereLogicator)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_addToClientExpression_Mc3s_Odos_Library_IWhereExpression_">DataItemCollectionValidator.addToClientExpression(IWhereExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_addToClientExpression_Mc3s_Odos_Library_IWhereExpression_Mc3s_Odos_Library_WhereLogicator_">DataItemCollectionValidator.addToClientExpression(IWhereExpression, WhereLogicator)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_GetObjectData_Mc3s_Serialization_IAdvancedSerializationInfo_Mc3s_Serialization_IAdvancedStreamingContext_">DataItemCollectionValidator.GetObjectData(IAdvancedSerializationInfo, IAdvancedStreamingContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_">DataItemCollectionValidator.GetObjectData(SerializationInfo, StreamingContext)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Library.html">Mc3s.Odos.Library</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Library_DataItemReferenceListValidator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class DataItemReferenceListValidator : DataItemCollectionValidator, IDataItemCollectionValidator, IDataItemCollectionValidator&lt;DataItem&gt;, IDataItemCollectionValidatorBase, IWhereExpression, IWhereOperand, IWhereText, INotifyPropertyChanged, IAdvancedSerializable, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemCollectionValidators.cs#lines-1165">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataItemReferenceListValidator__ctor_" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_DataItemReferenceListValidator__ctor_Mc3s_Odos_Library_DataItem_Mc3s_Odos_Library_DataItemField_" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator.#ctor(Mc3s.Odos.Library.DataItem,Mc3s.Odos.Library.DataItemField)">DataItemReferenceListValidator(DataItem, DataItemField)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataItemReferenceListValidator(DataItem parentDataItem, DataItemField dataItemField)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">parentDataItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td><span class="parametername">dataItemField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemCollectionValidators.cs#lines-1189">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataItemReferenceListValidator__ctor_" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_DataItemReferenceListValidator__ctor_Mc3s_Serialization_IAdvancedSerializationInfo_Mc3s_Serialization_IAdvancedStreamingContext_" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator.#ctor(Mc3s.Serialization.IAdvancedSerializationInfo,Mc3s.Serialization.IAdvancedStreamingContext)">DataItemReferenceListValidator(IAdvancedSerializationInfo, IAdvancedStreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DataItemReferenceListValidator(IAdvancedSerializationInfo info, IAdvancedStreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedSerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedStreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemCollectionValidators.cs#lines-1194">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataItemReferenceListValidator__ctor_" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_DataItemReferenceListValidator__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">DataItemReferenceListValidator(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DataItemReferenceListValidator(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemCollectionValidators.cs#lines-1156">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataItemReferenceListValidator__DataItemField_" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator._DataItemField*"></a>
+  <h4 id="Mc3s_Odos_Library_DataItemReferenceListValidator__DataItemField" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator._DataItemField">_DataItemField</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataItemField _DataItemField { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemCollectionValidators.cs#lines-1158">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataItemReferenceListValidator__IsReferenceListFilterEngaged_" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator._IsReferenceListFilterEngaged*"></a>
+  <h4 id="Mc3s_Odos_Library_DataItemReferenceListValidator__IsReferenceListFilterEngaged" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator._IsReferenceListFilterEngaged">_IsReferenceListFilterEngaged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsReferenceListFilterEngaged { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemCollectionValidators.cs#lines-1155">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataItemReferenceListValidator__ParentDataItem_" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator._ParentDataItem*"></a>
+  <h4 id="Mc3s_Odos_Library_DataItemReferenceListValidator__ParentDataItem" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator._ParentDataItem">_ParentDataItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataItem _ParentDataItem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemCollectionValidators.cs#lines-1157">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataItemReferenceListValidator__ReverseSingleReferenceField_" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator._ReverseSingleReferenceField*"></a>
+  <h4 id="Mc3s_Odos_Library_DataItemReferenceListValidator__ReverseSingleReferenceField" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator._ReverseSingleReferenceField">_ReverseSingleReferenceField</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataItemField _ReverseSingleReferenceField { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemCollectionValidators.cs#lines-1204">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DataItemReferenceListValidator_isValid_" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator.isValid*"></a>
+  <h4 id="Mc3s_Odos_Library_DataItemReferenceListValidator_isValid_Mc3s_Odos_Library_DataItem_" data-uid="Mc3s.Odos.Library.DataItemReferenceListValidator.isValid(Mc3s.Odos.Library.DataItem)">isValid(DataItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool isValid(DataItem dItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">dItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Library.DataItemCollectionValidator.html#Mc3s_Odos_Library_DataItemCollectionValidator_isValid_Mc3s_Odos_Library_DataItem_">DataItemCollectionValidator.isValid(DataItem)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidator.html">IDataItemCollectionValidator</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidator-1.html">IDataItemCollectionValidator&lt;DataItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidatorBase.html">IDataItemCollectionValidatorBase</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IWhereExpression.html">IWhereExpression</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IWhereOperand.html">IWhereOperand</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IWhereText.html">IWhereText</a>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Serialization.IAdvancedSerializable</span>
+  </div>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemCollectionValidators.cs#lines-1149" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

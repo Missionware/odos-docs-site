@@ -1,0 +1,953 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GateMappingClient
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GateMappingClient
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient">
+  
+  
+  <h1 id="Mc3s_Odos_Gate_Engine_GateMappingClient" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient" class="text-break">Class GateMappingClient
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for GateMappingClient.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html">GateClient</a></div>
+    <div class="level2"><span class="xref">GateMappingClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mc3s.Odos.Gate.IGateActionDispatcher-1.html">IGateActionDispatcher</a>&lt;<a class="xref" href="Mc3s.Odos.Gate.GatedDataItem.html">GatedDataItem</a>&gt;</div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IActionDispatcher.html">IActionDispatcher</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Gate.IGateClient.html">IGateClient</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="Mc3s.Odos.Gate.IGate.html">IGate</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_DefaultChangeMinCount">GateClient.DefaultChangeMinCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_DefaultChangeMaxCount">GateClient.DefaultChangeMaxCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_DefaultChangeMaxTime">GateClient.DefaultChangeMaxTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_DefaultChangeIdleTime">GateClient.DefaultChangeIdleTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_DefaultSaveCount">GateClient.DefaultSaveCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_DefaultSaveMaxTime">GateClient.DefaultSaveMaxTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_DefaultSaveIdleTime">GateClient.DefaultSaveIdleTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_DefaultQueueCheckTime">GateClient.DefaultQueueCheckTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_DefaultIOBufferCount">GateClient.DefaultIOBufferCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_DefaultInitStateAsync">GateClient.DefaultInitStateAsync</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_applyAgentConfigurationDefaults_System_Collections_Generic_Dictionary_System_String_System_String__System_String___System_String___">GateClient.applyAgentConfigurationDefaults(Dictionary&lt;String, String&gt;, String[], String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__closing">GateClient._closing</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__areTXNsAllowed">GateClient._areTXNsAllowed</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__ConfigurationAssemblyFullname">GateClient._ConfigurationAssemblyFullname</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_beforeChangelistHandling">GateClient.beforeChangelistHandling()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_OnAfterChangeListProcessing">GateClient.OnAfterChangeListProcessing()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_OnAfterSave_System_Boolean_">GateClient.OnAfterSave(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_enqueueGateEventInfo_System_Object_System_EventArgs_">GateClient.enqueueGateEventInfo(Object, EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__IsDisposed">GateClient._IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_Dispose_System_Boolean_">GateClient.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_Dispose">GateClient.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_AlwaysCleanUpOnDispose">GateClient.AlwaysCleanUpOnDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_UserCleanUpOnDispose">GateClient.UserCleanUpOnDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_sendKeyDataList_System_String_System_String_Mc3s_Odos_Library_IWhereExpression_">GateClient.sendKeyDataList(String, String, IWhereExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_sendPayload_Mc3s_Odos_Library_DataItemKeyInfo_Mc3s_Odos_Library_IFieldFilter_">GateClient.sendPayload(DataItemKeyInfo, IFieldFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_sendPayloadListOfQuery_Mc3s_SharedLib_TypeInfo_System_Boolean_Mc3s_Odos_Library_IWhereExpression_Mc3s_Odos_Library_IFieldFilter_">GateClient.sendPayloadListOfQuery(TypeInfo, Boolean, IWhereExpression, IFieldFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_sendPayloadListOfItems_System_Collections_Generic_List_Mc3s_Odos_Library_DataItemKeyInfo__System_Boolean_Mc3s_Odos_Library_IFieldFilter_">GateClient.sendPayloadListOfItems(List&lt;DataItemKeyInfo&gt;, Boolean, IFieldFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_subscribeKeys_System_Collections_Generic_HashSet_Mc3s_Odos_Library_DataItemKey__System_Boolean_">GateClient.subscribeKeys(HashSet&lt;DataItemKey&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_unSubscribeKeys_System_Collections_Generic_HashSet_Mc3s_Odos_Library_DataItemKey__System_Boolean_">GateClient.unSubscribeKeys(HashSet&lt;DataItemKey&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__GateAgent">GateClient._GateAgent</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__GateManager">GateClient._GateManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__MachineConfiguration">GateClient._MachineConfiguration</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__MonitorConfiguration">GateClient._MonitorConfiguration</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__AgentConfiguration">GateClient._AgentConfiguration</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__MapCache">GateClient._MapCache</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__GatedDomains">GateClient._GatedDomains</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__InitStateAsync">GateClient._InitStateAsync</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__IsInitialized">GateClient._IsInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__IsCacheInitialized">GateClient._IsCacheInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__Library">GateClient._Library</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__Protocol">GateClient._Protocol</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__ServerDns">GateClient._ServerDns</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__ServerPort">GateClient._ServerPort</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__IsClosing">GateClient._IsClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__AreTXNsAllowed">GateClient._AreTXNsAllowed</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__GateName">GateClient._GateName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient__GateType">GateClient._GateType</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_createCOMAndDoGateChangeQueueCheck">GateClient.createCOMAndDoGateChangeQueueCheck()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_bindCOMAndDoGateChangeQueueCheck">GateClient.bindCOMAndDoGateChangeQueueCheck()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_getActionDispatchers">GateClient.getActionDispatchers()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_isDomainGated_System_String_">GateClient.isDomainGated(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_isDomainGateCompliant_Mc3s_Odos_Library_DomainStateInfo_">GateClient.isDomainGateCompliant(DomainStateInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_addGatedDomain_System_String_System_String_">GateClient.addGatedDomain(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_checkAndRegisterGatedDomain_Mc3s_Odos_Library_DomainStateInfo_">GateClient.checkAndRegisterGatedDomain(DomainStateInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_getOrCreateRealDataItem__1___0__Mc3s_Odos_Library_DataItemKey_">GateClient.getOrCreateRealDataItem&lt;T&gt;(T, DataItemKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_getOrCreateRealDataItem_Mc3s_Odos_Library_DataItem__Mc3s_Odos_Library_DataItemKey_">GateClient.getOrCreateRealDataItem(DataItem, DataItemKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_createImageForSerialization_Mc3s_Odos_Library_DataItemKey_">GateClient.createImageForSerialization(DataItemKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_createLoadedDataItemImage_Mc3s_Odos_Library_DataItemKey_Mc3s_Odos_Gate_FillImageInGateDelegate_System_Collections_Generic_List_System_Exception___">GateClient.createLoadedDataItemImage(DataItemKey, FillImageInGateDelegate, List&lt;Exception&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_syncDataItemWithImage_Mc3s_Odos_Library_DataItem_Mc3s_Odos_Library_DataItemImage_">GateClient.syncDataItemWithImage(DataItem, DataItemImage)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_countUpdates">GateClient.countUpdates()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_getUpdates">GateClient.getUpdates()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_handleGateItemChangeEvent_Mc3s_Odos_Gate_GateEventInfo_">GateClient.handleGateItemChangeEvent(GateEventInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_handleAllGateItemChangeEvents_System_Collections_Generic_List_Mc3s_Odos_Gate_GateEventInfo__">GateClient.handleAllGateItemChangeEvents(List&lt;GateEventInfo&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_ForceCheckForChanges">GateClient.ForceCheckForChanges()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Gate.Engine.html">Mc3s.Odos.Gate.Engine</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Gate_Engine_GateMappingClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GateMappingClient : GateClient, IGateActionDispatcher&lt;GatedDataItem&gt;, IActionDispatcher, IGateClient, IDisposable, IGate</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingClient.cs#lines-27">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingClient__ctor_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingClient__ctor_Mc3s_Odos_Gate_Engine_GateAgent_System_Collections_Generic_Dictionary_System_String_System_String__System_Collections_Generic_Dictionary_System_String_System_String__System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.#ctor(Mc3s.Odos.Gate.Engine.GateAgent,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">GateMappingClient(GateAgent, Dictionary&lt;String, String&gt;, Dictionary&lt;String, String&gt;, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GateMappingClient(GateAgent gateAgent, Dictionary&lt;string, string&gt; overrideMachineConfiguration, Dictionary&lt;string, string&gt; overrideMonitorConfiguration, Dictionary&lt;string, string&gt; overrideAgentConfiguration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Gate.Engine.GateAgent.html">GateAgent</a></td>
+        <td><span class="parametername">gateAgent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">overrideMachineConfiguration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">overrideMonitorConfiguration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">overrideAgentConfiguration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingClient.cs#lines-125">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingClient_canConvertValue_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.canConvertValue*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingClient_canConvertValue_System_Type_Mc3s_Odos_Library_DataItemField_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.canConvertValue(System.Type,Mc3s.Odos.Library.DataItemField)">canConvertValue(Type, DataItemField)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool canConvertValue(Type sourceType, DataItemField field)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">sourceType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td><span class="parametername">field</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingClient.cs#lines-165">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingClient_createCache_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.createCache*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingClient_createCache_Mc3s_Odos_Gate_IGateClient_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.createCache(Mc3s.Odos.Gate.IGateClient)">createCache(IGateClient)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IGateCache createCache(IGateClient gateClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Gate.IGateClient.html">IGateClient</a></td>
+        <td><span class="parametername">gateClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Gate.IGateCache.html">IGateCache</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_createCache_Mc3s_Odos_Gate_IGateClient_">GateClient.createCache(IGateClient)</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingClient.cs#lines-72">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingClient_createElementVTE_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.createElementVTE*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingClient_createElementVTE_System_String_System_Object_Mc3s_SharedLib_FieldLoadErrorCode_System_String_System_DateTime_Mc3s_Odos_Library_DataItemField_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.createElementVTE(System.String,System.Object,Mc3s.SharedLib.FieldLoadErrorCode,System.String,System.DateTime,Mc3s.Odos.Library.DataItemField)">createElementVTE(String, Object, FieldLoadErrorCode, String, DateTime, DataItemField)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ElementVTE createElementVTE(string sourceID, object value, FieldLoadErrorCode errorCode, string errorDescription, DateTime timeStamp, DataItemField field)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.SharedLib.FieldLoadErrorCode</span></td>
+        <td><span class="parametername">errorCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">errorDescription</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">timeStamp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td><span class="parametername">field</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Gate.ElementVTE.html">ElementVTE</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingClient.cs#lines-61">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingClient_createEmptyElementVTE_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.createEmptyElementVTE*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingClient_createEmptyElementVTE_Mc3s_Odos_Library_DataItemField_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.createEmptyElementVTE(Mc3s.Odos.Library.DataItemField)">createEmptyElementVTE(DataItemField)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ElementVTE createEmptyElementVTE(DataItemField field)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td><span class="parametername">field</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Gate.ElementVTE.html">ElementVTE</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingClient.cs#lines-67">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingClient_createEmptyResultElementVTE_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.createEmptyResultElementVTE*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingClient_createEmptyResultElementVTE_System_String_Mc3s_Odos_Library_DataItemField_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.createEmptyResultElementVTE(System.String,Mc3s.Odos.Library.DataItemField)">createEmptyResultElementVTE(String, DataItemField)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ElementVTE createEmptyResultElementVTE(string sourceID, DataItemField field)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td><span class="parametername">field</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Gate.ElementVTE.html">ElementVTE</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingClient.cs#lines-169">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingClient_createIOController_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.createIOController*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingClient_createIOController_Mc3s_Odos_Gate_IGateCache_System_Boolean_Mc3s_Odos_Library_IFieldFilter_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.createIOController(Mc3s.Odos.Gate.IGateCache,System.Boolean,Mc3s.Odos.Library.IFieldFilter)">createIOController(IGateCache, Boolean, IFieldFilter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IGateIOController createIOController(IGateCache mapCache, bool isWriter, IFieldFilter fieldFilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Gate.IGateCache.html">IGateCache</a></td>
+        <td><span class="parametername">mapCache</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isWriter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IFieldFilter.html">IFieldFilter</a></td>
+        <td><span class="parametername">fieldFilter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Gate.IGateIOController.html">IGateIOController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_createIOController_Mc3s_Odos_Gate_IGateCache_System_Boolean_Mc3s_Odos_Library_IFieldFilter_">GateClient.createIOController(IGateCache, Boolean, IFieldFilter)</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingClient.cs#lines-134">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingClient_getConvertedValue_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.getConvertedValue*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingClient_getConvertedValue_System_Object_Mc3s_Odos_Library_DataItemField_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.getConvertedValue(System.Object,Mc3s.Odos.Library.DataItemField)">getConvertedValue(Object, DataItemField)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object getConvertedValue(object value, DataItemField field)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td><span class="parametername">field</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingClient.cs#lines-51">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingClient_getDefaultAssignChangeValueDelegate_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.getDefaultAssignChangeValueDelegate*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingClient_getDefaultAssignChangeValueDelegate_System_Type_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.getDefaultAssignChangeValueDelegate(System.Type)">getDefaultAssignChangeValueDelegate(Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AssignGateChangeValueDelegate getDefaultAssignChangeValueDelegate(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Gate.AssignGateChangeValueDelegate.html">AssignGateChangeValueDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingClient.cs#lines-43">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingClient_getDefaultReadValueDelegate_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.getDefaultReadValueDelegate*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingClient_getDefaultReadValueDelegate_System_Type_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.getDefaultReadValueDelegate(System.Type)">getDefaultReadValueDelegate(Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ReadValueDelegate getDefaultReadValueDelegate(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Gate.ReadValueDelegate.html">ReadValueDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingClient.cs#lines-143">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingClient_getDefaultValue_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.getDefaultValue*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingClient_getDefaultValue_Mc3s_Odos_Library_DataItemField_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.getDefaultValue(Mc3s.Odos.Library.DataItemField)">getDefaultValue(DataItemField)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object getDefaultValue(DataItemField field)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td><span class="parametername">field</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingClient.cs#lines-179">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_Engine_GateMappingClient_WriteValuesTo_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.WriteValuesTo*"></a>
+  <h4 id="Mc3s_Odos_Gate_Engine_GateMappingClient_WriteValuesTo_Mc3s_Odos_Gate_GatedDataItem_System_Boolean_Mc3s_Odos_Library_IFieldFilter_" data-uid="Mc3s.Odos.Gate.Engine.GateMappingClient.WriteValuesTo(Mc3s.Odos.Gate.GatedDataItem,System.Boolean,Mc3s.Odos.Library.IFieldFilter)">WriteValuesTo(GatedDataItem, Boolean, IFieldFilter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteValuesTo(GatedDataItem gatedDataItem, bool async, IFieldFilter fieldFilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Gate.GatedDataItem.html">GatedDataItem</a></td>
+        <td><span class="parametername">gatedDataItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">async</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IFieldFilter.html">IFieldFilter</a></td>
+        <td><span class="parametername">fieldFilter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Gate.Engine.GateClient.html#Mc3s_Odos_Gate_Engine_GateClient_WriteValuesTo_Mc3s_Odos_Gate_GatedDataItem_System_Boolean_Mc3s_Odos_Library_IFieldFilter_">GateClient.WriteValuesTo(GatedDataItem, Boolean, IFieldFilter)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Gate.IGateActionDispatcher-1.html">IGateActionDispatcher&lt;GatedDataItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IActionDispatcher.html">IActionDispatcher</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Gate.IGateClient.html">IGateClient</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Gate.IGate.html">IGate</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/Engine/GateMappingClient.cs#lines-15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

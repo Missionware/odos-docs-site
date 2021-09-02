@@ -1,0 +1,1026 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DataItemTemplateMapping&lt;TReadArgs, TWriteArgs, TReadResults, TWriteResults, TSubscribeResults, TUnSubscribeResults&gt;
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DataItemTemplateMapping&lt;TReadArgs, TWriteArgs, TReadResults, TWriteResults, TSubscribeResults, TUnSubscribeResults&gt;
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6">
+  
+  
+  <h1 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6" class="text-break">Class DataItemTemplateMapping&lt;TReadArgs, TWriteArgs, TReadResults, TWriteResults, TSubscribeResults, TUnSubscribeResults&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for DataItemTemplateMapping.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mc3s.Odos.Gate.DataItemMappingBase.html">DataItemMappingBase</a></div>
+    <div class="level2"><a class="xref" href="Mc3s.Odos.Gate.DataItemMappingByElements.html">DataItemMappingByElements</a></div>
+    <div class="level3"><span class="xref">DataItemTemplateMapping&lt;TReadArgs, TWriteArgs, TReadResults, TWriteResults, TSubscribeResults, TUnSubscribeResults&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mc3s.Odos.Gate.IDataItemMappingByElements.html">IDataItemMappingByElements</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Gate.IDataItemMappingBase.html">IDataItemMappingBase</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingByElements.html#Mc3s_Odos_Gate_DataItemMappingByElements__ElementMappings">DataItemMappingByElements._ElementMappings</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingByElements.html#Mc3s_Odos_Gate_DataItemMappingByElements__FieldMappings">DataItemMappingByElements._FieldMappings</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingByElements.html#Mc3s_Odos_Gate_DataItemMappingByElements__HasAnyFieldMapping">DataItemMappingByElements._HasAnyFieldMapping</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingByElements.html#Mc3s_Odos_Gate_DataItemMappingByElements__FieldCount">DataItemMappingByElements._FieldCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingByElements.html#Mc3s_Odos_Gate_DataItemMappingByElements_getReadFieldCount_Mc3s_Odos_Library_IFieldFilter_">DataItemMappingByElements.getReadFieldCount(IFieldFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingByElements.html#Mc3s_Odos_Gate_DataItemMappingByElements_getWriteFieldCount_Mc3s_Odos_Library_IFieldFilter_">DataItemMappingByElements.getWriteFieldCount(IFieldFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingByElements.html#Mc3s_Odos_Gate_DataItemMappingByElements_readToItem_Mc3s_Odos_Library_DataItem_">DataItemMappingByElements.readToItem(DataItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingByElements.html#Mc3s_Odos_Gate_DataItemMappingByElements_readToImage_Mc3s_Odos_Library_DataItemImage_Mc3s_Odos_Library_IFieldFilter_">DataItemMappingByElements.readToImage(DataItemImage, IFieldFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingByElements.html#Mc3s_Odos_Gate_DataItemMappingByElements_getElementMappingAt_System_Int32_">DataItemMappingByElements.getElementMappingAt(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingByElements.html#Mc3s_Odos_Gate_DataItemMappingByElements_createElementValueMapping_System_Int32_Mc3s_Odos_Gate_FieldMap_">DataItemMappingByElements.createElementValueMapping(Int32, FieldMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingByElements.html#Mc3s_Odos_Gate_DataItemMappingByElements_createElementFieldMapping_System_Int32_Mc3s_Odos_Gate_FieldMap_">DataItemMappingByElements.createElementFieldMapping(Int32, FieldMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingByElements.html#Mc3s_Odos_Gate_DataItemMappingByElements_tryGetVTEAt_System_Int32_Mc3s_Odos_Library_DataItemField_Mc3s_Odos_Gate_ElementVTE__">DataItemMappingByElements.tryGetVTEAt(Int32, DataItemField, ElementVTE)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingBase.html#Mc3s_Odos_Gate_DataItemMappingBase_getOrCreateLoadedDataItemInGate__1_Mc3s_Odos_Gate_IGateClient_Mc3s_Odos_Library_DataItemKey_Mc3s_Odos_Gate_FillImageInGateDelegate___0__System_Collections_Generic_List_System_Exception___">DataItemMappingBase.getOrCreateLoadedDataItemInGate&lt;T&gt;(IGateClient, DataItemKey, FillImageInGateDelegate, T, List&lt;Exception&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingBase.html#Mc3s_Odos_Gate_DataItemMappingBase_loadDataItemInGate__1_Mc3s_Odos_Gate_IGateClient___0_Mc3s_Odos_Gate_FillImageInGateDelegate_System_Collections_Generic_List_System_Exception___">DataItemMappingBase.loadDataItemInGate&lt;T&gt;(IGateClient, T, FillImageInGateDelegate, List&lt;Exception&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingBase.html#Mc3s_Odos_Gate_DataItemMappingBase_createLoadedDataItemImageInGate_Mc3s_Odos_Gate_IGateClient_Mc3s_Odos_Library_DataItemKey_Mc3s_Odos_Gate_FillImageInGateDelegate_System_Collections_Generic_List_System_Exception___">DataItemMappingBase.createLoadedDataItemImageInGate(IGateClient, DataItemKey, FillImageInGateDelegate, List&lt;Exception&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingBase.html#Mc3s_Odos_Gate_DataItemMappingBase_getOrCreateDataItem_Mc3s_Odos_Library_DataItem__">DataItemMappingBase.getOrCreateDataItem(DataItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingBase.html#Mc3s_Odos_Gate_DataItemMappingBase_trySubscribe">DataItemMappingBase.trySubscribe()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingBase.html#Mc3s_Odos_Gate_DataItemMappingBase_tryUnSubscribe">DataItemMappingBase.tryUnSubscribe()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingBase.html#Mc3s_Odos_Gate_DataItemMappingBase__GateClient">DataItemMappingBase._GateClient</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingBase.html#Mc3s_Odos_Gate_DataItemMappingBase__Key">DataItemMappingBase._Key</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingBase.html#Mc3s_Odos_Gate_DataItemMappingBase__IsSubscribed">DataItemMappingBase._IsSubscribed</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingBase.html#Mc3s_Odos_Gate_DataItemMappingBase__DataItem">DataItemMappingBase._DataItem</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingBase.html#Mc3s_Odos_Gate_DataItemMappingBase_setUnSubscribed">DataItemMappingBase.setUnSubscribed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingBase.html#Mc3s_Odos_Gate_DataItemMappingBase_Read">DataItemMappingBase.Read()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingBase.html#Mc3s_Odos_Gate_DataItemMappingBase_Subscribe">DataItemMappingBase.Subscribe()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Gate.DataItemMappingBase.html#Mc3s_Odos_Gate_DataItemMappingBase_UnSubscribe">DataItemMappingBase.UnSubscribe()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Gate.html">Mc3s.Odos.Gate</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class DataItemTemplateMapping&lt;TReadArgs, TWriteArgs, TReadResults, TWriteResults, TSubscribeResults, TUnSubscribeResults&gt; : DataItemMappingByElements, IDataItemMappingByElements, IDataItemMappingBase</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TReadArgs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TWriteArgs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TReadResults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TWriteResults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSubscribeResults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TUnSubscribeResults</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-30">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_DataItemTemplateMapping_6__ctor_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6__ctor_Mc3s_Odos_Gate_IGateClient_Mc3s_Odos_Gate_LoadMap_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.#ctor(Mc3s.Odos.Gate.IGateClient,Mc3s.Odos.Gate.LoadMap)">DataItemTemplateMapping(IGateClient, LoadMap)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataItemTemplateMapping(IGateClient gateClient, LoadMap loadMap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Gate.IGateClient.html">IGateClient</a></td>
+        <td><span class="parametername">gateClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Gate.LoadMap.html">LoadMap</a></td>
+        <td><span class="parametername">loadMap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-18">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6__readResults" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6._readResults">_readResults</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TReadResults[] _readResults</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TReadResults[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-20">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6__subscribeResults" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6._subscribeResults">_subscribeResults</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TSubscribeResults[] _subscribeResults</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TSubscribeResults[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-21">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6__unSubscribeResults" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6._unSubscribeResults">_unSubscribeResults</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TUnSubscribeResults[] _unSubscribeResults</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TUnSubscribeResults[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-19">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6__writeResults" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6._writeResults">_writeResults</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TWriteResults[] _writeResults</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TWriteResults[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-184">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_collectReadResults_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.collectReadResults*"></a>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_collectReadResults_Mc3s_Odos_Library_IFieldFilter__2___System_Int32__" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.collectReadResults(Mc3s.Odos.Library.IFieldFilter,`2[],System.Int32@)">collectReadResults(IFieldFilter, TReadResults[], ref Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void collectReadResults(IFieldFilter fieldFilter, TReadResults[] overallResults, ref int overallPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IFieldFilter.html">IFieldFilter</a></td>
+        <td><span class="parametername">fieldFilter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>TReadResults[]</td>
+        <td><span class="parametername">overallResults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">overallPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-40">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_collectResults_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.collectResults*"></a>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_collectResults__1_Mc3s_Odos_Library_IFieldFilter___0___System_Int32__" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.collectResults``1(Mc3s.Odos.Library.IFieldFilter,``0[],System.Int32@)">collectResults&lt;TResults&gt;(IFieldFilter, TResults[], ref Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TResults[] collectResults&lt;TResults&gt;(IFieldFilter fieldFilter, TResults[] overallResults, ref int overallPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IFieldFilter.html">IFieldFilter</a></td>
+        <td><span class="parametername">fieldFilter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>TResults[]</td>
+        <td><span class="parametername">overallResults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">overallPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TResults[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResults</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-192">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_collectSubscribeResults_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.collectSubscribeResults*"></a>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_collectSubscribeResults_Mc3s_Odos_Library_IFieldFilter__4___System_Int32__" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.collectSubscribeResults(Mc3s.Odos.Library.IFieldFilter,`4[],System.Int32@)">collectSubscribeResults(IFieldFilter, TSubscribeResults[], ref Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void collectSubscribeResults(IFieldFilter fieldFilter, TSubscribeResults[] overallResults, ref int overallPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IFieldFilter.html">IFieldFilter</a></td>
+        <td><span class="parametername">fieldFilter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>TSubscribeResults[]</td>
+        <td><span class="parametername">overallResults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">overallPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-196">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_collectUnSubscribeResults_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.collectUnSubscribeResults*"></a>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_collectUnSubscribeResults_Mc3s_Odos_Library_IFieldFilter__5___System_Int32__" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.collectUnSubscribeResults(Mc3s.Odos.Library.IFieldFilter,`5[],System.Int32@)">collectUnSubscribeResults(IFieldFilter, TUnSubscribeResults[], ref Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void collectUnSubscribeResults(IFieldFilter fieldFilter, TUnSubscribeResults[] overallResults, ref int overallPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IFieldFilter.html">IFieldFilter</a></td>
+        <td><span class="parametername">fieldFilter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>TUnSubscribeResults[]</td>
+        <td><span class="parametername">overallResults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">overallPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-188">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_collectWriteResults_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.collectWriteResults*"></a>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_collectWriteResults_Mc3s_Odos_Library_IFieldFilter__3___System_Int32__" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.collectWriteResults(Mc3s.Odos.Library.IFieldFilter,`3[],System.Int32@)">collectWriteResults(IFieldFilter, TWriteResults[], ref Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void collectWriteResults(IFieldFilter fieldFilter, TWriteResults[] overallResults, ref int overallPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IFieldFilter.html">IFieldFilter</a></td>
+        <td><span class="parametername">fieldFilter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>TWriteResults[]</td>
+        <td><span class="parametername">overallResults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">overallPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-70">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getReadFieldArgAt_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getReadFieldArgAt*"></a>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getReadFieldArgAt_System_Int32__0__" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getReadFieldArgAt(System.Int32,`0@)">getReadFieldArgAt(Int32, out TReadArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool getReadFieldArgAt(int index, out TReadArgs arg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TReadArgs</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-76">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getReadFieldArgs_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getReadFieldArgs*"></a>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getReadFieldArgs_Mc3s_Odos_Library_IFieldFilter_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getReadFieldArgs(Mc3s.Odos.Library.IFieldFilter)">getReadFieldArgs(IFieldFilter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TReadArgs[] getReadFieldArgs(IFieldFilter fieldFilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IFieldFilter.html">IFieldFilter</a></td>
+        <td><span class="parametername">fieldFilter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TReadArgs[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-72">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getSubscribeFieldArgAt_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getSubscribeFieldArgAt*"></a>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getSubscribeFieldArgAt_System_Int32__0__" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getSubscribeFieldArgAt(System.Int32,`0@)">getSubscribeFieldArgAt(Int32, out TReadArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool getSubscribeFieldArgAt(int index, out TReadArgs arg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TReadArgs</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-130">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getSubscribeFieldArgs_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getSubscribeFieldArgs*"></a>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getSubscribeFieldArgs_Mc3s_Odos_Library_IFieldFilter_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getSubscribeFieldArgs(Mc3s.Odos.Library.IFieldFilter)">getSubscribeFieldArgs(IFieldFilter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TReadArgs[] getSubscribeFieldArgs(IFieldFilter fieldFilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IFieldFilter.html">IFieldFilter</a></td>
+        <td><span class="parametername">fieldFilter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TReadArgs[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-73">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getUnSubscribeFieldArgAt_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getUnSubscribeFieldArgAt*"></a>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getUnSubscribeFieldArgAt_System_Int32__4__" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getUnSubscribeFieldArgAt(System.Int32,`4@)">getUnSubscribeFieldArgAt(Int32, out TSubscribeResults)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool getUnSubscribeFieldArgAt(int index, out TSubscribeResults arg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TSubscribeResults</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-157">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getUnSubscribeFieldArgs_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getUnSubscribeFieldArgs*"></a>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getUnSubscribeFieldArgs_Mc3s_Odos_Library_IFieldFilter_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getUnSubscribeFieldArgs(Mc3s.Odos.Library.IFieldFilter)">getUnSubscribeFieldArgs(IFieldFilter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TSubscribeResults[] getUnSubscribeFieldArgs(IFieldFilter fieldFilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IFieldFilter.html">IFieldFilter</a></td>
+        <td><span class="parametername">fieldFilter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TSubscribeResults[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-71">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getWriteFieldArgAt_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getWriteFieldArgAt*"></a>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getWriteFieldArgAt_System_Int32_System_Object__1__" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getWriteFieldArgAt(System.Int32,System.Object,`1@)">getWriteFieldArgAt(Int32, Object, out TWriteArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool getWriteFieldArgAt(int index, object value, out TWriteArgs arg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TWriteArgs</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-103">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getWriteFieldArgs_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getWriteFieldArgs*"></a>
+  <h4 id="Mc3s_Odos_Gate_DataItemTemplateMapping_6_getWriteFieldArgs_Mc3s_Odos_Library_IFieldFilter_" data-uid="Mc3s.Odos.Gate.DataItemTemplateMapping`6.getWriteFieldArgs(Mc3s.Odos.Library.IFieldFilter)">getWriteFieldArgs(IFieldFilter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TWriteArgs[] getWriteFieldArgs(IFieldFilter fieldFilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IFieldFilter.html">IFieldFilter</a></td>
+        <td><span class="parametername">fieldFilter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TWriteArgs[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Gate.IDataItemMappingByElements.html">IDataItemMappingByElements</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Gate.IDataItemMappingBase.html">IDataItemMappingBase</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Gate/DataItemTemplateMapping.cs#lines-13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

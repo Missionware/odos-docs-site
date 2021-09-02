@@ -1,0 +1,3466 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ServerMgr
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ServerMgr
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Client.ServerMgr">
+  
+  
+  <h1 id="Mc3s_Odos_Client_ServerMgr" data-uid="Mc3s.Odos.Client.ServerMgr" class="text-break">Class ServerMgr
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for ServerMgr.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ServerMgr</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">Mc3s.SharedLib.IHostInfo</span></div>
+    <div><span class="xref">Mc3s.Odos.Security.IConnectedAuthorizationProvider</span></div>
+    <div><span class="xref">Mc3s.Odos.Security.IAuthorizationProvider</span></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IAuthorizationClient.html">IAuthorizationClient</a></div>
+    <div><span class="xref">Mc3s.Odos.Security.Authentication.IAuthenticationProvider</span></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IServerEventReceiver.html">IServerEventReceiver</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.ITxnDispatchProxy.html">ITxnDispatchProxy</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IRegistrationSubscriber-2.html">IRegistrationSubscriber</a>&lt;<span class="xref">System.String</span>, <a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a>&gt;</div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IRegistrationSubscriber-2.html">IRegistrationSubscriber</a>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItemKey.html">DataItemKey</a>, <a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a>&gt;</div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IRegistrationSubscriber.html">IRegistrationSubscriber</a></div>
+    <div><span class="xref">Mc3s.SharedLib.RPC.ICallAgent</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Client.html">Mc3s.Odos.Client</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Client_ServerMgr_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ServerMgr : IDisposable, IHostInfo, IConnectedAuthorizationProvider, IAuthorizationProvider, IAuthorizationClient, IAuthenticationProvider, IServerEventReceiver, ITxnDispatchProxy, IRegistrationSubscriber&lt;string, DataItemClassInfo&gt;, IRegistrationSubscriber&lt;DataItemKey, DataItem&gt;, IRegistrationSubscriber, ICallAgent</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-437">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__Authorization_" data-uid="Mc3s.Odos.Client.ServerMgr._Authorization*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__Authorization" data-uid="Mc3s.Odos.Client.ServerMgr._Authorization">_Authorization</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IAuthorization _Authorization { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.IAuthorization</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-177">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__CanProvideData_" data-uid="Mc3s.Odos.Client.ServerMgr._CanProvideData*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__CanProvideData" data-uid="Mc3s.Odos.Client.ServerMgr._CanProvideData">_CanProvideData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _CanProvideData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-147">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__Client_" data-uid="Mc3s.Odos.Client.ServerMgr._Client*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__Client" data-uid="Mc3s.Odos.Client.ServerMgr._Client">_Client</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IClient _Client { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-758">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__ClientConnectionInfo_" data-uid="Mc3s.Odos.Client.ServerMgr._ClientConnectionInfo*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__ClientConnectionInfo" data-uid="Mc3s.Odos.Client.ServerMgr._ClientConnectionInfo">_ClientConnectionInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClientConnectionInfo _ClientConnectionInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.ClientConnectionInfo.html">ClientConnectionInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-155">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__ClientInfo_" data-uid="Mc3s.Odos.Client.ServerMgr._ClientInfo*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__ClientInfo" data-uid="Mc3s.Odos.Client.ServerMgr._ClientInfo">_ClientInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClientInfo _ClientInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.ClientInfo.html">ClientInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-156">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__ClientModeInfo_" data-uid="Mc3s.Odos.Client.ServerMgr._ClientModeInfo*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__ClientModeInfo" data-uid="Mc3s.Odos.Client.ServerMgr._ClientModeInfo">_ClientModeInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClientModeInfo _ClientModeInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.ClientModeInfo.html">ClientModeInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-153">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__CommAssemblyFullName_" data-uid="Mc3s.Odos.Client.ServerMgr._CommAssemblyFullName*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__CommAssemblyFullName" data-uid="Mc3s.Odos.Client.ServerMgr._CommAssemblyFullName">_CommAssemblyFullName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _CommAssemblyFullName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-455">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__ConnectedAuthorization_" data-uid="Mc3s.Odos.Client.ServerMgr._ConnectedAuthorization*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__ConnectedAuthorization" data-uid="Mc3s.Odos.Client.ServerMgr._ConnectedAuthorization">_ConnectedAuthorization</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IConnectedAuthorization _ConnectedAuthorization { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.IConnectedAuthorization</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-412">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__ConnectedAuthorizationProvider_" data-uid="Mc3s.Odos.Client.ServerMgr._ConnectedAuthorizationProvider*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__ConnectedAuthorizationProvider" data-uid="Mc3s.Odos.Client.ServerMgr._ConnectedAuthorizationProvider">_ConnectedAuthorizationProvider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IConnectedAuthorizationProvider _ConnectedAuthorizationProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.IConnectedAuthorizationProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-149">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__ConnectionAgent_" data-uid="Mc3s.Odos.Client.ServerMgr._ConnectionAgent*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__ConnectionAgent" data-uid="Mc3s.Odos.Client.ServerMgr._ConnectionAgent">_ConnectionAgent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IConnectionClientAgent _ConnectionAgent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Comm.IConnectionClientAgent.html">IConnectionClientAgent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-150">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__ConnectionMgr_" data-uid="Mc3s.Odos.Client.ServerMgr._ConnectionMgr*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__ConnectionMgr" data-uid="Mc3s.Odos.Client.ServerMgr._ConnectionMgr">_ConnectionMgr</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConnectionStateMgr _ConnectionMgr { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.SharedLib.ConnectionStateMgr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-157">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__ConnectionTicket_" data-uid="Mc3s.Odos.Client.ServerMgr._ConnectionTicket*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__ConnectionTicket" data-uid="Mc3s.Odos.Client.ServerMgr._ConnectionTicket">_ConnectionTicket</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClientKey _ConnectionTicket { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.ClientKey.html">ClientKey</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-387">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__DNS_" data-uid="Mc3s.Odos.Client.ServerMgr._DNS*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__DNS" data-uid="Mc3s.Odos.Client.ServerMgr._DNS">_DNS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _DNS { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-386">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__HostName_" data-uid="Mc3s.Odos.Client.ServerMgr._HostName*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__HostName" data-uid="Mc3s.Odos.Client.ServerMgr._HostName">_HostName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _HostName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-389">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IPAddress_" data-uid="Mc3s.Odos.Client.ServerMgr._IPAddress*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IPAddress" data-uid="Mc3s.Odos.Client.ServerMgr._IPAddress">_IPAddress</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _IPAddress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-576">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IsAbleToProcessServerEvent_" data-uid="Mc3s.Odos.Client.ServerMgr._IsAbleToProcessServerEvent*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IsAbleToProcessServerEvent" data-uid="Mc3s.Odos.Client.ServerMgr._IsAbleToProcessServerEvent">_IsAbleToProcessServerEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsAbleToProcessServerEvent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-605">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IsAuthenticationServerConnected_" data-uid="Mc3s.Odos.Client.ServerMgr._IsAuthenticationServerConnected*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IsAuthenticationServerConnected" data-uid="Mc3s.Odos.Client.ServerMgr._IsAuthenticationServerConnected">_IsAuthenticationServerConnected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsAuthenticationServerConnected { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-606">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IsAuthenticationServerListening_" data-uid="Mc3s.Odos.Client.ServerMgr._IsAuthenticationServerListening*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IsAuthenticationServerListening" data-uid="Mc3s.Odos.Client.ServerMgr._IsAuthenticationServerListening">_IsAuthenticationServerListening</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsAuthenticationServerListening { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-352">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IsDisposed_" data-uid="Mc3s.Odos.Client.ServerMgr._IsDisposed*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IsDisposed" data-uid="Mc3s.Odos.Client.ServerMgr._IsDisposed">_IsDisposed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsDisposed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-654">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IsHandling_" data-uid="Mc3s.Odos.Client.ServerMgr._IsHandling*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IsHandling" data-uid="Mc3s.Odos.Client.ServerMgr._IsHandling">_IsHandling</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IsHandling { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-186">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IsPostRegisterFinished_" data-uid="Mc3s.Odos.Client.ServerMgr._IsPostRegisterFinished*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IsPostRegisterFinished" data-uid="Mc3s.Odos.Client.ServerMgr._IsPostRegisterFinished">_IsPostRegisterFinished</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsPostRegisterFinished { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-166">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IsReconnecting_" data-uid="Mc3s.Odos.Client.ServerMgr._IsReconnecting*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IsReconnecting" data-uid="Mc3s.Odos.Client.ServerMgr._IsReconnecting">_IsReconnecting</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsReconnecting { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-477">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IsRegistered_" data-uid="Mc3s.Odos.Client.ServerMgr._IsRegistered*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IsRegistered" data-uid="Mc3s.Odos.Client.ServerMgr._IsRegistered">_IsRegistered</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsRegistered { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-476">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IsRegistrationRequired_" data-uid="Mc3s.Odos.Client.ServerMgr._IsRegistrationRequired*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IsRegistrationRequired" data-uid="Mc3s.Odos.Client.ServerMgr._IsRegistrationRequired">_IsRegistrationRequired</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsRegistrationRequired { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-162">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IsServerConnected_" data-uid="Mc3s.Odos.Client.ServerMgr._IsServerConnected*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IsServerConnected" data-uid="Mc3s.Odos.Client.ServerMgr._IsServerConnected">_IsServerConnected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsServerConnected { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-164">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IsServerConnectedAndListening_" data-uid="Mc3s.Odos.Client.ServerMgr._IsServerConnectedAndListening*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IsServerConnectedAndListening" data-uid="Mc3s.Odos.Client.ServerMgr._IsServerConnectedAndListening">_IsServerConnectedAndListening</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsServerConnectedAndListening { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-160">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IsServerConnectionRequested_" data-uid="Mc3s.Odos.Client.ServerMgr._IsServerConnectionRequested*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IsServerConnectionRequested" data-uid="Mc3s.Odos.Client.ServerMgr._IsServerConnectionRequested">_IsServerConnectionRequested</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsServerConnectionRequested { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-161">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IsServerConnectionStarted_" data-uid="Mc3s.Odos.Client.ServerMgr._IsServerConnectionStarted*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IsServerConnectionStarted" data-uid="Mc3s.Odos.Client.ServerMgr._IsServerConnectionStarted">_IsServerConnectionStarted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsServerConnectionStarted { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-163">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IsServerListening_" data-uid="Mc3s.Odos.Client.ServerMgr._IsServerListening*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IsServerListening" data-uid="Mc3s.Odos.Client.ServerMgr._IsServerListening">_IsServerListening</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsServerListening { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-438">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__IsServiceSecurityEnabled_" data-uid="Mc3s.Odos.Client.ServerMgr._IsServiceSecurityEnabled*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__IsServiceSecurityEnabled" data-uid="Mc3s.Odos.Client.ServerMgr._IsServiceSecurityEnabled">_IsServiceSecurityEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IsServiceSecurityEnabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-402">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__Library_" data-uid="Mc3s.Odos.Client.ServerMgr._Library*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__Library" data-uid="Mc3s.Odos.Client.ServerMgr._Library">_Library</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _Library { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-404">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__ListeningPort_" data-uid="Mc3s.Odos.Client.ServerMgr._ListeningPort*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__ListeningPort" data-uid="Mc3s.Odos.Client.ServerMgr._ListeningPort">_ListeningPort</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int _ListeningPort { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-388">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__MachineName_" data-uid="Mc3s.Odos.Client.ServerMgr._MachineName*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__MachineName" data-uid="Mc3s.Odos.Client.ServerMgr._MachineName">_MachineName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _MachineName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-653">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__ObjMgr_" data-uid="Mc3s.Odos.Client.ServerMgr._ObjMgr*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__ObjMgr" data-uid="Mc3s.Odos.Client.ServerMgr._ObjMgr">_ObjMgr</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDataItemManager _ObjMgr { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemManager.html">IDataItemManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-403">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__Protocol_" data-uid="Mc3s.Odos.Client.ServerMgr._Protocol*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__Protocol" data-uid="Mc3s.Odos.Client.ServerMgr._Protocol">_Protocol</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _Protocol { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-167">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__RegistrationState_" data-uid="Mc3s.Odos.Client.ServerMgr._RegistrationState*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__RegistrationState" data-uid="Mc3s.Odos.Client.ServerMgr._RegistrationState">_RegistrationState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConnectionRegistrationState _RegistrationState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.SharedLib.ConnectionRegistrationState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-165">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__RemoteAuthenticationProxy_" data-uid="Mc3s.Odos.Client.ServerMgr._RemoteAuthenticationProxy*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__RemoteAuthenticationProxy" data-uid="Mc3s.Odos.Client.ServerMgr._RemoteAuthenticationProxy">_RemoteAuthenticationProxy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRemoteAuthenticationProxy _RemoteAuthenticationProxy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.Authentication.IRemoteAuthenticationProxy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-148">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__ServerAuthenticationProvider_" data-uid="Mc3s.Odos.Client.ServerMgr._ServerAuthenticationProvider*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__ServerAuthenticationProvider" data-uid="Mc3s.Odos.Client.ServerMgr._ServerAuthenticationProvider">_ServerAuthenticationProvider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IServerAuthenticationProvider _ServerAuthenticationProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.IServerAuthenticationProvider.html">IServerAuthenticationProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-158">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__ServerEventProcessErrorBuffer_" data-uid="Mc3s.Odos.Client.ServerMgr._ServerEventProcessErrorBuffer*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__ServerEventProcessErrorBuffer" data-uid="Mc3s.Odos.Client.ServerMgr._ServerEventProcessErrorBuffer">_ServerEventProcessErrorBuffer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ServerEventProcessErrorInfo&gt; _ServerEventProcessErrorBuffer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mc3s.Odos.Client.ServerEventProcessErrorInfo.html">ServerEventProcessErrorInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-151">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__ServerEventProcessMaxErrorCount_" data-uid="Mc3s.Odos.Client.ServerMgr._ServerEventProcessMaxErrorCount*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__ServerEventProcessMaxErrorCount" data-uid="Mc3s.Odos.Client.ServerMgr._ServerEventProcessMaxErrorCount">_ServerEventProcessMaxErrorCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int _ServerEventProcessMaxErrorCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-448">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__ServiceSecurity_" data-uid="Mc3s.Odos.Client.ServerMgr._ServiceSecurity*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__ServiceSecurity" data-uid="Mc3s.Odos.Client.ServerMgr._ServiceSecurity">_ServiceSecurity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IServiceSecurityObject _ServiceSecurity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.IServiceSecurityObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-154">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__Signature_" data-uid="Mc3s.Odos.Client.ServerMgr._Signature*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__Signature" data-uid="Mc3s.Odos.Client.ServerMgr._Signature">_Signature</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _Signature { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-159">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__TXNProcessErrorBuffer_" data-uid="Mc3s.Odos.Client.ServerMgr._TXNProcessErrorBuffer*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__TXNProcessErrorBuffer" data-uid="Mc3s.Odos.Client.ServerMgr._TXNProcessErrorBuffer">_TXNProcessErrorBuffer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TXNProcessErrorInfo&gt; _TXNProcessErrorBuffer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mc3s.Odos.Client.TXNProcessErrorInfo.html">TXNProcessErrorInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-152">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__TXNProcessMaxErrorCount_" data-uid="Mc3s.Odos.Client.ServerMgr._TXNProcessMaxErrorCount*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__TXNProcessMaxErrorCount" data-uid="Mc3s.Odos.Client.ServerMgr._TXNProcessMaxErrorCount">_TXNProcessMaxErrorCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int _TXNProcessMaxErrorCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-405">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr__URI_" data-uid="Mc3s.Odos.Client.ServerMgr._URI*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr__URI" data-uid="Mc3s.Odos.Client.ServerMgr._URI">_URI</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _URI { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-2860">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_ApplyToConnectionState_" data-uid="Mc3s.Odos.Client.ServerMgr.ApplyToConnectionState*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_ApplyToConnectionState_System_Exception_" data-uid="Mc3s.Odos.Client.ServerMgr.ApplyToConnectionState(System.Exception)">ApplyToConnectionState(Exception)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyToConnectionState(Exception ex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">ex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-769">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_blockComm_" data-uid="Mc3s.Odos.Client.ServerMgr.blockComm*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_blockComm" data-uid="Mc3s.Odos.Client.ServerMgr.blockComm">blockComm()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void blockComm()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-2826">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_Close_" data-uid="Mc3s.Odos.Client.ServerMgr.Close*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_Close" data-uid="Mc3s.Odos.Client.ServerMgr.Close">Close()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-2735">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_CloseConnection_" data-uid="Mc3s.Odos.Client.ServerMgr.CloseConnection*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_CloseConnection_Mc3s_Odos_Client_ClientCONInfo_" data-uid="Mc3s.Odos.Client.ServerMgr.CloseConnection(Mc3s.Odos.Client.ClientCONInfo)">CloseConnection(ClientCONInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CloseConnection(ClientCONInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.ClientCONInfo.html">ClientCONInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-2724">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_CloseConnectionAsync_" data-uid="Mc3s.Odos.Client.ServerMgr.CloseConnectionAsync*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_CloseConnectionAsync_Mc3s_Odos_Client_ClientCONInfo_" data-uid="Mc3s.Odos.Client.ServerMgr.CloseConnectionAsync(Mc3s.Odos.Client.ClientCONInfo)">CloseConnectionAsync(ClientCONInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; CloseConnectionAsync(ClientCONInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.ClientCONInfo.html">ClientCONInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-1794">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_Connect_" data-uid="Mc3s.Odos.Client.ServerMgr.Connect*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_Connect_Mc3s_Odos_Client_ClientCONInfo_" data-uid="Mc3s.Odos.Client.ServerMgr.Connect(Mc3s.Odos.Client.ClientCONInfo)">Connect(ClientCONInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Connect(ClientCONInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.ClientCONInfo.html">ClientCONInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-1822">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_ConnectAsync_" data-uid="Mc3s.Odos.Client.ServerMgr.ConnectAsync*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_ConnectAsync_Mc3s_Odos_Client_ClientCONInfo_" data-uid="Mc3s.Odos.Client.ServerMgr.ConnectAsync(Mc3s.Odos.Client.ClientCONInfo)">ConnectAsync(ClientCONInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; ConnectAsync(ClientCONInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.ClientCONInfo.html">ClientCONInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-299">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_ConnectionManager_ConnectionChange_" data-uid="Mc3s.Odos.Client.ServerMgr.ConnectionManager_ConnectionChange*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_ConnectionManager_ConnectionChange_System_Object_Mc3s_SharedLib_ConnectionChangeEventArgs_" data-uid="Mc3s.Odos.Client.ServerMgr.ConnectionManager_ConnectionChange(System.Object,Mc3s.SharedLib.ConnectionChangeEventArgs)">ConnectionManager_ConnectionChange(Object, ConnectionChangeEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ConnectionManager_ConnectionChange(object source, ConnectionChangeEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.SharedLib.ConnectionChangeEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-339">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_ConnectionManager_ConnectionNotListening_" data-uid="Mc3s.Odos.Client.ServerMgr.ConnectionManager_ConnectionNotListening*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_ConnectionManager_ConnectionNotListening_System_Object_System_EventArgs_" data-uid="Mc3s.Odos.Client.ServerMgr.ConnectionManager_ConnectionNotListening(System.Object,System.EventArgs)">ConnectionManager_ConnectionNotListening(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ConnectionManager_ConnectionNotListening(object source, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-333">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_ConnectionManager_ConnectionRecoverableError_" data-uid="Mc3s.Odos.Client.ServerMgr.ConnectionManager_ConnectionRecoverableError*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_ConnectionManager_ConnectionRecoverableError_System_Object_Mc3s_SharedLib_ConnectionRecoverableErrorEventArgs_" data-uid="Mc3s.Odos.Client.ServerMgr.ConnectionManager_ConnectionRecoverableError(System.Object,Mc3s.SharedLib.ConnectionRecoverableErrorEventArgs)">ConnectionManager_ConnectionRecoverableError(Object, ConnectionRecoverableErrorEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ConnectionManager_ConnectionRecoverableError(object source, ConnectionRecoverableErrorEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.SharedLib.ConnectionRecoverableErrorEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-369">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_Dispose_" data-uid="Mc3s.Odos.Client.ServerMgr.Dispose*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_Dispose" data-uid="Mc3s.Odos.Client.ServerMgr.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-355">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_Dispose_" data-uid="Mc3s.Odos.Client.ServerMgr.Dispose*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_Dispose_System_Boolean_" data-uid="Mc3s.Odos.Client.ServerMgr.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-579">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_enqueueServerEvents_" data-uid="Mc3s.Odos.Client.ServerMgr.enqueueServerEvents*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_enqueueServerEvents_System_Collections_Generic_List_Mc3s_Odos_Library_ServerEventArgs__" data-uid="Mc3s.Odos.Client.ServerMgr.enqueueServerEvents(System.Collections.Generic.List{Mc3s.Odos.Library.ServerEventArgs})">enqueueServerEvents(List&lt;ServerEventArgs&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void enqueueServerEvents(List&lt;ServerEventArgs&gt; srvEvents)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mc3s.Odos.Library.ServerEventArgs.html">ServerEventArgs</a>&gt;</td>
+        <td><span class="parametername">srvEvents</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-657">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_evaluateTxnForDispatch_" data-uid="Mc3s.Odos.Client.ServerMgr.evaluateTxnForDispatch*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_evaluateTxnForDispatch_System_Boolean_Mc3s_Odos_Library_TransactionEventArgs_" data-uid="Mc3s.Odos.Client.ServerMgr.evaluateTxnForDispatch(System.Boolean,Mc3s.Odos.Library.TransactionEventArgs)">evaluateTxnForDispatch(Boolean, TransactionEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool evaluateTxnForDispatch(bool isClientDomainAware, TransactionEventArgs te)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isClientDomainAware</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.TransactionEventArgs.html">TransactionEventArgs</a></td>
+        <td><span class="parametername">te</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-415">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_GetAppSecurityAssessment_" data-uid="Mc3s.Odos.Client.ServerMgr.GetAppSecurityAssessment*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_GetAppSecurityAssessment" data-uid="Mc3s.Odos.Client.ServerMgr.GetAppSecurityAssessment">GetAppSecurityAssessment()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServiceSecurityAssessment GetAppSecurityAssessment()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.Authorization.ServiceSecurityAssessment</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-643">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_getAuthenticationContext_" data-uid="Mc3s.Odos.Client.ServerMgr.getAuthenticationContext*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_getAuthenticationContext_System_String_" data-uid="Mc3s.Odos.Client.ServerMgr.getAuthenticationContext(System.String)">getAuthenticationContext(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IAuthListenerContext getAuthenticationContext(string clientSignature)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">clientSignature</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.Authentication.IAuthListenerContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-427">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_GetClassSecurityAssessment_" data-uid="Mc3s.Odos.Client.ServerMgr.GetClassSecurityAssessment*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_GetClassSecurityAssessment_Mc3s_Odos_Library_DataItemClassInfo_" data-uid="Mc3s.Odos.Client.ServerMgr.GetClassSecurityAssessment(Mc3s.Odos.Library.DataItemClassInfo)">GetClassSecurityAssessment(DataItemClassInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataItemClassInfoSecurityAssessment GetClassSecurityAssessment(DataItemClassInfo classInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">classInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Security.DataItemClassInfoSecurityAssessment.html">DataItemClassInfoSecurityAssessment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-421">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_GetDomainSecurityAssessment_" data-uid="Mc3s.Odos.Client.ServerMgr.GetDomainSecurityAssessment*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_GetDomainSecurityAssessment_Mc3s_Odos_Library_DataItemDomain_" data-uid="Mc3s.Odos.Client.ServerMgr.GetDomainSecurityAssessment(Mc3s.Odos.Library.DataItemDomain)">GetDomainSecurityAssessment(DataItemDomain)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataItemDomainSecurityAssessment GetDomainSecurityAssessment(DataItemDomain domain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemDomain.html">DataItemDomain</a></td>
+        <td><span class="parametername">domain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Security.DataItemDomainSecurityAssessment.html">DataItemDomainSecurityAssessment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-609">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_getSecuritySettings_" data-uid="Mc3s.Odos.Client.ServerMgr.getSecuritySettings*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_getSecuritySettings" data-uid="Mc3s.Odos.Client.ServerMgr.getSecuritySettings">getSecuritySettings()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISecuritySettings getSecuritySettings()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.ISecuritySettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-733">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_getSubscriptionIndex_" data-uid="Mc3s.Odos.Client.ServerMgr.getSubscriptionIndex*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_getSubscriptionIndex_Mc3s_Odos_Library_IRegistrationInfoContainer_Mc3s_Odos_Library_DataItemKey_Mc3s_Odos_Library_DataItem__" data-uid="Mc3s.Odos.Client.ServerMgr.getSubscriptionIndex(Mc3s.Odos.Library.IRegistrationInfoContainer{Mc3s.Odos.Library.DataItemKey,Mc3s.Odos.Library.DataItem})">getSubscriptionIndex(IRegistrationInfoContainer&lt;DataItemKey, DataItem&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getSubscriptionIndex(IRegistrationInfoContainer&lt;DataItemKey, DataItem&gt; container)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoContainer-2.html">IRegistrationInfoContainer</a>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItemKey.html">DataItemKey</a>, <a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a>&gt;</td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-688">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_getSubscriptionIndex_" data-uid="Mc3s.Odos.Client.ServerMgr.getSubscriptionIndex*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_getSubscriptionIndex_Mc3s_Odos_Library_IRegistrationInfoContainer_System_String_Mc3s_Odos_Library_DataItemClassInfo__" data-uid="Mc3s.Odos.Client.ServerMgr.getSubscriptionIndex(Mc3s.Odos.Library.IRegistrationInfoContainer{System.String,Mc3s.Odos.Library.DataItemClassInfo})">getSubscriptionIndex(IRegistrationInfoContainer&lt;String, DataItemClassInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getSubscriptionIndex(IRegistrationInfoContainer&lt;string, DataItemClassInfo&gt; container)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoContainer-2.html">IRegistrationInfoContainer</a>&lt;<span class="xref">System.String</span>, <a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a>&gt;</td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-744">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_handleRegistrationSubscribersChanged_" data-uid="Mc3s.Odos.Client.ServerMgr.handleRegistrationSubscribersChanged*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_handleRegistrationSubscribersChanged_System_Object_Mc3s_Odos_Library_RegistrationSubscribersChangedEventArgs_Mc3s_Odos_Library_DataItemKey_Mc3s_Odos_Library_DataItem__" data-uid="Mc3s.Odos.Client.ServerMgr.handleRegistrationSubscribersChanged(System.Object,Mc3s.Odos.Library.RegistrationSubscribersChangedEventArgs{Mc3s.Odos.Library.DataItemKey,Mc3s.Odos.Library.DataItem})">handleRegistrationSubscribersChanged(Object, RegistrationSubscribersChangedEventArgs&lt;DataItemKey, DataItem&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void handleRegistrationSubscribersChanged(object source, RegistrationSubscribersChangedEventArgs&lt;DataItemKey, DataItem&gt; e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.RegistrationSubscribersChangedEventArgs-2.html">RegistrationSubscribersChangedEventArgs</a>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItemKey.html">DataItemKey</a>, <a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a>&gt;</td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-699">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_handleRegistrationSubscribersChanged_" data-uid="Mc3s.Odos.Client.ServerMgr.handleRegistrationSubscribersChanged*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_handleRegistrationSubscribersChanged_System_Object_Mc3s_Odos_Library_RegistrationSubscribersChangedEventArgs_System_String_Mc3s_Odos_Library_DataItemClassInfo__" data-uid="Mc3s.Odos.Client.ServerMgr.handleRegistrationSubscribersChanged(System.Object,Mc3s.Odos.Library.RegistrationSubscribersChangedEventArgs{System.String,Mc3s.Odos.Library.DataItemClassInfo})">handleRegistrationSubscribersChanged(Object, RegistrationSubscribersChangedEventArgs&lt;String, DataItemClassInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void handleRegistrationSubscribersChanged(object source, RegistrationSubscribersChangedEventArgs&lt;string, DataItemClassInfo&gt; e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.RegistrationSubscribersChangedEventArgs-2.html">RegistrationSubscribersChangedEventArgs</a>&lt;<span class="xref">System.String</span>, <a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a>&gt;</td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-748">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_handleRegistrationSubscriptionChanged_" data-uid="Mc3s.Odos.Client.ServerMgr.handleRegistrationSubscriptionChanged*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_handleRegistrationSubscriptionChanged_System_Object_Mc3s_Odos_Library_RegistrationSubscriptionChangedEventArgs_Mc3s_Odos_Library_DataItemKey_Mc3s_Odos_Library_DataItem__" data-uid="Mc3s.Odos.Client.ServerMgr.handleRegistrationSubscriptionChanged(System.Object,Mc3s.Odos.Library.RegistrationSubscriptionChangedEventArgs{Mc3s.Odos.Library.DataItemKey,Mc3s.Odos.Library.DataItem})">handleRegistrationSubscriptionChanged(Object, RegistrationSubscriptionChangedEventArgs&lt;DataItemKey, DataItem&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void handleRegistrationSubscriptionChanged(object source, RegistrationSubscriptionChangedEventArgs&lt;DataItemKey, DataItem&gt; e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.RegistrationSubscriptionChangedEventArgs-2.html">RegistrationSubscriptionChangedEventArgs</a>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItemKey.html">DataItemKey</a>, <a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a>&gt;</td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-703">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_handleRegistrationSubscriptionChanged_" data-uid="Mc3s.Odos.Client.ServerMgr.handleRegistrationSubscriptionChanged*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_handleRegistrationSubscriptionChanged_System_Object_Mc3s_Odos_Library_RegistrationSubscriptionChangedEventArgs_System_String_Mc3s_Odos_Library_DataItemClassInfo__" data-uid="Mc3s.Odos.Client.ServerMgr.handleRegistrationSubscriptionChanged(System.Object,Mc3s.Odos.Library.RegistrationSubscriptionChangedEventArgs{System.String,Mc3s.Odos.Library.DataItemClassInfo})">handleRegistrationSubscriptionChanged(Object, RegistrationSubscriptionChangedEventArgs&lt;String, DataItemClassInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void handleRegistrationSubscriptionChanged(object source, RegistrationSubscriptionChangedEventArgs&lt;string, DataItemClassInfo&gt; e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.RegistrationSubscriptionChangedEventArgs-2.html">RegistrationSubscriptionChangedEventArgs</a>&lt;<span class="xref">System.String</span>, <a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a>&gt;</td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-625">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_initializeAuthSessionForClient_" data-uid="Mc3s.Odos.Client.ServerMgr.initializeAuthSessionForClient*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_initializeAuthSessionForClient_System_String_Mc3s_Odos_Security_AuthRequestInfo_" data-uid="Mc3s.Odos.Client.ServerMgr.initializeAuthSessionForClient(System.String,Mc3s.Odos.Security.AuthRequestInfo)">initializeAuthSessionForClient(String, AuthRequestInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AuthMethodInfo initializeAuthSessionForClient(string clientSignature, AuthRequestInfo authRequestInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">clientSignature</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.AuthRequestInfo</span></td>
+        <td><span class="parametername">authRequestInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.Authentication.AuthMethodInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-485">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_isAuthorizedTo_" data-uid="Mc3s.Odos.Client.ServerMgr.isAuthorizedTo*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_isAuthorizedTo_System_Exception__System_Collections_Generic_IEnumerable_Mc3s_Odos_Security_ISecurityObject__" data-uid="Mc3s.Odos.Client.ServerMgr.isAuthorizedTo(System.Exception@,System.Collections.Generic.IEnumerable{Mc3s.Odos.Security.ISecurityObject})">isAuthorizedTo(out Exception, IEnumerable&lt;ISecurityObject&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isAuthorizedTo(out Exception ex, IEnumerable&lt;ISecurityObject&gt; securityObjectsToAssess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">ex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Mc3s.Odos.Security.ISecurityObject</span>&gt;</td>
+        <td><span class="parametername">securityObjectsToAssess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-480">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_isAuthorizedToAccessRequiredDomains_" data-uid="Mc3s.Odos.Client.ServerMgr.isAuthorizedToAccessRequiredDomains*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_isAuthorizedToAccessRequiredDomains_System_Exception__" data-uid="Mc3s.Odos.Client.ServerMgr.isAuthorizedToAccessRequiredDomains(System.Exception@)">isAuthorizedToAccessRequiredDomains(out Exception)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isAuthorizedToAccessRequiredDomains(out Exception ex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">ex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-713">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_linkAsSubscriber_" data-uid="Mc3s.Odos.Client.ServerMgr.linkAsSubscriber*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_linkAsSubscriber_Mc3s_Odos_Library_IRegistrationInfoContainer_Mc3s_Odos_Library_DataItemKey_Mc3s_Odos_Library_DataItem__System_Int32_" data-uid="Mc3s.Odos.Client.ServerMgr.linkAsSubscriber(Mc3s.Odos.Library.IRegistrationInfoContainer{Mc3s.Odos.Library.DataItemKey,Mc3s.Odos.Library.DataItem},System.Int32)">linkAsSubscriber(IRegistrationInfoContainer&lt;DataItemKey, DataItem&gt;, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void linkAsSubscriber(IRegistrationInfoContainer&lt;DataItemKey, DataItem&gt; container, int i)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoContainer-2.html">IRegistrationInfoContainer</a>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItemKey.html">DataItemKey</a>, <a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a>&gt;</td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-668">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_linkAsSubscriber_" data-uid="Mc3s.Odos.Client.ServerMgr.linkAsSubscriber*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_linkAsSubscriber_Mc3s_Odos_Library_IRegistrationInfoContainer_System_String_Mc3s_Odos_Library_DataItemClassInfo__System_Int32_" data-uid="Mc3s.Odos.Client.ServerMgr.linkAsSubscriber(Mc3s.Odos.Library.IRegistrationInfoContainer{System.String,Mc3s.Odos.Library.DataItemClassInfo},System.Int32)">linkAsSubscriber(IRegistrationInfoContainer&lt;String, DataItemClassInfo&gt;, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void linkAsSubscriber(IRegistrationInfoContainer&lt;string, DataItemClassInfo&gt; container, int i)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoContainer-2.html">IRegistrationInfoContainer</a>&lt;<span class="xref">System.String</span>, <a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a>&gt;</td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-101">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_OnClientConnectionAuthorization_" data-uid="Mc3s.Odos.Client.ServerMgr.OnClientConnectionAuthorization*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_OnClientConnectionAuthorization_System_Object_Mc3s_SharedLib_ConnectionChangeEventArgs_" data-uid="Mc3s.Odos.Client.ServerMgr.OnClientConnectionAuthorization(System.Object,Mc3s.SharedLib.ConnectionChangeEventArgs)">OnClientConnectionAuthorization(Object, ConnectionChangeEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnClientConnectionAuthorization(object source, ConnectionChangeEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.SharedLib.ConnectionChangeEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-88">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_OnClientConnectionRequestChange_" data-uid="Mc3s.Odos.Client.ServerMgr.OnClientConnectionRequestChange*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_OnClientConnectionRequestChange_System_Object_Mc3s_Odos_Library_ServerConnectionRequestChangedEventArgs_" data-uid="Mc3s.Odos.Client.ServerMgr.OnClientConnectionRequestChange(System.Object,Mc3s.Odos.Library.ServerConnectionRequestChangedEventArgs)">OnClientConnectionRequestChange(Object, ServerConnectionRequestChangedEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnClientConnectionRequestChange(object source, ServerConnectionRequestChangedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.ServerConnectionRequestChangedEventArgs.html">ServerConnectionRequestChangedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-31">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_OnServerConnectionChange_" data-uid="Mc3s.Odos.Client.ServerMgr.OnServerConnectionChange*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_OnServerConnectionChange_System_Object_Mc3s_SharedLib_ConnectionChangeEventArgs_" data-uid="Mc3s.Odos.Client.ServerMgr.OnServerConnectionChange(System.Object,Mc3s.SharedLib.ConnectionChangeEventArgs)">OnServerConnectionChange(Object, ConnectionChangeEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnServerConnectionChange(object source, ConnectionChangeEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.SharedLib.ConnectionChangeEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-57">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_OnServerConnectionNotListening_" data-uid="Mc3s.Odos.Client.ServerMgr.OnServerConnectionNotListening*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_OnServerConnectionNotListening_System_Object_System_EventArgs_" data-uid="Mc3s.Odos.Client.ServerMgr.OnServerConnectionNotListening(System.Object,System.EventArgs)">OnServerConnectionNotListening(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnServerConnectionNotListening(object source, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-44">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_OnServerConnectionRecoverableError_" data-uid="Mc3s.Odos.Client.ServerMgr.OnServerConnectionRecoverableError*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_OnServerConnectionRecoverableError_System_Object_Mc3s_SharedLib_ConnectionRecoverableErrorEventArgs_" data-uid="Mc3s.Odos.Client.ServerMgr.OnServerConnectionRecoverableError(System.Object,Mc3s.SharedLib.ConnectionRecoverableErrorEventArgs)">OnServerConnectionRecoverableError(Object, ConnectionRecoverableErrorEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnServerConnectionRecoverableError(object source, ConnectionRecoverableErrorEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.SharedLib.ConnectionRecoverableErrorEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-70">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_OnServerEvent_" data-uid="Mc3s.Odos.Client.ServerMgr.OnServerEvent*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_OnServerEvent_System_Object_Mc3s_Odos_Library_ServerEventArgs_" data-uid="Mc3s.Odos.Client.ServerMgr.OnServerEvent(System.Object,Mc3s.Odos.Library.ServerEventArgs)">OnServerEvent(Object, ServerEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnServerEvent(object source, ServerEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.ServerEventArgs.html">ServerEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-773">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_pauseCommFor_" data-uid="Mc3s.Odos.Client.ServerMgr.pauseCommFor*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_pauseCommFor_System_Int32_" data-uid="Mc3s.Odos.Client.ServerMgr.pauseCommFor(System.Int32)">pauseCommFor(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void pauseCommFor(int milliSeconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">milliSeconds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-631">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_receiveAuthDataFromClient_" data-uid="Mc3s.Odos.Client.ServerMgr.receiveAuthDataFromClient*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_receiveAuthDataFromClient_System_String_System_String_System_Byte___" data-uid="Mc3s.Odos.Client.ServerMgr.receiveAuthDataFromClient(System.String,System.String,System.Byte[])">receiveAuthDataFromClient(String, String, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] receiveAuthDataFromClient(string clientSignature, string id, byte[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">clientSignature</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-594">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_receiveExchangeInfoRequest_" data-uid="Mc3s.Odos.Client.ServerMgr.receiveExchangeInfoRequest*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_receiveExchangeInfoRequest_System_String_Mc3s_SharedLib_RequestData_" data-uid="Mc3s.Odos.Client.ServerMgr.receiveExchangeInfoRequest(System.String,Mc3s.SharedLib.RequestData)">receiveExchangeInfoRequest(String, RequestData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void receiveExchangeInfoRequest(string senderSignature, RequestData request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">senderSignature</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.SharedLib.RequestData</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-1731">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_registerApplicationSecurity_" data-uid="Mc3s.Odos.Client.ServerMgr.registerApplicationSecurity*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_registerApplicationSecurity_Mc3s_Odos_Security_IServiceSecurityObject_" data-uid="Mc3s.Odos.Client.ServerMgr.registerApplicationSecurity(Mc3s.Odos.Security.IServiceSecurityObject)">registerApplicationSecurity(IServiceSecurityObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void registerApplicationSecurity(IServiceSecurityObject appServiceSecurity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.IServiceSecurityObject</span></td>
+        <td><span class="parametername">appServiceSecurity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-1083">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_reRegisterAndSync_" data-uid="Mc3s.Odos.Client.ServerMgr.reRegisterAndSync*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_reRegisterAndSync" data-uid="Mc3s.Odos.Client.ServerMgr.reRegisterAndSync">reRegisterAndSync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool reRegisterAndSync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-781">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_resetComm_" data-uid="Mc3s.Odos.Client.ServerMgr.resetComm*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_resetComm" data-uid="Mc3s.Odos.Client.ServerMgr.resetComm">resetComm()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void resetComm()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-2143">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_ResetConnectionRegistration_" data-uid="Mc3s.Odos.Client.ServerMgr.ResetConnectionRegistration*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_ResetConnectionRegistration_Mc3s_Odos_Client_ClientCONInfo_" data-uid="Mc3s.Odos.Client.ServerMgr.ResetConnectionRegistration(Mc3s.Odos.Client.ClientCONInfo)">ResetConnectionRegistration(ClientCONInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClientRegistrationInfo ResetConnectionRegistration(ClientCONInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.ClientCONInfo.html">ClientCONInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.ClientRegistrationInfo.html">ClientRegistrationInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-2122">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_ResetConnectionRegistrationAsync_" data-uid="Mc3s.Odos.Client.ServerMgr.ResetConnectionRegistrationAsync*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_ResetConnectionRegistrationAsync_Mc3s_Odos_Client_ClientCONInfo_" data-uid="Mc3s.Odos.Client.ServerMgr.ResetConnectionRegistrationAsync(Mc3s.Odos.Client.ClientCONInfo)">ResetConnectionRegistrationAsync(ClientCONInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;ClientRegistrationInfo&gt; ResetConnectionRegistrationAsync(ClientCONInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.ClientCONInfo.html">ClientCONInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mc3s.Odos.Library.ClientRegistrationInfo.html">ClientRegistrationInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-637">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_sendAuthenticatedClientIdentity_" data-uid="Mc3s.Odos.Client.ServerMgr.sendAuthenticatedClientIdentity*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_sendAuthenticatedClientIdentity_System_String_" data-uid="Mc3s.Odos.Client.ServerMgr.sendAuthenticatedClientIdentity(System.String)">sendAuthenticatedClientIdentity(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IClientIdentity sendAuthenticatedClientIdentity(string clientSignature)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">clientSignature</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.IClientIdentity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-1742">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_StartConnection_" data-uid="Mc3s.Odos.Client.ServerMgr.StartConnection*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_StartConnection_Mc3s_Odos_Client_ClientCONInfo_" data-uid="Mc3s.Odos.Client.ServerMgr.StartConnection(Mc3s.Odos.Client.ClientCONInfo)">StartConnection(ClientCONInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartConnection(ClientCONInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.ClientCONInfo.html">ClientCONInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-1774">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_StartConnectionAsync_" data-uid="Mc3s.Odos.Client.ServerMgr.StartConnectionAsync*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_StartConnectionAsync_Mc3s_Odos_Client_ClientCONInfo_" data-uid="Mc3s.Odos.Client.ServerMgr.StartConnectionAsync(Mc3s.Odos.Client.ClientCONInfo)">StartConnectionAsync(ClientCONInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; StartConnectionAsync(ClientCONInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.ClientCONInfo.html">ClientCONInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-777">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_stopComm_" data-uid="Mc3s.Odos.Client.ServerMgr.stopComm*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_stopComm" data-uid="Mc3s.Odos.Client.ServerMgr.stopComm">stopComm()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void stopComm()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-2536">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_StopConnection_" data-uid="Mc3s.Odos.Client.ServerMgr.StopConnection*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_StopConnection_Mc3s_Odos_Client_ClientCONInfo_" data-uid="Mc3s.Odos.Client.ServerMgr.StopConnection(Mc3s.Odos.Client.ClientCONInfo)">StopConnection(ClientCONInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StopConnection(ClientCONInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.ClientCONInfo.html">ClientCONInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-2522">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_StopConnectionAsync_" data-uid="Mc3s.Odos.Client.ServerMgr.StopConnectionAsync*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_StopConnectionAsync_Mc3s_Odos_Client_ClientCONInfo_" data-uid="Mc3s.Odos.Client.ServerMgr.StopConnectionAsync(Mc3s.Odos.Client.ClientCONInfo)">StopConnectionAsync(ClientCONInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; StopConnectionAsync(ClientCONInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.ClientCONInfo.html">ClientCONInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-765">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_throttleCommTo_" data-uid="Mc3s.Odos.Client.ServerMgr.throttleCommTo*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_throttleCommTo_System_Int64_" data-uid="Mc3s.Odos.Client.ServerMgr.throttleCommTo(System.Int64)">throttleCommTo(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void throttleCommTo(long maximumBytesPerSecond)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">maximumBytesPerSecond</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-722">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_unlinkAsSubscriber_" data-uid="Mc3s.Odos.Client.ServerMgr.unlinkAsSubscriber*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_unlinkAsSubscriber_Mc3s_Odos_Library_IRegistrationInfoContainer_Mc3s_Odos_Library_DataItemKey_Mc3s_Odos_Library_DataItem__" data-uid="Mc3s.Odos.Client.ServerMgr.unlinkAsSubscriber(Mc3s.Odos.Library.IRegistrationInfoContainer{Mc3s.Odos.Library.DataItemKey,Mc3s.Odos.Library.DataItem})">unlinkAsSubscriber(IRegistrationInfoContainer&lt;DataItemKey, DataItem&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void unlinkAsSubscriber(IRegistrationInfoContainer&lt;DataItemKey, DataItem&gt; container)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoContainer-2.html">IRegistrationInfoContainer</a>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItemKey.html">DataItemKey</a>, <a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a>&gt;</td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-677">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_unlinkAsSubscriber_" data-uid="Mc3s.Odos.Client.ServerMgr.unlinkAsSubscriber*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_unlinkAsSubscriber_Mc3s_Odos_Library_IRegistrationInfoContainer_System_String_Mc3s_Odos_Library_DataItemClassInfo__" data-uid="Mc3s.Odos.Client.ServerMgr.unlinkAsSubscriber(Mc3s.Odos.Library.IRegistrationInfoContainer{System.String,Mc3s.Odos.Library.DataItemClassInfo})">unlinkAsSubscriber(IRegistrationInfoContainer&lt;String, DataItemClassInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void unlinkAsSubscriber(IRegistrationInfoContainer&lt;string, DataItemClassInfo&gt; container)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IRegistrationInfoContainer-2.html">IRegistrationInfoContainer</a>&lt;<span class="xref">System.String</span>, <a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a>&gt;</td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-376">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_ServerMgr_UserCleanUpOnDispose_" data-uid="Mc3s.Odos.Client.ServerMgr.UserCleanUpOnDispose*"></a>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_UserCleanUpOnDispose" data-uid="Mc3s.Odos.Client.ServerMgr.UserCleanUpOnDispose">UserCleanUpOnDispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UserCleanUpOnDispose()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-100">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_ClientConnectionAuthorization" data-uid="Mc3s.Odos.Client.ServerMgr.ClientConnectionAuthorization">ClientConnectionAuthorization</h4>
+  <div class="markdown level1 summary"><p>Raised when the CLIENT AUTHORIZATION should happen</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ConnectionChangeEventArgs&gt; ClientConnectionAuthorization</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">Mc3s.SharedLib.ConnectionChangeEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-87">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_ClientConnectionRequestChange" data-uid="Mc3s.Odos.Client.ServerMgr.ClientConnectionRequestChange">ClientConnectionRequestChange</h4>
+  <div class="markdown level1 summary"><p>Raised when the CLIENT CONNECTION REQUEST state is changed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ServerConnectionRequestChangedEventArgs&gt; ClientConnectionRequestChange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Mc3s.Odos.Library.ServerConnectionRequestChangedEventArgs.html">ServerConnectionRequestChangedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-30">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_ServerConnectionChange" data-uid="Mc3s.Odos.Client.ServerMgr.ServerConnectionChange">ServerConnectionChange</h4>
+  <div class="markdown level1 summary"><p>Raised when CONNECTION CHANGE is identified</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ConnectionChangeEventArgs&gt; ServerConnectionChange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">Mc3s.SharedLib.ConnectionChangeEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-56">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_ServerConnectionNotListening" data-uid="Mc3s.Odos.Client.ServerMgr.ServerConnectionNotListening">ServerConnectionNotListening</h4>
+  <div class="markdown level1 summary"><p>Raised when CONNECTION NOT LISTENING is identified</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EventArgs&gt; ServerConnectionNotListening</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.EventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-43">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_ServerConnectionRecoverableError" data-uid="Mc3s.Odos.Client.ServerMgr.ServerConnectionRecoverableError">ServerConnectionRecoverableError</h4>
+  <div class="markdown level1 summary"><p>Raised when CONNECTION RECOVERABLE ERROR is identified</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ConnectionRecoverableErrorEventArgs&gt; ServerConnectionRecoverableError</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">Mc3s.SharedLib.ConnectionRecoverableErrorEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-69">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Client_ServerMgr_ServerEvent" data-uid="Mc3s.Odos.Client.ServerMgr.ServerEvent">ServerEvent</h4>
+  <div class="markdown level1 summary"><p>Raised when SERVER EVENT arrives</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ServerEventArgs&gt; ServerEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Mc3s.Odos.Library.ServerEventArgs.html">ServerEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">Mc3s.SharedLib.IHostInfo</span>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Odos.Security.IConnectedAuthorizationProvider</span>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Odos.Security.IAuthorizationProvider</span>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IAuthorizationClient.html">IAuthorizationClient</a>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Odos.Security.Authentication.IAuthenticationProvider</span>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IServerEventReceiver.html">IServerEventReceiver</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.ITxnDispatchProxy.html">ITxnDispatchProxy</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationSubscriber-2.html">IRegistrationSubscriber&lt;K, T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationSubscriber-2.html">IRegistrationSubscriber&lt;K, T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationSubscriber.html">IRegistrationSubscriber</a>
+  </div>
+  <div>
+      <span class="xref">Mc3s.SharedLib.RPC.ICallAgent</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/ServerMgr.cs#lines-23" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

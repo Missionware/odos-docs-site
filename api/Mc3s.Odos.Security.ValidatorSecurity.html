@@ -1,0 +1,2835 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ValidatorSecurity
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ValidatorSecurity
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Security.ValidatorSecurity">
+  
+  
+  <h1 id="Mc3s_Odos_Security_ValidatorSecurity" data-uid="Mc3s.Odos.Security.ValidatorSecurity" class="text-break">Class ValidatorSecurity
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for ValidatorSecurity.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity</span></div>
+    <div class="level2"><span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject</span></div>
+    <div class="level3"><span class="xref">ValidatorSecurity</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity</span>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject</span>&gt;</div>
+    <div><span class="xref">Mc3s.Odos.Security.ISecurityObject</span></div>
+    <div><span class="xref">Mc3s.Odos.Security.ISecurityEntity</span></div>
+    <div><span class="xref">Mc3s.Odos.Security.ISecurityDisplayAs</span></div>
+    <div><span class="xref">System.IComparable</span></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidator.html">IDataItemCollectionValidator</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidator-1.html">IDataItemCollectionValidator</a>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a>&gt;</div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidatorBase.html">IDataItemCollectionValidatorBase</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IWhereExpression.html">IWhereExpression</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IWhereOperand.html">IWhereOperand</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IWhereText.html">IWhereText</a></div>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._EmptyObjects</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._EmptyOperations</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._EmptySecurityObjectCategories</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getLabel&lt;T&gt;(T, System.Func&lt;T, System.String&gt;, Mc3s.Odos.Security.Authorization.SecurityObjectAttribute)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getHeader&lt;T&gt;(T, System.Func&lt;T, System.String&gt;, Mc3s.Odos.Security.Authorization.SecurityObjectAttribute)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getDescription&lt;T&gt;(T, System.Func&lt;T, System.String&gt;, Mc3s.Odos.Security.Authorization.SecurityObjectAttribute)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getOrCreatePermission(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject, Mc3s.Odos.Security.ISecurityOperation, System.Collections.Generic.Dictionary&lt;System.String, Mc3s.Odos.Security.ISecurityObjectPermission&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.collectAssignedChildSecurityObjectCategories(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.isSecurityInitialized(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.setSecurityInitialized(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.initializeChildrenSecurity(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.areAllChildrenInitialized(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.registerParentSecurityObject(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.registerChildSecurityObject(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getParentSecurityObject(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getChildSecurityObjects(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getImmediateChildSecurityObjectsOfSameCategory(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getImmediateChildSecurityObjectsByCategory(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getImmediateChildSecurityObjectCategories(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.findSecurityObjectByResourceID&lt;T&gt;(System.String, Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.findSecurityObjectBySecurityName&lt;T&gt;(Mc3s.Odos.Security.IServiceSecurityObject, System.String, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.tryFindSecurityObjectBySecurityName(Mc3s.Odos.Security.IServiceSecurityObject, System.String, Mc3s.Odos.Security.ISecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.tryGetChildSecurityObjectBySecurityName(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject, System.String, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.isUnassignedPermissionOfChildObjectAuthorized(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject, Mc3s.Odos.Security.ISecurityObjectPermission)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.Equals(Mc3s.Odos.Security.Authorization.SecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._SecurityOperationType</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._SecurityDefaultAssessment</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._SecurityOperations</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._AssignedChildSecurityObjectCategories</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._AssignedPermissions</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._RegisteredServices</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.initializeSecurity(Mc3s.Odos.Security.IServiceSecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.isSecurityInitialized(Mc3s.Odos.Security.IServiceSecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.areAllChildrenInitialized(Mc3s.Odos.Security.IServiceSecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.registerDeclarativeSecurity(Mc3s.Odos.Security.IServiceSecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.collectAssignedPermissions(Mc3s.Odos.Security.IServiceSecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.registerParentSecurityObject(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.registerChildSecurityObject(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getParentSecurityObject(Mc3s.Odos.Security.IServiceSecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getChildSecurityObjects(Mc3s.Odos.Security.IServiceSecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.getOrCreatePermission(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityOperation)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.isOperationDefined(Mc3s.Odos.Security.ISecurityOperation)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.isAnyOperationDefined(System.Collections.Generic.IEnumerable&lt;Mc3s.Odos.Security.ISecurityOperation&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.isUnassignedPermissionOfChildObjectAuthorized(Mc3s.Odos.Security.IServiceSecurityObject, Mc3s.Odos.Security.ISecurityObjectPermission)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject.tryGetChildSecurityObjectBySecurityName(Mc3s.Odos.Security.IServiceSecurityObject, System.String, Mc3s.Odos.Security.ISecurityObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity.getSecurityNameFromResourceID(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._label</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._header</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._description</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._securityLabel</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._securityHeader</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._securityDescription</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity.Equals(Mc3s.Odos.Security.Authorization.SecurityEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity.CompareTo(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._ResourceID</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._SecurityName</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._SecurityLabel</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._SecurityHeader</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._SecurityDescription</span>
+    </div>
+    <div>
+      <span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._SecurityDisplayOrder</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Security.html">Mc3s.Odos.Security</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Security_ValidatorSecurity_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ValidatorSecurity : SecurityObject, IEquatable&lt;SecurityEntity&gt;, IEquatable&lt;SecurityObject&gt;, ISecurityObject, ISecurityEntity, ISecurityDisplayAs, IComparable, IDataItemCollectionValidator, IDataItemCollectionValidator&lt;DataItem&gt;, IDataItemCollectionValidatorBase, IWhereExpression, IWhereOperand, IWhereText, INotifyPropertyChanged</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-194">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__ctor_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__ctor_Mc3s_Odos_Library_IDataItemCollectionValidator_Mc3s_Odos_Security_SecurityOperationType_System_Collections_Generic_IEnumerable_Mc3s_Odos_Security_ValidatorSecurityOperation__" data-uid="Mc3s.Odos.Security.ValidatorSecurity.#ctor(Mc3s.Odos.Library.IDataItemCollectionValidator,Mc3s.Odos.Security.SecurityOperationType,System.Collections.Generic.IEnumerable{Mc3s.Odos.Security.ValidatorSecurityOperation})">ValidatorSecurity(IDataItemCollectionValidator, SecurityOperationType, IEnumerable&lt;ValidatorSecurityOperation&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValidatorSecurity(IDataItemCollectionValidator validator, SecurityOperationType securityOperationType, IEnumerable&lt;ValidatorSecurityOperation&gt; definedOperations)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidator.html">IDataItemCollectionValidator</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.SecurityOperationType</span></td>
+        <td><span class="parametername">securityOperationType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Mc3s.Odos.Security.ValidatorSecurityOperation.html">ValidatorSecurityOperation</a>&gt;</td>
+        <td><span class="parametername">definedOperations</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-45">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__BrowseOperation" data-uid="Mc3s.Odos.Security.ValidatorSecurity._BrowseOperation">_BrowseOperation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidatorSecurityOperation _BrowseOperation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Security.ValidatorSecurityOperation.html">ValidatorSecurityOperation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-39">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__ChildSecurityObjectCategories" data-uid="Mc3s.Odos.Security.ValidatorSecurity._ChildSecurityObjectCategories">_ChildSecurityObjectCategories</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] _ChildSecurityObjectCategories</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-55">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__DefaultSecurityOperations" data-uid="Mc3s.Odos.Security.ValidatorSecurity._DefaultSecurityOperations">_DefaultSecurityOperations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidatorSecurityOperation[] _DefaultSecurityOperations</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Security.ValidatorSecurityOperation.html">ValidatorSecurityOperation</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-50">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__DisplayOperation" data-uid="Mc3s.Odos.Security.ValidatorSecurity._DisplayOperation">_DisplayOperation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidatorSecurityOperation _DisplayOperation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Security.ValidatorSecurityOperation.html">ValidatorSecurityOperation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-40">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__LoadOperation" data-uid="Mc3s.Odos.Security.ValidatorSecurity._LoadOperation">_LoadOperation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValidatorSecurityOperation _LoadOperation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Security.ValidatorSecurityOperation.html">ValidatorSecurityOperation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-31">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__SecOpsCategory" data-uid="Mc3s.Odos.Security.ValidatorSecurity._SecOpsCategory">_SecOpsCategory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string _SecOpsCategory = &quot;Validators&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-32">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__SecOpsCategoryPrefix" data-uid="Mc3s.Odos.Security.ValidatorSecurity._SecOpsCategoryPrefix">_SecOpsCategoryPrefix</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string _SecOpsCategoryPrefix = &quot;VA&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-24">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_ItemBrowseSuffix" data-uid="Mc3s.Odos.Security.ValidatorSecurity.ItemBrowseSuffix">ItemBrowseSuffix</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ItemBrowseSuffix = &quot;ITEM_BROWSE&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-28">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_ItemBrowseSuffixFriendlyName" data-uid="Mc3s.Odos.Security.ValidatorSecurity.ItemBrowseSuffixFriendlyName">ItemBrowseSuffixFriendlyName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ItemBrowseSuffixFriendlyName = &quot;Item Browse&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-25">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_ItemDisplaySuffix" data-uid="Mc3s.Odos.Security.ValidatorSecurity.ItemDisplaySuffix">ItemDisplaySuffix</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ItemDisplaySuffix = &quot;ITEM_DISPLAY&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-29">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_ItemDisplaySuffixFriendlyName" data-uid="Mc3s.Odos.Security.ValidatorSecurity.ItemDisplaySuffixFriendlyName">ItemDisplaySuffixFriendlyName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ItemDisplaySuffixFriendlyName = &quot;Item Display&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-23">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_ItemLoadSuffix" data-uid="Mc3s.Odos.Security.ValidatorSecurity.ItemLoadSuffix">ItemLoadSuffix</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ItemLoadSuffix = &quot;ITEM_LOAD&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-27">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_ItemLoadSuffixFriendlyName" data-uid="Mc3s.Odos.Security.ValidatorSecurity.ItemLoadSuffixFriendlyName">ItemLoadSuffixFriendlyName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ItemLoadSuffixFriendlyName = &quot;Item Load&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-306">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__ClassInfo_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._ClassInfo*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__ClassInfo" data-uid="Mc3s.Odos.Security.ValidatorSecurity._ClassInfo">_ClassInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DataItemClassInfo _ClassInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-322">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__ClientExpression_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._ClientExpression*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__ClientExpression" data-uid="Mc3s.Odos.Security.ValidatorSecurity._ClientExpression">_ClientExpression</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IWhereExpression _ClientExpression { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IWhereExpression.html">IWhereExpression</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-214">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__DefinedChildSecurityObjectCategories_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._DefinedChildSecurityObjectCategories*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__DefinedChildSecurityObjectCategories" data-uid="Mc3s.Odos.Security.ValidatorSecurity._DefinedChildSecurityObjectCategories">_DefinedChildSecurityObjectCategories</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ICollection&lt;string&gt; _DefinedChildSecurityObjectCategories { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._DefinedChildSecurityObjectCategories</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-311">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__Description_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._Description*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__Description" data-uid="Mc3s.Odos.Security.ValidatorSecurity._Description">_Description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string _Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._Description</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-317">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__DoLoadListMemberReferences_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._DoLoadListMemberReferences*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__DoLoadListMemberReferences" data-uid="Mc3s.Odos.Security.ValidatorSecurity._DoLoadListMemberReferences">_DoLoadListMemberReferences</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _DoLoadListMemberReferences { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-319">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__FieldFilter_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._FieldFilter*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__FieldFilter" data-uid="Mc3s.Odos.Security.ValidatorSecurity._FieldFilter">_FieldFilter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IFieldFilter _FieldFilter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IFieldFilter.html">IFieldFilter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-316">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__FieldLoadMode_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._FieldLoadMode*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__FieldLoadMode" data-uid="Mc3s.Odos.Security.ValidatorSecurity._FieldLoadMode">_FieldLoadMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FieldLoadMode _FieldLoadMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.FieldLoadMode.html">FieldLoadMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-320">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__FieldSorter_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._FieldSorter*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__FieldSorter" data-uid="Mc3s.Odos.Security.ValidatorSecurity._FieldSorter">_FieldSorter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IFieldSorter _FieldSorter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IFieldSorter.html">IFieldSorter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-313">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__HasWhere_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._HasWhere*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__HasWhere" data-uid="Mc3s.Odos.Security.ValidatorSecurity._HasWhere">_HasWhere</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _HasWhere { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-310">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__Header_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._Header*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__Header" data-uid="Mc3s.Odos.Security.ValidatorSecurity._Header">_Header</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string _Header { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._Header</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-307">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__IncludeSubClasses_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IncludeSubClasses*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__IncludeSubClasses" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IncludeSubClasses">_IncludeSubClasses</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IncludeSubClasses { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-318">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__IsClientOnly_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IsClientOnly*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__IsClientOnly" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IsClientOnly">_IsClientOnly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IsClientOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-308">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__IsFindFirst_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IsFindFirst*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__IsFindFirst" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IsFindFirst">_IsFindFirst</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IsFindFirst { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-315">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__IsForceLoader_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IsForceLoader*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__IsForceLoader" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IsForceLoader">_IsForceLoader</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IsForceLoader { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-234">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__IsNot_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IsNot*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__IsNot" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IsNot">_IsNot</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IsNot { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-215">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__IsSecurityEnabled_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IsSecurityEnabled*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__IsSecurityEnabled" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IsSecurityEnabled">_IsSecurityEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool _IsSecurityEnabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._IsSecurityEnabled</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-235">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__IsSetToNull_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IsSetToNull*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__IsSetToNull" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IsSetToNull">_IsSetToNull</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IsSetToNull { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-233">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__IsTypeDominant_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IsTypeDominant*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__IsTypeDominant" data-uid="Mc3s.Odos.Security.ValidatorSecurity._IsTypeDominant">_IsTypeDominant</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IsTypeDominant { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-309">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__Label_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._Label*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__Label" data-uid="Mc3s.Odos.Security.ValidatorSecurity._Label">_Label</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string _Label { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Security.Authorization.SecurityEntity._Label</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-321">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__OverallExpression_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._OverallExpression*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__OverallExpression" data-uid="Mc3s.Odos.Security.ValidatorSecurity._OverallExpression">_OverallExpression</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IWhereExpression _OverallExpression { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IWhereExpression.html">IWhereExpression</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-314">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__PreferredQueryExecutionScope_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._PreferredQueryExecutionScope*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__PreferredQueryExecutionScope" data-uid="Mc3s.Odos.Security.ValidatorSecurity._PreferredQueryExecutionScope">_PreferredQueryExecutionScope</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual QueryExecutionScope _PreferredQueryExecutionScope { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.QueryExecutionScope.html">QueryExecutionScope</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-324">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__QueryExpression_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._QueryExpression*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__QueryExpression" data-uid="Mc3s.Odos.Security.ValidatorSecurity._QueryExpression">_QueryExpression</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IWhereExpression _QueryExpression { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IWhereExpression.html">IWhereExpression</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-212">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__SecurityCategory_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._SecurityCategory*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__SecurityCategory" data-uid="Mc3s.Odos.Security.ValidatorSecurity._SecurityCategory">_SecurityCategory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string _SecurityCategory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._SecurityCategory</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-213">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__SecurityCategoryPrefix_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._SecurityCategoryPrefix*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__SecurityCategoryPrefix" data-uid="Mc3s.Odos.Security.ValidatorSecurity._SecurityCategoryPrefix">_SecurityCategoryPrefix</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string _SecurityCategoryPrefix { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Security.Authorization.SecurityObject._SecurityCategoryPrefix</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-188">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__Validator_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._Validator*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__Validator" data-uid="Mc3s.Odos.Security.ValidatorSecurity._Validator">_Validator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDataItemCollectionValidator _Validator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidator.html">IDataItemCollectionValidator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-312">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__Version_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._Version*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__Version" data-uid="Mc3s.Odos.Security.ValidatorSecurity._Version">_Version</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int _Version { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-323">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity__WhereExpression_" data-uid="Mc3s.Odos.Security.ValidatorSecurity._WhereExpression*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity__WhereExpression" data-uid="Mc3s.Odos.Security.ValidatorSecurity._WhereExpression">_WhereExpression</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IWhereExpression _WhereExpression { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IWhereExpression.html">IWhereExpression</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-96">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_analyzeTypeAndCreateSecurityObjects_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.analyzeTypeAndCreateSecurityObjects*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_analyzeTypeAndCreateSecurityObjects_Mc3s_Odos_Security_IServiceSecurityObject_System_Type_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.analyzeTypeAndCreateSecurityObjects(Mc3s.Odos.Security.IServiceSecurityObject,System.Type)">analyzeTypeAndCreateSecurityObjects(IServiceSecurityObject, Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void analyzeTypeAndCreateSecurityObjects(IServiceSecurityObject serviceSecurityObject, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.IServiceSecurityObject</span></td>
+        <td><span class="parametername">serviceSecurityObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-363">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_buildKey_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.buildKey*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_buildKey" data-uid="Mc3s.Odos.Security.ValidatorSecurity.buildKey">buildKey()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DataItemCollectionKey buildKey()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.DataItemCollectionKey.html">DataItemCollectionKey</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-244">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_canExpressionValidateIn_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.canExpressionValidateIn*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_canExpressionValidateIn_Mc3s_Odos_Library_QueryExecutionScope_Mc3s_Odos_Library_DataItemClassInfo_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.canExpressionValidateIn(Mc3s.Odos.Library.QueryExecutionScope,Mc3s.Odos.Library.DataItemClassInfo)">canExpressionValidateIn(QueryExecutionScope, DataItemClassInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool canExpressionValidateIn(QueryExecutionScope scope, DataItemClassInfo queriedClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.QueryExecutionScope.html">QueryExecutionScope</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">queriedClass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-329">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_createCollection_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.createCollection*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_createCollection_Mc3s_Odos_Library_IClient_Mc3s_Odos_Client_DataItemCollectionKey_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.createCollection(Mc3s.Odos.Library.IClient,Mc3s.Odos.Client.DataItemCollectionKey)">createCollection(IClient, DataItemCollectionKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IDataItemCollection createCollection(IClient client, DataItemCollectionKey collectionKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.DataItemCollectionKey.html">DataItemCollectionKey</a></td>
+        <td><span class="parametername">collectionKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemCollection.html">IDataItemCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-289">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_findExpression_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.findExpression*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_findExpression_Mc3s_Odos_Library_IWhereExpressionComparisonHandler_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.findExpression(Mc3s.Odos.Library.IWhereExpressionComparisonHandler)">findExpression(IWhereExpressionComparisonHandler)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IWhereExpression findExpression(IWhereExpressionComparisonHandler comparisonHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IWhereExpressionComparisonHandler.html">IWhereExpressionComparisonHandler</a></td>
+        <td><span class="parametername">comparisonHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IWhereExpression.html">IWhereExpression</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-277">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_getDataType_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getDataType*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_getDataType_Mc3s_Odos_Library_DataItemClassInfo_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getDataType(Mc3s.Odos.Library.DataItemClassInfo)">getDataType(DataItemClassInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Type getDataType(DataItemClassInfo queriedClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">queriedClass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-283">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_getDataValue_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getDataValue*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_getDataValue_Mc3s_Odos_Library_DataItem_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getDataValue(Mc3s.Odos.Library.DataItem)">getDataValue(DataItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object getDataValue(DataItem dItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">dItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-424">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_getDefinitionsXmlString_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getDefinitionsXmlString*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_getDefinitionsXmlString_System_Boolean_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getDefinitionsXmlString(System.Boolean)">getDefinitionsXmlString(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getDefinitionsXmlString(bool includeHardValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeHardValues</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-326">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_GetOverallExpressionCmdText_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.GetOverallExpressionCmdText*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_GetOverallExpressionCmdText_Mc3s_Odos_Library_IDataItemManager_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.GetOverallExpressionCmdText(Mc3s.Odos.Library.IDataItemManager)">GetOverallExpressionCmdText(IDataItemManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetOverallExpressionCmdText(IDataItemManager objMgr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemManager.html">IDataItemManager</a></td>
+        <td><span class="parametername">objMgr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-325">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_GetOverallExpressionText_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.GetOverallExpressionText*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_GetOverallExpressionText_Mc3s_Odos_Library_IDataItemManager_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.GetOverallExpressionText(Mc3s.Odos.Library.IDataItemManager)">GetOverallExpressionText(IDataItemManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetOverallExpressionText(IDataItemManager objMgr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemManager.html">IDataItemManager</a></td>
+        <td><span class="parametername">objMgr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-335">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_getQuery_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getQuery*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_getQuery_Mc3s_Odos_Library_IDataItemManager_Mc3s_Odos_Library_QueryTextType_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getQuery(Mc3s.Odos.Library.IDataItemManager,Mc3s.Odos.Library.QueryTextType)">getQuery(IDataItemManager, QueryTextType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string getQuery(IDataItemManager objMgr, QueryTextType textType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemManager.html">IDataItemManager</a></td>
+        <td><span class="parametername">objMgr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.QueryTextType.html">QueryTextType</a></td>
+        <td><span class="parametername">textType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-238">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_getQuery_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getQuery*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_getQuery_Mc3s_Odos_Library_QueryTextType_Mc3s_Odos_Library_IQueryHelper_Mc3s_Odos_Library_DataItemClassInfo_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getQuery(Mc3s.Odos.Library.QueryTextType,Mc3s.Odos.Library.IQueryHelper,Mc3s.Odos.Library.DataItemClassInfo)">getQuery(QueryTextType, IQueryHelper, DataItemClassInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string getQuery(QueryTextType textType, IQueryHelper queryHelper, DataItemClassInfo queriedClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.QueryTextType.html">QueryTextType</a></td>
+        <td><span class="parametername">textType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IQueryHelper.html">IQueryHelper</a></td>
+        <td><span class="parametername">queryHelper</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">queriedClass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-271">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_getQueryInExpression_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getQueryInExpression*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_getQueryInExpression_Mc3s_Odos_Library_QueryTextType_Mc3s_Odos_Library_IQueryHelper_Mc3s_Odos_Library_DataItemClassInfo_Mc3s_Odos_Library_WhereOperator_Mc3s_Odos_Library_IWhereOperand_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getQueryInExpression(Mc3s.Odos.Library.QueryTextType,Mc3s.Odos.Library.IQueryHelper,Mc3s.Odos.Library.DataItemClassInfo,Mc3s.Odos.Library.WhereOperator,Mc3s.Odos.Library.IWhereOperand)">getQueryInExpression(QueryTextType, IQueryHelper, DataItemClassInfo, WhereOperator, IWhereOperand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string getQueryInExpression(QueryTextType textType, IQueryHelper queryHelper, DataItemClassInfo queriedClass, WhereOperator op, IWhereOperand otherOperand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.QueryTextType.html">QueryTextType</a></td>
+        <td><span class="parametername">textType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IQueryHelper.html">IQueryHelper</a></td>
+        <td><span class="parametername">queryHelper</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">queriedClass</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.WhereOperator.html">WhereOperator</a></td>
+        <td><span class="parametername">op</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IWhereOperand.html">IWhereOperand</a></td>
+        <td><span class="parametername">otherOperand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-369">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_getReadInfo_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getReadInfo*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_getReadInfo_System_String_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getReadInfo(System.String)">getReadInfo(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object getReadInfo(string iKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">iKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-58">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_getResourceID_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getResourceID*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_getResourceID_Mc3s_Odos_Library_IDataItemCollectionValidator_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getResourceID(Mc3s.Odos.Library.IDataItemCollectionValidator)">getResourceID(IDataItemCollectionValidator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string getResourceID(IDataItemCollectionValidator validator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidator.html">IDataItemCollectionValidator</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-129">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_getSecurityClearedDataItems_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getSecurityClearedDataItems*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_getSecurityClearedDataItems_Mc3s_Odos_Library_IDataItemManager_Mc3s_Odos_Library_DataItemClassInfo_System_Collections_Generic_List_Mc3s_Odos_Library_DataItem__System_Collections_Generic_IEnumerable_Mc3s_Odos_Security_ValidatorSecurity__Mc3s_Odos_Security_ValidatorSecurityOperation___" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getSecurityClearedDataItems(Mc3s.Odos.Library.IDataItemManager,Mc3s.Odos.Library.DataItemClassInfo,System.Collections.Generic.List{Mc3s.Odos.Library.DataItem},System.Collections.Generic.IEnumerable{Mc3s.Odos.Security.ValidatorSecurity},Mc3s.Odos.Security.ValidatorSecurityOperation[])">getSecurityClearedDataItems(IDataItemManager, DataItemClassInfo, List&lt;DataItem&gt;, IEnumerable&lt;ValidatorSecurity&gt;, ValidatorSecurityOperation[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;DataItemKey, DataItem&gt; getSecurityClearedDataItems(IDataItemManager objMgr, DataItemClassInfo classInfo, List&lt;DataItem&gt; dataItems, IEnumerable&lt;ValidatorSecurity&gt; securityValidators, params ValidatorSecurityOperation[] scope)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemManager.html">IDataItemManager</a></td>
+        <td><span class="parametername">objMgr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">classInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a>&gt;</td>
+        <td><span class="parametername">dataItems</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Mc3s.Odos.Security.ValidatorSecurity.html">ValidatorSecurity</a>&gt;</td>
+        <td><span class="parametername">securityValidators</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Security.ValidatorSecurityOperation.html">ValidatorSecurityOperation</a>[]</td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItemKey.html">DataItemKey</a>, <a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-357">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_getValidClassInfos_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getValidClassInfos*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_getValidClassInfos_System_Boolean_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getValidClassInfos(System.Boolean)">getValidClassInfos(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual List&lt;DataItemClassInfo&gt; getValidClassInfos(bool includeAbstract)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAbstract</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-353">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_getValidClassInfosPerDomain_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getValidClassInfosPerDomain*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_getValidClassInfosPerDomain_Mc3s_Odos_Library_IDataItemManager_System_Boolean_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.getValidClassInfosPerDomain(Mc3s.Odos.Library.IDataItemManager,System.Boolean)">getValidClassInfosPerDomain(IDataItemManager, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Dictionary&lt;string, List&lt;DataItemClassInfo&gt;&gt; getValidClassInfosPerDomain(IDataItemManager objMgr, bool includeAbstract)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemManager.html">IDataItemManager</a></td>
+        <td><span class="parametername">objMgr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAbstract</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-347">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_includeDomain_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.includeDomain*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_includeDomain_Mc3s_Odos_Library_DataItemDomain_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.includeDomain(Mc3s.Odos.Library.DataItemDomain)">includeDomain(DataItemDomain)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void includeDomain(DataItemDomain domain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemDomain.html">DataItemDomain</a></td>
+        <td><span class="parametername">domain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-250">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_isValid_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.isValid*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_isValid_Mc3s_Odos_Library_DataItem_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.isValid(Mc3s.Odos.Library.DataItem)">isValid(DataItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool isValid(DataItem dItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">dItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-409">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_postInitialize_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.postInitialize*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_postInitialize" data-uid="Mc3s.Odos.Security.ValidatorSecurity.postInitialize">postInitialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void postInitialize()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-449">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_queryDataBrowsePermission_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.queryDataBrowsePermission*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_queryDataBrowsePermission_Mc3s_Odos_Security_IAuthorizationProvider_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.queryDataBrowsePermission(Mc3s.Odos.Security.IAuthorizationProvider)">queryDataBrowsePermission(IAuthorizationProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool queryDataBrowsePermission(IAuthorizationProvider authorizationProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.IAuthorizationProvider</span></td>
+        <td><span class="parametername">authorizationProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-453">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_queryDataDisplayPermission_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.queryDataDisplayPermission*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_queryDataDisplayPermission_Mc3s_Odos_Security_IAuthorizationProvider_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.queryDataDisplayPermission(Mc3s.Odos.Security.IAuthorizationProvider)">queryDataDisplayPermission(IAuthorizationProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool queryDataDisplayPermission(IAuthorizationProvider authorizationProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.IAuthorizationProvider</span></td>
+        <td><span class="parametername">authorizationProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-445">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_queryDataLoadPermission_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.queryDataLoadPermission*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_queryDataLoadPermission_Mc3s_Odos_Security_IAuthorizationProvider_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.queryDataLoadPermission(Mc3s.Odos.Security.IAuthorizationProvider)">queryDataLoadPermission(IAuthorizationProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool queryDataLoadPermission(IAuthorizationProvider authorizationProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.IAuthorizationProvider</span></td>
+        <td><span class="parametername">authorizationProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-341">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_runIsValid_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.runIsValid*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_runIsValid_Mc3s_Odos_Library_DataItem_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.runIsValid(Mc3s.Odos.Library.DataItem)">runIsValid(DataItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool runIsValid(DataItem dItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">dItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-375">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_setReadInfo_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.setReadInfo*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_setReadInfo_System_String_System_Object_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.setReadInfo(System.String,System.Object)">setReadInfo(String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void setReadInfo(string iKey, object iValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">iKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">iValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-85">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_validateAndGetDescription_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.validateAndGetDescription*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_validateAndGetDescription_Mc3s_Odos_Library_IDataItemCollectionValidator_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.validateAndGetDescription(Mc3s.Odos.Library.IDataItemCollectionValidator)">validateAndGetDescription(IDataItemCollectionValidator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string validateAndGetDescription(IDataItemCollectionValidator validator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidator.html">IDataItemCollectionValidator</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-76">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_validateAndGetHeader_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.validateAndGetHeader*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_validateAndGetHeader_Mc3s_Odos_Library_IDataItemCollectionValidator_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.validateAndGetHeader(Mc3s.Odos.Library.IDataItemCollectionValidator)">validateAndGetHeader(IDataItemCollectionValidator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string validateAndGetHeader(IDataItemCollectionValidator validator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidator.html">IDataItemCollectionValidator</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-67">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Security_ValidatorSecurity_validateAndGetLabel_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.validateAndGetLabel*"></a>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_validateAndGetLabel_Mc3s_Odos_Library_IDataItemCollectionValidator_" data-uid="Mc3s.Odos.Security.ValidatorSecurity.validateAndGetLabel(Mc3s.Odos.Library.IDataItemCollectionValidator)">validateAndGetLabel(IDataItemCollectionValidator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string validateAndGetLabel(IDataItemCollectionValidator validator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidator.html">IDataItemCollectionValidator</a></td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-299">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_IsValidExpressionChanged" data-uid="Mc3s.Odos.Security.ValidatorSecurity.IsValidExpressionChanged">IsValidExpressionChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EventArgs&gt; IsValidExpressionChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.EventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-222">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Security_ValidatorSecurity_PropertyChanged" data-uid="Mc3s.Odos.Security.ValidatorSecurity.PropertyChanged">PropertyChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PropertyChangedEventHandler PropertyChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.PropertyChangedEventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Odos.Security.ISecurityObject</span>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Odos.Security.ISecurityEntity</span>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Odos.Security.ISecurityDisplayAs</span>
+  </div>
+  <div>
+      <span class="xref">System.IComparable</span>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidator.html">IDataItemCollectionValidator</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidator-1.html">IDataItemCollectionValidator&lt;DataItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IDataItemCollectionValidatorBase.html">IDataItemCollectionValidatorBase</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IWhereExpression.html">IWhereExpression</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IWhereOperand.html">IWhereOperand</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IWhereText.html">IWhereText</a>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Security/ValidatorSecurity.cs#lines-18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

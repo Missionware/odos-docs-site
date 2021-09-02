@@ -1,0 +1,1567 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DataItemSystemFactory
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DataItemSystemFactory
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Client.DataItemSystemFactory">
+  
+  
+  <h1 id="Mc3s_Odos_Client_DataItemSystemFactory" data-uid="Mc3s.Odos.Client.DataItemSystemFactory" class="text-break">Class DataItemSystemFactory
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for DataItemSystemFactory.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html">DataItemDomainController</a></div>
+    <div class="level2"><a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html">DataItemDomainFactory</a></div>
+    <div class="level3"><span class="xref">DataItemSystemFactory</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html">DataItemDomainController</a>&gt;</div>
+    <div><span class="xref">System.IComparable</span></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IDataItemDomainController.html">IDataItemDomainController</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Client.IDataItemSystemDomainFactory.html">IDataItemSystemDomainFactory</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Client.IDataItemDomainFactory.html">IDataItemDomainFactory</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Collaboration.IAppRoleContainer.html">IAppRoleContainer</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_getGateInfoForClass_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_DataItemClassInfo_System_Boolean_">DataItemDomainFactory.getGateInfoForClass(IClient, DataItemClassInfo, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_getGateInfoForField_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_DataItemField_System_Boolean_">DataItemDomainFactory.getGateInfoForField(IClient, DataItemField, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_getGateInfoForAction_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_DataItemAction_System_Boolean_">DataItemDomainFactory.getGateInfoForAction(IClient, DataItemAction, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_getGateClientKeyForClass_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_DataItemClassInfo_System_Boolean_">DataItemDomainFactory.getGateClientKeyForClass(IClient, DataItemClassInfo, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_getGateClientKeyForField_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_DataItemField_System_Boolean_">DataItemDomainFactory.getGateClientKeyForField(IClient, DataItemField, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_getGateClientKeyForAction_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_DataItemAction_System_Boolean_">DataItemDomainFactory.getGateClientKeyForAction(IClient, DataItemAction, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_getGateConfigurationInfoForClass_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_DataItemClassInfo_System_Boolean_">DataItemDomainFactory.getGateConfigurationInfoForClass(IClient, DataItemClassInfo, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_getGateConfigurationInfoForField_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_DataItemField_System_Boolean_">DataItemDomainFactory.getGateConfigurationInfoForField(IClient, DataItemField, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_getGateConfigurationInfoForAction_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_DataItemAction_System_Boolean_">DataItemDomainFactory.getGateConfigurationInfoForAction(IClient, DataItemAction, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__AssemblyName">DataItemDomainFactory._AssemblyName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__DomainStateInfo">DataItemDomainFactory._DomainStateInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__QueryInfo">DataItemDomainFactory._QueryInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__ConnectionString">DataItemDomainFactory._ConnectionString</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__ConnectionCheckInt">DataItemDomainFactory._ConnectionCheckInt</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__DisConnectionCheckInt">DataItemDomainFactory._DisConnectionCheckInt</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__LoadValidationMode">DataItemDomainFactory._LoadValidationMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__BreakOnLoadError">DataItemDomainFactory._BreakOnLoadError</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__DomainCommitPriority">DataItemDomainFactory._DomainCommitPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__IsDataContainer">DataItemDomainFactory._IsDataContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__IsCrossDomainContainer">DataItemDomainFactory._IsCrossDomainContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__IsPreLoadCapable">DataItemDomainFactory._IsPreLoadCapable</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__IsValidateOnDBCapable">DataItemDomainFactory._IsValidateOnDBCapable</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__IsNotificationsCapable">DataItemDomainFactory._IsNotificationsCapable</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__IsReferenceAdditionSafe">DataItemDomainFactory._IsReferenceAdditionSafe</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__IsReferenceDeletionSafe">DataItemDomainFactory._IsReferenceDeletionSafe</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__IsAbstractTypePersisted">DataItemDomainFactory._IsAbstractTypePersisted</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__Configuration">DataItemDomainFactory._Configuration</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__IsInitialized">DataItemDomainFactory._IsInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__IsAvailable">DataItemDomainFactory._IsAvailable</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_DomainStateChange">DataItemDomainFactory.DomainStateChange</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_OnDomainStateChange_System_Object_Mc3s_Odos_Library_ServerDomainStateChangeEventArgs_">DataItemDomainFactory.OnDomainStateChange(Object, ServerDomainStateChangeEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_getFactoryAssembly">DataItemDomainFactory.getFactoryAssembly()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_getDomainDescription">DataItemDomainFactory.getDomainDescription()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__DomainInitializationMode">DataItemDomainFactory._DomainInitializationMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__DomainInitializationBehavior">DataItemDomainFactory._DomainInitializationBehavior</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__InitializationEvaluationFunc">DataItemDomainFactory._InitializationEvaluationFunc</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__IsDataInitialized">DataItemDomainFactory._IsDataInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_getOrCreateRegisteredWorkstation_Mc3s_Odos_Library_IClient_">DataItemDomainFactory.getOrCreateRegisteredWorkstation(IClient)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_getOrCreateRegisteredUser_Mc3s_Odos_Library_IClient_">DataItemDomainFactory.getOrCreateRegisteredUser(IClient)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_getOrCreateRegisteredRole_Mc3s_Odos_Library_IClient_">DataItemDomainFactory.getOrCreateRegisteredRole(IClient)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_evaluateIfInitializationRequired_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_DomainStateInfo_System_Boolean_">DataItemDomainFactory.evaluateIfInitializationRequired(IClient, DomainStateInfo, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_initializeDomainItem_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_DomainStateInfo_Mc3s_Odos_Client_DomainInitStateData_System_Boolean_">DataItemDomainFactory.initializeDomainItem(IClient, DomainStateInfo, DomainInitStateData, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_analyzeDomainData_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_DomainStateInfo_Mc3s_Odos_Client_DomainInitStateData_Mc3s_Odos_Library_DataItem_">DataItemDomainFactory.analyzeDomainData(IClient, DomainStateInfo, DomainInitStateData, DataItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_onDomainLoadAndInitialized_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_DomainStateInfo_">DataItemDomainFactory.onDomainLoadAndInitialized(IClient, DomainStateInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_getTypeByFullyQualifiedName_System_String_">DataItemDomainFactory.getTypeByFullyQualifiedName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_createDataItem_System_Type_">DataItemDomainFactory.createDataItem(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_persistedDataItemExists_Mc3s_Odos_Library_DataItemKey_">DataItemDomainFactory.persistedDataItemExists(DataItemKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_readDataItem_Mc3s_Odos_Library_DataItemKey_">DataItemDomainFactory.readDataItem(DataItemKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_tryReadDataItem__1_Mc3s_Odos_Library_DataItemKey___0__">DataItemDomainFactory.tryReadDataItem&lt;DataItemType&gt;(DataItemKey, DataItemType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_readDataItemsByType_System_Type_">DataItemDomainFactory.readDataItemsByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_readDataItemsByType_System_Type_System_Boolean_">DataItemDomainFactory.readDataItemsByType(Type, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_readDataItemsByType_System_Type_System_Boolean_System_Boolean_">DataItemDomainFactory.readDataItemsByType(Type, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_readDataItemsByType_Mc3s_Odos_Library_IDataItemCollectionValidator_">DataItemDomainFactory.readDataItemsByType(IDataItemCollectionValidator)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_readDataItemCollection_System_Type_">DataItemDomainFactory.readDataItemCollection(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_readDataItemCollection_System_Type_System_Boolean_">DataItemDomainFactory.readDataItemCollection(Type, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_readDataItemCollection_System_Type_System_Boolean_System_Boolean_">DataItemDomainFactory.readDataItemCollection(Type, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_readDataItemCollection_System_Type_System_Boolean_System_Boolean_System_Boolean_">DataItemDomainFactory.readDataItemCollection(Type, Boolean, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_readDataItemCollection_System_Type_System_Boolean_System_Boolean_System_Boolean_System_String___">DataItemDomainFactory.readDataItemCollection(Type, Boolean, Boolean, Boolean, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_readDataItemCollection_Mc3s_Odos_Library_IDataItemCollectionValidator_">DataItemDomainFactory.readDataItemCollection(IDataItemCollectionValidator)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory_readDataItemCollection_Mc3s_Odos_Library_IDataItemCollectionValidator_System_String___">DataItemDomainFactory.readDataItemCollection(IDataItemCollectionValidator, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController__Id">DataItemDomainController._Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController__ClientProcMgr">DataItemDomainController._ClientProcMgr</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController__Assembly">DataItemDomainController._Assembly</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController__ClassControllers">DataItemDomainController._ClassControllers</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController__PreLoadedClassInfos">DataItemDomainController._PreLoadedClassInfos</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_GetHashCode">DataItemDomainController.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_Equals_Mc3s_Odos_Library_DataItemDomainController_">DataItemDomainController.Equals(DataItemDomainController)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_Equals_System_Object_">DataItemDomainController.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_ToString">DataItemDomainController.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_CompareTo_System_Object_">DataItemDomainController.CompareTo(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController__ObjMgr">DataItemDomainController._ObjMgr</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController__Domain">DataItemDomainController._Domain</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController__QueryHelper">DataItemDomainController._QueryHelper</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController__DomainName">DataItemDomainController._DomainName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController__IsDataReady">DataItemDomainController._IsDataReady</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController__IsPreLoadRequired">DataItemDomainController._IsPreLoadRequired</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController__IsPreLoading">DataItemDomainController._IsPreLoading</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController__HasPreLoaded">DataItemDomainController._HasPreLoaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_getDomainServerEventHandler_Mc3s_Odos_Library_IServer_">DataItemDomainController.getDomainServerEventHandler(IServer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_initializeClassControllers">DataItemDomainController.initializeClassControllers()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_tryGetClassController_Mc3s_Odos_Library_DataItemClassInfo_Mc3s_Odos_Library_DataItemClassController__">DataItemDomainController.tryGetClassController(DataItemClassInfo, DataItemClassController)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_areMandatoryGateRequirementsConfigured_System_Collections_Generic_List_System_Collections_Generic_Dictionary_System_String_System_String___">DataItemDomainController.areMandatoryGateRequirementsConfigured(List&lt;Dictionary&lt;String, String&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_getMandatoryGateRequirements">DataItemDomainController.getMandatoryGateRequirements()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_hasAnyMandatoryGateRequirement">DataItemDomainController.hasAnyMandatoryGateRequirement()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_areReferencedDomainsInitialized">DataItemDomainController.areReferencedDomainsInitialized()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_areReferencedDomainsAvailable">DataItemDomainController.areReferencedDomainsAvailable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_attachDataServer_Mc3s_Odos_Library_IServer_">DataItemDomainController.attachDataServer(IServer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_isClientProcessRegistered_Mc3s_Odos_Library_ClientProcessMgrBase_">DataItemDomainController.isClientProcessRegistered(ClientProcessMgrBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_getRegisteredClientProcess_Mc3s_Odos_Library_ClientKey_">DataItemDomainController.getRegisteredClientProcess(ClientKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_registerClientProcess_Mc3s_Odos_Library_ClientProcessMgrBase_">DataItemDomainController.registerClientProcess(ClientProcessMgrBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_unregisterClientProcess_Mc3s_Odos_Library_ClientProcessMgrBase_">DataItemDomainController.unregisterClientProcess(ClientProcessMgrBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.DataItemDomainController.html#Mc3s_Odos_Library_DataItemDomainController_unregisterClientProcess_Mc3s_Odos_Library_ClientKey_">DataItemDomainController.unregisterClientProcess(ClientKey)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Client.html">Mc3s.Odos.Client</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Client_DataItemSystemFactory_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class DataItemSystemFactory : DataItemDomainFactory, IEquatable&lt;DataItemDomainController&gt;, IComparable, IDataItemDomainController, IDataItemSystemDomainFactory, IDataItemDomainFactory, IAppRoleContainer</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-28">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory__ApplicationItem_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory._ApplicationItem*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory__ApplicationItem" data-uid="Mc3s.Odos.Client.DataItemSystemFactory._ApplicationItem">_ApplicationItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IApplicationItem _ApplicationItem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IApplicationItem.html">IApplicationItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-29">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory__AuthorizationEntityManager_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory._AuthorizationEntityManager*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory__AuthorizationEntityManager" data-uid="Mc3s.Odos.Client.DataItemSystemFactory._AuthorizationEntityManager">_AuthorizationEntityManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAuthorizationEntityManager _AuthorizationEntityManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IAuthorizationEntityManager.html">IAuthorizationEntityManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-26">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory__InitializationPriority_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory._InitializationPriority*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory__InitializationPriority" data-uid="Mc3s.Odos.Client.DataItemSystemFactory._InitializationPriority">_InitializationPriority</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int _InitializationPriority { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html#Mc3s_Odos_Client_DataItemDomainFactory__InitializationPriority">DataItemDomainFactory._InitializationPriority</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-51">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory__ProcessAuthorizationEntity_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory._ProcessAuthorizationEntity*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory__ProcessAuthorizationEntity" data-uid="Mc3s.Odos.Client.DataItemSystemFactory._ProcessAuthorizationEntity">_ProcessAuthorizationEntity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IProcessAuthorizationEntity _ProcessAuthorizationEntity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IProcessAuthorizationEntity.html">IProcessAuthorizationEntity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-27">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory__SharedApplicationItem_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory._SharedApplicationItem*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory__SharedApplicationItem" data-uid="Mc3s.Odos.Client.DataItemSystemFactory._SharedApplicationItem">_SharedApplicationItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IApplicationItem _SharedApplicationItem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IApplicationItem.html">IApplicationItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-67">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_clearProcessAuthorizationEntity_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.clearProcessAuthorizationEntity*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_clearProcessAuthorizationEntity_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_ClientKey_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.clearProcessAuthorizationEntity(Mc3s.Odos.Library.IClient,Mc3s.Odos.Library.ClientKey)">clearProcessAuthorizationEntity(IClient, ClientKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void clearProcessAuthorizationEntity(IClient client, ClientKey clientKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.ClientKey.html">ClientKey</a></td>
+        <td><span class="parametername">clientKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-75">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_createApplicationItem_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.createApplicationItem*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_createApplicationItem_Mc3s_Odos_Library_IClient_System_String_System_String_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.createApplicationItem(Mc3s.Odos.Library.IClient,System.String,System.String)">createApplicationItem(IClient, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract IApplicationItem createApplicationItem(IClient client, string appName, string description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">appName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IApplicationItem.html">IApplicationItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-83">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_createApplicationList_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.createApplicationList*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_createApplicationList_Mc3s_Odos_Library_IApplicationItem_System_String_System_Type_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.createApplicationList(Mc3s.Odos.Library.IApplicationItem,System.String,System.Type)">createApplicationList(IApplicationItem, String, Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void createApplicationList(IApplicationItem appDef, string listName, Type valueType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IApplicationItem.html">IApplicationItem</a></td>
+        <td><span class="parametername">appDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">listName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">valueType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-79">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_createAuthorizationEntityManager_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.createAuthorizationEntityManager*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_createAuthorizationEntityManager" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.createAuthorizationEntityManager">createAuthorizationEntityManager()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract IAuthorizationEntityManager createAuthorizationEntityManager()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IAuthorizationEntityManager.html">IAuthorizationEntityManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-56">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_createDomainItem_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.createDomainItem*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_createDomainItem_Mc3s_Odos_Library_IClient_Mc3s_Odos_Client_DataItemDomainFactory_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.createDomainItem(Mc3s.Odos.Library.IClient,Mc3s.Odos.Client.DataItemDomainFactory)">createDomainItem(IClient, DataItemDomainFactory)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract DataItem createDomainItem(IClient client, DataItemDomainFactory domain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.DataItemDomainFactory.html">DataItemDomainFactory</a></td>
+        <td><span class="parametername">domain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-74">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_createSharedApplicationItem_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.createSharedApplicationItem*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_createSharedApplicationItem_Mc3s_Odos_Library_IClient_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.createSharedApplicationItem(Mc3s.Odos.Library.IClient)">createSharedApplicationItem(IClient)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract IApplicationItem createSharedApplicationItem(IClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IApplicationItem.html">IApplicationItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-84">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_deleteApplicationList_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.deleteApplicationList*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_deleteApplicationList_Mc3s_Odos_Library_IApplicationItem_System_String_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.deleteApplicationList(Mc3s.Odos.Library.IApplicationItem,System.String)">deleteApplicationList(IApplicationItem, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void deleteApplicationList(IApplicationItem appDef, string listName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IApplicationItem.html">IApplicationItem</a></td>
+        <td><span class="parametername">appDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">listName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-61">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_doesApplicationItemExists_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.doesApplicationItemExists*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_doesApplicationItemExists_Mc3s_Odos_Library_IClient_System_String_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.doesApplicationItemExists(Mc3s.Odos.Library.IClient,System.String)">doesApplicationItemExists(IClient, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool doesApplicationItemExists(IClient client, string appName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">appName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-54">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_doesDomainItemExist_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.doesDomainItemExist*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_doesDomainItemExist_Mc3s_Odos_Library_IClient_System_String_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.doesDomainItemExist(Mc3s.Odos.Library.IClient,System.String)">doesDomainItemExist(IClient, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool doesDomainItemExist(IClient client, string domainName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">domainName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-60">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_doesSharedApplicationItemExists_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.doesSharedApplicationItemExists*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_doesSharedApplicationItemExists_Mc3s_Odos_Library_IClient_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.doesSharedApplicationItemExists(Mc3s.Odos.Library.IClient)">doesSharedApplicationItemExists(IClient)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool doesSharedApplicationItemExists(IClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-88">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_getApplicationIconData_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.getApplicationIconData*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_getApplicationIconData_Mc3s_Odos_Library_IApplicationItem_System_String_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.getApplicationIconData(Mc3s.Odos.Library.IApplicationItem,System.String)">getApplicationIconData(IApplicationItem, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ApplicationIconData getApplicationIconData(IApplicationItem appDef, string iconID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IApplicationItem.html">IApplicationItem</a></td>
+        <td><span class="parametername">appDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">iconID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.ApplicationIconData.html">ApplicationIconData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-89">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_getApplicationIconsData_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.getApplicationIconsData*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_getApplicationIconsData_Mc3s_Odos_Library_IApplicationItem_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.getApplicationIconsData(Mc3s.Odos.Library.IApplicationItem)">getApplicationIconsData(IApplicationItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ApplicationIconData[] getApplicationIconsData(IApplicationItem appDef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IApplicationItem.html">IApplicationItem</a></td>
+        <td><span class="parametername">appDef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.ApplicationIconData.html">ApplicationIconData</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-82">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_getApplicationList_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.getApplicationList*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_getApplicationList_Mc3s_Odos_Library_IApplicationItem_System_String_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.getApplicationList(Mc3s.Odos.Library.IApplicationItem,System.String)">getApplicationList(IApplicationItem, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract List&lt;object&gt; getApplicationList(IApplicationItem appDef, string listName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IApplicationItem.html">IApplicationItem</a></td>
+        <td><span class="parametername">appDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">listName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-97">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_getAvailableAppRoles_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.getAvailableAppRoles*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_getAvailableAppRoles_Mc3s_Odos_Library_IDataItemManager_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.getAvailableAppRoles(Mc3s.Odos.Library.IDataItemManager)">getAvailableAppRoles(IDataItemManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Dictionary&lt;TypeInfo, ICollection&lt;IAppRole&gt;&gt; getAvailableAppRoles(IDataItemManager objMgr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemManager.html">IDataItemManager</a></td>
+        <td><span class="parametername">objMgr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">Mc3s.SharedLib.TypeInfo</span>, <span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Mc3s.Odos.Collaboration.IAppRole.html">IAppRole</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-76">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_initializeApplicationItem_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.initializeApplicationItem*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_initializeApplicationItem_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_IApplicationItem_System_Boolean_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.initializeApplicationItem(Mc3s.Odos.Library.IClient,Mc3s.Odos.Library.IApplicationItem,System.Boolean)">initializeApplicationItem(IClient, IApplicationItem, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract ICollection&lt;DataItem&gt; initializeApplicationItem(IClient client, IApplicationItem appItem, bool isShared)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IApplicationItem.html">IApplicationItem</a></td>
+        <td><span class="parametername">appItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isShared</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-57">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_initializeDomainItem_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.initializeDomainItem*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_initializeDomainItem_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_DataItem_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.initializeDomainItem(Mc3s.Odos.Library.IClient,Mc3s.Odos.Library.DataItem)">initializeDomainItem(IClient, DataItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ICollection&lt;DataItem&gt; initializeDomainItem(IClient client, DataItem domainItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">domainItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-66">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_initProcessAuthorizationEntity_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.initProcessAuthorizationEntity*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_initProcessAuthorizationEntity_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_ClientKey_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.initProcessAuthorizationEntity(Mc3s.Odos.Library.IClient,Mc3s.Odos.Library.ClientKey)">initProcessAuthorizationEntity(IClient, ClientKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void initProcessAuthorizationEntity(IClient client, ClientKey clientKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.ClientKey.html">ClientKey</a></td>
+        <td><span class="parametername">clientKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-90">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_resetApplicationIcons_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.resetApplicationIcons*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_resetApplicationIcons_Mc3s_Odos_Library_IApplicationItem_Mc3s_Odos_Library_ApplicationIconData___" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.resetApplicationIcons(Mc3s.Odos.Library.IApplicationItem,Mc3s.Odos.Library.ApplicationIconData[])">resetApplicationIcons(IApplicationItem, ApplicationIconData[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void resetApplicationIcons(IApplicationItem appDef, params ApplicationIconData[] iconDataList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IApplicationItem.html">IApplicationItem</a></td>
+        <td><span class="parametername">appDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.ApplicationIconData.html">ApplicationIconData</a>[]</td>
+        <td><span class="parametername">iconDataList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-85">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_saveApplicationList_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.saveApplicationList*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_saveApplicationList_Mc3s_Odos_Library_IApplicationItem_System_String_System_Collections_Generic_List_System_Object__" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.saveApplicationList(Mc3s.Odos.Library.IApplicationItem,System.String,System.Collections.Generic.List{System.Object})">saveApplicationList(IApplicationItem, String, List&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void saveApplicationList(IApplicationItem appDef, string listName, List&lt;object&gt; values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IApplicationItem.html">IApplicationItem</a></td>
+        <td><span class="parametername">appDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">listName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-63">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_tryGetApplicationItem_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.tryGetApplicationItem*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_tryGetApplicationItem_Mc3s_Odos_Library_IClient_System_String_Mc3s_Odos_Library_IApplicationItem__" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.tryGetApplicationItem(Mc3s.Odos.Library.IClient,System.String,Mc3s.Odos.Library.IApplicationItem@)">tryGetApplicationItem(IClient, String, out IApplicationItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool tryGetApplicationItem(IClient client, string appName, out IApplicationItem appItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">appName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IApplicationItem.html">IApplicationItem</a></td>
+        <td><span class="parametername">appItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-55">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_tryGetDomainItem_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.tryGetDomainItem*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_tryGetDomainItem_Mc3s_Odos_Library_IClient_System_String_Mc3s_Odos_Library_DataItem__" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.tryGetDomainItem(Mc3s.Odos.Library.IClient,System.String,Mc3s.Odos.Library.DataItem@)">tryGetDomainItem(IClient, String, out DataItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool tryGetDomainItem(IClient client, string domainName, out DataItem domainItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">domainName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">domainItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-62">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Client_DataItemSystemFactory_tryGetSharedApplicationItem_" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.tryGetSharedApplicationItem*"></a>
+  <h4 id="Mc3s_Odos_Client_DataItemSystemFactory_tryGetSharedApplicationItem_Mc3s_Odos_Library_IClient_Mc3s_Odos_Library_IApplicationItem__" data-uid="Mc3s.Odos.Client.DataItemSystemFactory.tryGetSharedApplicationItem(Mc3s.Odos.Library.IClient,Mc3s.Odos.Library.IApplicationItem@)">tryGetSharedApplicationItem(IClient, out IApplicationItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool tryGetSharedApplicationItem(IClient client, out IApplicationItem appItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IApplicationItem.html">IApplicationItem</a></td>
+        <td><span class="parametername">appItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IComparable</span>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IDataItemDomainController.html">IDataItemDomainController</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Client.IDataItemSystemDomainFactory.html">IDataItemSystemDomainFactory</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Client.IDataItemDomainFactory.html">IDataItemDomainFactory</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Collaboration.IAppRoleContainer.html">IAppRoleContainer</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Client/DataItemSystemFactory.cs#lines-13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

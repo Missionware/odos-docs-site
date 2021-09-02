@@ -1,0 +1,775 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConnectionListenerAgent
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConnectionListenerAgent
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent">
+  
+  
+  <h1 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent" class="text-break">Class ConnectionListenerAgent
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for ConnectionListenerAgent.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.MarshalByRefObject</span></div>
+    <div class="level2"><a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html">ConnectionAgentBase</a></div>
+    <div class="level3"><a class="xref" href="Mc3s.Odos.Comm.Internal.ConnectionAgent.html">ConnectionAgent</a></div>
+    <div class="level4"><span class="xref">ConnectionListenerAgent</span></div>
+      <div class="level5"><a class="xref" href="Mc3s.Odos.Comm.Internal.ConnectionClientAgent.html">ConnectionClientAgent</a></div>
+      <div class="level5"><a class="xref" href="Mc3s.Odos.Comm.Internal.ConnectionServerAgent.html">ConnectionServerAgent</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="Mc3s.Odos.Comm.IConnectionListenerAgent.html">IConnectionListenerAgent</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Comm.IConnectionAgent.html">IConnectionAgent</a></div>
+    <div><span class="xref">Mc3s.Odos.Security.Authentication.IAuthListenerAgent</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.Internal.ConnectionAgent.html#Mc3s_Odos_Comm_Internal_ConnectionAgent__Library">ConnectionAgent._Library</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.Internal.ConnectionAgent.html#Mc3s_Odos_Comm_Internal_ConnectionAgent__LibraryURI">ConnectionAgent._LibraryURI</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.Internal.ConnectionAgent.html#Mc3s_Odos_Comm_Internal_ConnectionAgent__Protocol">ConnectionAgent._Protocol</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.Internal.ConnectionAgent.html#Mc3s_Odos_Comm_Internal_ConnectionAgent__ConfiguredPort">ConnectionAgent._ConfiguredPort</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.Internal.ConnectionAgent.html#Mc3s_Odos_Comm_Internal_ConnectionAgent__EndPointURI">ConnectionAgent._EndPointURI</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.Internal.ConnectionAgent.html#Mc3s_Odos_Comm_Internal_ConnectionAgent__RequestingIPAddress">ConnectionAgent._RequestingIPAddress</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_HDR_CALLER_SIGNATURE">ConnectionAgentBase.HDR_CALLER_SIGNATURE</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__ThreadCallerIPAddress">ConnectionAgentBase._ThreadCallerIPAddress</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__ThreadCallerSignature">ConnectionAgentBase._ThreadCallerSignature</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__ThreadTargetURI">ConnectionAgentBase._ThreadTargetURI</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_setRequestData_System_Net_IPAddress_System_String_System_String_">ConnectionAgentBase.setRequestData(IPAddress, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_clearRequestData">ConnectionAgentBase.clearRequestData()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_getCanonicalURI_System_String_System_String_System_String_System_String_System_Int32_">ConnectionAgentBase.getCanonicalURI(String, String, String, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__RecyclableMemoryStreamManager">ConnectionAgentBase._RecyclableMemoryStreamManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__ThrottleManager">ConnectionAgentBase._ThrottleManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__ChannelParameters">ConnectionAgentBase._ChannelParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__IsDisposed">ConnectionAgentBase._IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_Dispose_System_Boolean_">ConnectionAgentBase.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_Dispose">ConnectionAgentBase.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_cleanUpManagedResources">ConnectionAgentBase.cleanUpManagedResources()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_destructUnmanagedResources">ConnectionAgentBase.destructUnmanagedResources()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__Configuration">ConnectionAgentBase._Configuration</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__IsServer">ConnectionAgentBase._IsServer</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__AuthenticationProvider">ConnectionAgentBase._AuthenticationProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__IsCompressionConfigured">ConnectionAgentBase._IsCompressionConfigured</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__IsCompressionAvailable">ConnectionAgentBase._IsCompressionAvailable</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__CompressionScope">ConnectionAgentBase._CompressionScope</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__CompressionMode">ConnectionAgentBase._CompressionMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__CompressionThresold">ConnectionAgentBase._CompressionThresold</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__EnableSpinWaitInDataCalls">ConnectionAgentBase._EnableSpinWaitInDataCalls</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__UseRecyclableMemoryStream">ConnectionAgentBase._UseRecyclableMemoryStream</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__EnableThrottling">ConnectionAgentBase._EnableThrottling</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase__RequestClient">ConnectionAgentBase._RequestClient</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_Configure_Mc3s_SharedLib_IRequestClient_System_Collections_Generic_Dictionary_System_String_System_String__">ConnectionAgentBase.Configure(IRequestClient, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_getConnectionStats">ConnectionAgentBase.getConnectionStats()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_createStream_System_String_">ConnectionAgentBase.createStream(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_getManagedStream_System_String_System_String_">ConnectionAgentBase.getManagedStream(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_getChannelParameter__1_System_String_">ConnectionAgentBase.getChannelParameter&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_getChannelParameter__1_System_String_System_Boolean_">ConnectionAgentBase.getChannelParameter&lt;T&gt;(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_setChannelParameter_System_String_System_Object_">ConnectionAgentBase.setChannelParameter(String, Object)</a>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.GetLifetimeService()</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.InitializeLifetimeService()</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.MemberwiseClone(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Comm.Internal.html">Mc3s.Odos.Comm.Internal</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ConnectionListenerAgent : ConnectionAgent, IDisposable, IConnectionListenerAgent, IConnectionAgent, IAuthListenerAgent</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-31">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent__ctor_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent__ctor" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.#ctor">ConnectionListenerAgent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConnectionListenerAgent()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-61">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent__ListenAs_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent._ListenAs*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent__ListenAs" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent._ListenAs">_ListenAs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] _ListenAs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-59">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent__ListeningPort_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent._ListeningPort*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent__ListeningPort" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent._ListeningPort">_ListeningPort</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int _ListeningPort { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-58">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent__ListeningURI_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent._ListeningURI*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent__ListeningURI" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent._ListeningURI">_ListeningURI</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string _ListeningURI { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-60">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent__Signature_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent._Signature*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent__Signature" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent._Signature">_Signature</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _Signature { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-80">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_getLocalSecuritySettings_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.getLocalSecuritySettings*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_getLocalSecuritySettings" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.getLocalSecuritySettings">getLocalSecuritySettings()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ISecuritySettings getLocalSecuritySettings()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.ISecuritySettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-90">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_initializeAuthSessionForClient_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.initializeAuthSessionForClient*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_initializeAuthSessionForClient_System_String_Mc3s_Odos_Security_AuthRequestInfo_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.initializeAuthSessionForClient(System.String,Mc3s.Odos.Security.AuthRequestInfo)">initializeAuthSessionForClient(String, AuthRequestInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AuthMethodInfo initializeAuthSessionForClient(string clientSignature, AuthRequestInfo authRequestInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">clientSignature</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.AuthRequestInfo</span></td>
+        <td><span class="parametername">authRequestInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.Authentication.AuthMethodInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-41">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_initializeListener_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.initializeListener*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_initializeListener_System_Boolean_Mc3s_Odos_Security_Authentication_IAuthenticationProvider_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.initializeListener(System.Boolean,Mc3s.Odos.Security.Authentication.IAuthenticationProvider)">initializeListener(Boolean, IAuthenticationProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void initializeListener(bool isServer, IAuthenticationProvider authenticationProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isServer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.Authentication.IAuthenticationProvider</span></td>
+        <td><span class="parametername">authenticationProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Comm.ConnectionAgentBase.html#Mc3s_Odos_Comm_ConnectionAgentBase_initializeListener_System_Boolean_Mc3s_Odos_Security_Authentication_IAuthenticationProvider_">ConnectionAgentBase.initializeListener(Boolean, IAuthenticationProvider)</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-66">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_isConnected_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.isConnected*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_isConnected" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.isConnected">isConnected()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool isConnected()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-64">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_isInitialized_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.isInitialized*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_isInitialized" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.isInitialized">isInitialized()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool isInitialized()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-67">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_isListening_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.isListening*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_isListening" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.isListening">isListening()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool isListening()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-65">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_isStarted_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.isStarted*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_isStarted" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.isStarted">isStarted()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool isStarted()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-96">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_receiveAuthDataFromClient_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.receiveAuthDataFromClient*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_receiveAuthDataFromClient_System_String_System_String_System_Byte___" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.receiveAuthDataFromClient(System.String,System.String,System.Byte[])">receiveAuthDataFromClient(String, String, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] receiveAuthDataFromClient(string clientSignature, string id, byte[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">clientSignature</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-102">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_sendAuthenticatedClientIdentity_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.sendAuthenticatedClientIdentity*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_sendAuthenticatedClientIdentity_System_String_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.sendAuthenticatedClientIdentity(System.String)">sendAuthenticatedClientIdentity(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IClientIdentity sendAuthenticatedClientIdentity(string clientSignature)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">clientSignature</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.IClientIdentity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-70">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_Start_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.Start*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_Start" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Start()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-74">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_Stop_" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.Stop*"></a>
+  <h4 id="Mc3s_Odos_Comm_Internal_ConnectionListenerAgent_Stop" data-uid="Mc3s.Odos.Comm.Internal.ConnectionListenerAgent.Stop">Stop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Stop()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Comm.IConnectionListenerAgent.html">IConnectionListenerAgent</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Comm.IConnectionAgent.html">IConnectionAgent</a>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Odos.Security.Authentication.IAuthListenerAgent</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Comm/Internal/ConnectionListenerAgent.cs#lines-11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

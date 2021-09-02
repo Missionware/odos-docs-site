@@ -1,0 +1,1213 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PersistedDictionary&lt;TKey, TValue&gt;
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PersistedDictionary&lt;TKey, TValue&gt;
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Library.PersistedDictionary`2">
+  
+  
+  <h1 id="Mc3s_Odos_Library_PersistedDictionary_2" data-uid="Mc3s.Odos.Library.PersistedDictionary`2" class="text-break">Class PersistedDictionary&lt;TKey, TValue&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Collections.Generic.Dictionary</span>&lt;TKey, TValue&gt;</div>
+    <div class="level2"><span class="xref">PersistedDictionary&lt;TKey, TValue&gt;</span></div>
+      <div class="level3"><a class="xref" href="Mc3s.Odos.Library.IntKeyDictionary-1.html">IntKeyDictionary&lt;TValue&gt;</a></div>
+      <div class="level3"><a class="xref" href="Mc3s.Odos.Library.StringKeyDictionary-1.html">StringKeyDictionary&lt;TValue&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IDictionary</span>&lt;TKey, TValue&gt;</div>
+    <div><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;TKey, TValue&gt;&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;TKey, TValue&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;TKey, TValue&gt;&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;TKey, TValue&gt;&gt;</div>
+    <div><span class="xref">System.Collections.IDictionary</span></div>
+    <div><span class="xref">System.Collections.ICollection</span></div>
+    <div><span class="xref">System.Runtime.Serialization.IDeserializationCallback</span></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IPersistableDictionary-2.html">IPersistableDictionary</a>&lt;TKey, TValue&gt;</div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IPersistableDictionary.html">IPersistableDictionary</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IPersistableTypedList.html">IPersistableTypedList</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IPersistableAsString.html">IPersistableAsString</a></div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+    <div><span class="xref">Mc3s.Serialization.IAdvancedSerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.IDictionary.get_Item(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.IDictionary.set_Item(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.Add(TKey, TValue)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.Clear()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.ContainsKey(TKey)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.ContainsValue(TValue)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.GetEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.OnDeserialization(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.Remove(TKey)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;&gt;.Add(System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;&gt;.Contains(System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;&gt;.CopyTo(System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;[], System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;&gt;.Remove(System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;&gt;.GetEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.ICollection.CopyTo(System.Array, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.IDictionary.Add(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.IDictionary.Contains(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.IDictionary.GetEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.IDictionary.Remove(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.IEnumerable.GetEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.TryGetValue(TKey, TValue)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.Comparer</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.Count</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.Item[TKey]</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.Keys</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;&gt;.IsReadOnly</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;.Keys</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;.Values</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.Generic.IReadOnlyDictionary&lt;TKey, TValue&gt;.Keys</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.Generic.IReadOnlyDictionary&lt;TKey, TValue&gt;.Values</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.ICollection.IsSynchronized</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.ICollection.SyncRoot</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.IDictionary.IsFixedSize</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.IDictionary.IsReadOnly</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.IDictionary.Item[System.Object]</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.IDictionary.Keys</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.System.Collections.IDictionary.Values</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.Values</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Library.html">Mc3s.Odos.Library</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Library_PersistedDictionary_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+[TransmittedType]
+public abstract class PersistedDictionary&lt;TKey, TValue&gt; : Dictionary&lt;TKey, TValue&gt;, IDictionary&lt;TKey, TValue&gt;, ICollection&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IReadOnlyDictionary&lt;TKey, TValue&gt;, IReadOnlyCollection&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IDictionary, ICollection, IDeserializationCallback, IPersistableDictionary&lt;TKey, TValue&gt;, IPersistableDictionary, IPersistableTypedList, IPersistableAsString, IEnumerable, ISerializable, IAdvancedSerializable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-27">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2__ctor_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2__ctor" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.#ctor">PersistedDictionary()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PersistedDictionary()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-234">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2__ctor_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2__ctor_Mc3s_Serialization_IAdvancedSerializationInfo_Mc3s_Serialization_IAdvancedStreamingContext_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.#ctor(Mc3s.Serialization.IAdvancedSerializationInfo,Mc3s.Serialization.IAdvancedStreamingContext)">PersistedDictionary(IAdvancedSerializationInfo, IAdvancedStreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PersistedDictionary(IAdvancedSerializationInfo info, IAdvancedStreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedSerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedStreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-31">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2__ctor_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2__ctor_System_Collections_Generic_IEqualityComparer__0__" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})">PersistedDictionary(IEqualityComparer&lt;TKey&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PersistedDictionary(IEqualityComparer&lt;TKey&gt; comparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEqualityComparer</span>&lt;TKey&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-246">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2__ctor_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">PersistedDictionary(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PersistedDictionary(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-82">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2__PersistableString_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2._PersistableString*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2__PersistableString" data-uid="Mc3s.Odos.Library.PersistedDictionary`2._PersistableString">_PersistableString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _PersistableString { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-86">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_KeyValueSeparator_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.KeyValueSeparator*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_KeyValueSeparator" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.KeyValueSeparator">KeyValueSeparator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string KeyValueSeparator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-85">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_Separator_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.Separator*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_Separator" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.Separator">Separator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Separator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-83">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_TypeOfKeys_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.TypeOfKeys*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_TypeOfKeys" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.TypeOfKeys">TypeOfKeys</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type TypeOfKeys { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-84">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_TypeOfValues_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.TypeOfValues*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_TypeOfValues" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.TypeOfValues">TypeOfValues</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type TypeOfValues { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-89">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_convertItemToString_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.convertItemToString*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_convertItemToString_System_Object_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.convertItemToString(System.Object)">convertItemToString(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string convertItemToString(object item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-41">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_convertKeyToString_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.convertKeyToString*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_convertKeyToString__0_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.convertKeyToString(`0)">convertKeyToString(TKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string convertKeyToString(TKey key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-93">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_convertStringToItem_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.convertStringToItem*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_convertStringToItem_System_String_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.convertStringToItem(System.String)">convertStringToItem(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object convertStringToItem(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-43">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_convertStringToKey_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.convertStringToKey*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_convertStringToKey_System_String_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.convertStringToKey(System.String)">convertStringToKey(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract TKey convertStringToKey(string keyStr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">keyStr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-44">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_convertStringToValue_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.convertStringToValue*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_convertStringToValue_System_String_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.convertStringToValue(System.String)">convertStringToValue(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract TValue convertStringToValue(string valueStr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">valueStr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-98">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_convertToSeparatedString_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.convertToSeparatedString*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_convertToSeparatedString" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.convertToSeparatedString">convertToSeparatedString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string convertToSeparatedString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-42">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_convertValueToString_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.convertValueToString*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_convertValueToString__1_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.convertValueToString(`1)">convertValueToString(TValue)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string convertValueToString(TValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-167">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_doesKeyExists_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.doesKeyExists*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_doesKeyExists_System_Object_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.doesKeyExists(System.Object)">doesKeyExists(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool doesKeyExists(object key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-240">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_GetObjectData_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.GetObjectData*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_GetObjectData_Mc3s_Serialization_IAdvancedSerializationInfo_Mc3s_Serialization_IAdvancedStreamingContext_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.GetObjectData(Mc3s.Serialization.IAdvancedSerializationInfo,Mc3s.Serialization.IAdvancedStreamingContext)">GetObjectData(IAdvancedSerializationInfo, IAdvancedStreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetObjectData(IAdvancedSerializationInfo info, IAdvancedStreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedSerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedStreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-253">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_GetObjectData_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.GetObjectData*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-179">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_getValueForKey_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.getValueForKey*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_getValueForKey_System_Object_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.getValueForKey(System.Object)">getValueForKey(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object getValueForKey(object key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-191">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_isEqualPerMember_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.isEqualPerMember*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_isEqualPerMember_Mc3s_Odos_Library_IPersistableTypedList_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.isEqualPerMember(Mc3s.Odos.Library.IPersistableTypedList)">isEqualPerMember(IPersistableTypedList)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool isEqualPerMember(IPersistableTypedList list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IPersistableTypedList.html">IPersistableTypedList</a></td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-151">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_resetFrom_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.resetFrom*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_resetFrom_System_Collections_ICollection_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.resetFrom(System.Collections.ICollection)">resetFrom(ICollection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void resetFrom(ICollection strItemCollection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ICollection</span></td>
+        <td><span class="parametername">strItemCollection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-117">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_resetFrom_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.resetFrom*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_resetFrom_System_String_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.resetFrom(System.String)">resetFrom(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void resetFrom(string separatedStr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">separatedStr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-135">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_resetFrom_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.resetFrom*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_resetFrom_System_String___" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.resetFrom(System.String[])">resetFrom(String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void resetFrom(string[] strItemList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">strItemList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-51">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_PersistedDictionary_2_ToString_" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.ToString*"></a>
+  <h4 id="Mc3s_Odos_Library_PersistedDictionary_2_ToString" data-uid="Mc3s.Odos.Library.PersistedDictionary`2.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyDictionary&lt;TKey, TValue&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IDictionary</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.ICollection</span>
+  </div>
+  <div>
+      <span class="xref">System.Runtime.Serialization.IDeserializationCallback</span>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IPersistableDictionary-2.html">IPersistableDictionary&lt;TKey, TValue&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IPersistableDictionary.html">IPersistableDictionary</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IPersistableTypedList.html">IPersistableTypedList</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IPersistableAsString.html">IPersistableAsString</a>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Serialization.IAdvancedSerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/PersistedTypedDictionaries.cs#lines-12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

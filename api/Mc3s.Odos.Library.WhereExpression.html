@@ -1,0 +1,1037 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WhereExpression
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WhereExpression
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Library.WhereExpression">
+  
+  
+  <h1 id="Mc3s_Odos_Library_WhereExpression" data-uid="Mc3s.Odos.Library.WhereExpression" class="text-break">Class WhereExpression
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for WhereExpression.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">WhereExpression</span></div>
+      <div class="level2"><a class="xref" href="Mc3s.Odos.Library.WhereBooleanExpression.html">WhereBooleanExpression</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mc3s.Odos.Library.IWhereExpression.html">IWhereExpression</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IWhereOperand.html">IWhereOperand</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IWhereText.html">IWhereText</a></div>
+    <div><span class="xref">Mc3s.Serialization.IAdvancedSerializable</span></div>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Library.html">Mc3s.Odos.Library</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Library_WhereExpression_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public abstract class WhereExpression : IWhereExpression, IWhereOperand, IWhereText, IAdvancedSerializable, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-192">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression__ctor_" data-uid="Mc3s.Odos.Library.WhereExpression.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression__ctor" data-uid="Mc3s.Odos.Library.WhereExpression.#ctor">WhereExpression()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WhereExpression()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-249">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression__ctor_" data-uid="Mc3s.Odos.Library.WhereExpression.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression__ctor_Mc3s_Serialization_IAdvancedSerializationInfo_Mc3s_Serialization_IAdvancedStreamingContext_" data-uid="Mc3s.Odos.Library.WhereExpression.#ctor(Mc3s.Serialization.IAdvancedSerializationInfo,Mc3s.Serialization.IAdvancedStreamingContext)">WhereExpression(IAdvancedSerializationInfo, IAdvancedStreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected WhereExpression(IAdvancedSerializationInfo info, IAdvancedStreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedSerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedStreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-263">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression__ctor_" data-uid="Mc3s.Odos.Library.WhereExpression.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Mc3s.Odos.Library.WhereExpression.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">WhereExpression(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected WhereExpression(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-185">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Library_WhereExpression__isNot" data-uid="Mc3s.Odos.Library.WhereExpression._isNot">_isNot</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _isNot</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-184">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Library_WhereExpression__isTypeDominant" data-uid="Mc3s.Odos.Library.WhereExpression._isTypeDominant">_isTypeDominant</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _isTypeDominant</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-202">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression__IsNot_" data-uid="Mc3s.Odos.Library.WhereExpression._IsNot*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression__IsNot" data-uid="Mc3s.Odos.Library.WhereExpression._IsNot">_IsNot</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IsNot { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-203">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression__IsSetToNull_" data-uid="Mc3s.Odos.Library.WhereExpression._IsSetToNull*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression__IsSetToNull" data-uid="Mc3s.Odos.Library.WhereExpression._IsSetToNull">_IsSetToNull</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IsSetToNull { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-201">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression__IsTypeDominant_" data-uid="Mc3s.Odos.Library.WhereExpression._IsTypeDominant*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression__IsTypeDominant" data-uid="Mc3s.Odos.Library.WhereExpression._IsTypeDominant">_IsTypeDominant</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _IsTypeDominant { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-95">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression_BuildExpresion_" data-uid="Mc3s.Odos.Library.WhereExpression.BuildExpresion*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression_BuildExpresion_Mc3s_Odos_Library_IDataItemManager_Mc3s_Odos_Library_DataItemClassInfo_System_Func_Mc3s_Odos_Library_IWhereExpression__" data-uid="Mc3s.Odos.Library.WhereExpression.BuildExpresion(Mc3s.Odos.Library.IDataItemManager,Mc3s.Odos.Library.DataItemClassInfo,System.Func{Mc3s.Odos.Library.IWhereExpression})">BuildExpresion(IDataItemManager, DataItemClassInfo, Func&lt;IWhereExpression&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IWhereExpression BuildExpresion(IDataItemManager objMgr, DataItemClassInfo queriedClass, Func&lt;IWhereExpression&gt; expressionBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemManager.html">IDataItemManager</a></td>
+        <td><span class="parametername">objMgr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">queriedClass</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Mc3s.Odos.Library.IWhereExpression.html">IWhereExpression</a>&gt;</td>
+        <td><span class="parametername">expressionBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IWhereExpression.html">IWhereExpression</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-206">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression_canExpressionValidateIn_" data-uid="Mc3s.Odos.Library.WhereExpression.canExpressionValidateIn*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression_canExpressionValidateIn_Mc3s_Odos_Library_QueryExecutionScope_Mc3s_Odos_Library_DataItemClassInfo_" data-uid="Mc3s.Odos.Library.WhereExpression.canExpressionValidateIn(Mc3s.Odos.Library.QueryExecutionScope,Mc3s.Odos.Library.DataItemClassInfo)">canExpressionValidateIn(QueryExecutionScope, DataItemClassInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool canExpressionValidateIn(QueryExecutionScope scope, DataItemClassInfo queriedClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.QueryExecutionScope.html">QueryExecutionScope</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">queriedClass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-230">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression_findExpression_" data-uid="Mc3s.Odos.Library.WhereExpression.findExpression*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression_findExpression_Mc3s_Odos_Library_IWhereExpressionComparisonHandler_" data-uid="Mc3s.Odos.Library.WhereExpression.findExpression(Mc3s.Odos.Library.IWhereExpressionComparisonHandler)">findExpression(IWhereExpressionComparisonHandler)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IWhereExpression findExpression(IWhereExpressionComparisonHandler comparisonHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IWhereExpressionComparisonHandler.html">IWhereExpressionComparisonHandler</a></td>
+        <td><span class="parametername">comparisonHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IWhereExpression.html">IWhereExpression</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-141">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression_getDataItemAsOperandValue_" data-uid="Mc3s.Odos.Library.WhereExpression.getDataItemAsOperandValue*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression_getDataItemAsOperandValue_Mc3s_Odos_Library_DataItemField_System_String_" data-uid="Mc3s.Odos.Library.WhereExpression.getDataItemAsOperandValue(Mc3s.Odos.Library.DataItemField,System.String)">getDataItemAsOperandValue(DataItemField, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static DataItem getDataItemAsOperandValue(DataItemField field, string fullID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td><span class="parametername">field</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fullID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-221">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression_getDataType_" data-uid="Mc3s.Odos.Library.WhereExpression.getDataType*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression_getDataType_Mc3s_Odos_Library_DataItemClassInfo_" data-uid="Mc3s.Odos.Library.WhereExpression.getDataType(Mc3s.Odos.Library.DataItemClassInfo)">getDataType(DataItemClassInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Type getDataType(DataItemClassInfo queriedClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">queriedClass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-227">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression_getDataValue_" data-uid="Mc3s.Odos.Library.WhereExpression.getDataValue*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression_getDataValue_Mc3s_Odos_Library_DataItem_" data-uid="Mc3s.Odos.Library.WhereExpression.getDataValue(Mc3s.Odos.Library.DataItem)">getDataValue(DataItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract object getDataValue(DataItem dItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">dItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-256">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression_GetObjectData_" data-uid="Mc3s.Odos.Library.WhereExpression.GetObjectData*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression_GetObjectData_Mc3s_Serialization_IAdvancedSerializationInfo_Mc3s_Serialization_IAdvancedStreamingContext_" data-uid="Mc3s.Odos.Library.WhereExpression.GetObjectData(Mc3s.Serialization.IAdvancedSerializationInfo,Mc3s.Serialization.IAdvancedStreamingContext)">GetObjectData(IAdvancedSerializationInfo, IAdvancedStreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetObjectData(IAdvancedSerializationInfo info, IAdvancedStreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedSerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.Serialization.IAdvancedStreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-270">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression_GetObjectData_" data-uid="Mc3s.Odos.Library.WhereExpression.GetObjectData*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Mc3s.Odos.Library.WhereExpression.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-127">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression_getObjMgr_" data-uid="Mc3s.Odos.Library.WhereExpression.getObjMgr*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression_getObjMgr" data-uid="Mc3s.Odos.Library.WhereExpression.getObjMgr">getObjMgr()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static IDataItemManager getObjMgr()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IDataItemManager.html">IDataItemManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-134">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression_getQueriedClass_" data-uid="Mc3s.Odos.Library.WhereExpression.getQueriedClass*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression_getQueriedClass" data-uid="Mc3s.Odos.Library.WhereExpression.getQueriedClass">getQueriedClass()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static DataItemClassInfo getQueriedClass()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-209">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression_getQuery_" data-uid="Mc3s.Odos.Library.WhereExpression.getQuery*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression_getQuery_Mc3s_Odos_Library_QueryTextType_Mc3s_Odos_Library_IQueryHelper_Mc3s_Odos_Library_DataItemClassInfo_" data-uid="Mc3s.Odos.Library.WhereExpression.getQuery(Mc3s.Odos.Library.QueryTextType,Mc3s.Odos.Library.IQueryHelper,Mc3s.Odos.Library.DataItemClassInfo)">getQuery(QueryTextType, IQueryHelper, DataItemClassInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string getQuery(QueryTextType textType, IQueryHelper queryHelper, DataItemClassInfo queriedClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.QueryTextType.html">QueryTextType</a></td>
+        <td><span class="parametername">textType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IQueryHelper.html">IQueryHelper</a></td>
+        <td><span class="parametername">queryHelper</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">queriedClass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-165">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression_getQueryExpressionDefault_" data-uid="Mc3s.Odos.Library.WhereExpression.getQueryExpressionDefault*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression_getQueryExpressionDefault_Mc3s_Odos_Library_QueryTextType_Mc3s_Odos_Library_IQueryHelper_Mc3s_Odos_Library_DataItemClassInfo_Mc3s_Odos_Library_IWhereOperand_Mc3s_Odos_Library_WhereOperator_Mc3s_Odos_Library_IWhereOperand_" data-uid="Mc3s.Odos.Library.WhereExpression.getQueryExpressionDefault(Mc3s.Odos.Library.QueryTextType,Mc3s.Odos.Library.IQueryHelper,Mc3s.Odos.Library.DataItemClassInfo,Mc3s.Odos.Library.IWhereOperand,Mc3s.Odos.Library.WhereOperator,Mc3s.Odos.Library.IWhereOperand)">getQueryExpressionDefault(QueryTextType, IQueryHelper, DataItemClassInfo, IWhereOperand, WhereOperator, IWhereOperand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string getQueryExpressionDefault(QueryTextType textType, IQueryHelper queryHelper, DataItemClassInfo queriedClass, IWhereOperand masterOperand, WhereOperator op, IWhereOperand slaveOperand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.QueryTextType.html">QueryTextType</a></td>
+        <td><span class="parametername">textType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IQueryHelper.html">IQueryHelper</a></td>
+        <td><span class="parametername">queryHelper</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">queriedClass</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IWhereOperand.html">IWhereOperand</a></td>
+        <td><span class="parametername">masterOperand</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.WhereOperator.html">WhereOperator</a></td>
+        <td><span class="parametername">op</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IWhereOperand.html">IWhereOperand</a></td>
+        <td><span class="parametername">slaveOperand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-215">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression_getQueryInExpression_" data-uid="Mc3s.Odos.Library.WhereExpression.getQueryInExpression*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression_getQueryInExpression_Mc3s_Odos_Library_QueryTextType_Mc3s_Odos_Library_IQueryHelper_Mc3s_Odos_Library_DataItemClassInfo_Mc3s_Odos_Library_WhereOperator_Mc3s_Odos_Library_IWhereOperand_" data-uid="Mc3s.Odos.Library.WhereExpression.getQueryInExpression(Mc3s.Odos.Library.QueryTextType,Mc3s.Odos.Library.IQueryHelper,Mc3s.Odos.Library.DataItemClassInfo,Mc3s.Odos.Library.WhereOperator,Mc3s.Odos.Library.IWhereOperand)">getQueryInExpression(QueryTextType, IQueryHelper, DataItemClassInfo, WhereOperator, IWhereOperand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string getQueryInExpression(QueryTextType textType, IQueryHelper queryHelper, DataItemClassInfo queriedClass, WhereOperator op, IWhereOperand slaveOperand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.QueryTextType.html">QueryTextType</a></td>
+        <td><span class="parametername">textType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IQueryHelper.html">IQueryHelper</a></td>
+        <td><span class="parametername">queryHelper</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a></td>
+        <td><span class="parametername">queriedClass</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.WhereOperator.html">WhereOperator</a></td>
+        <td><span class="parametername">op</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IWhereOperand.html">IWhereOperand</a></td>
+        <td><span class="parametername">slaveOperand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-212">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_WhereExpression_isValid_" data-uid="Mc3s.Odos.Library.WhereExpression.isValid*"></a>
+  <h4 id="Mc3s_Odos_Library_WhereExpression_isValid_Mc3s_Odos_Library_DataItem_" data-uid="Mc3s.Odos.Library.WhereExpression.isValid(Mc3s.Odos.Library.DataItem)">isValid(DataItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool isValid(DataItem dItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">dItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IWhereExpression.html">IWhereExpression</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IWhereOperand.html">IWhereOperand</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IWhereText.html">IWhereText</a>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Serialization.IAdvancedSerializable</span>
+  </div>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/Serializable/DataItemQueries.cs#lines-86" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

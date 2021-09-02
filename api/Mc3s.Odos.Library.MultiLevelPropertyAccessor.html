@@ -1,0 +1,672 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MultiLevelPropertyAccessor
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MultiLevelPropertyAccessor
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor">
+  
+  
+  <h1 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor" class="text-break">Class MultiLevelPropertyAccessor
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for MultiLevelPropertyAccessor.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MultiLevelPropertyAccessor</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mc3s.Odos.Library.IValueAccessor.html">IValueAccessor</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Library.html">Mc3s.Odos.Library</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MultiLevelPropertyAccessor : IValueAccessor</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-5747">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__IsTargetDeclarative_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._IsTargetDeclarative*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__IsTargetDeclarative" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._IsTargetDeclarative">_IsTargetDeclarative</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsTargetDeclarative { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-5746">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__LastLevelAccessor_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._LastLevelAccessor*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__LastLevelAccessor" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._LastLevelAccessor">_LastLevelAccessor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MultiLevelPropertyAccessor _LastLevelAccessor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.MultiLevelPropertyAccessor.html">MultiLevelPropertyAccessor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-5743">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__LevelAccessor_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._LevelAccessor*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__LevelAccessor" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._LevelAccessor">_LevelAccessor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IValueAccessor _LevelAccessor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IValueAccessor.html">IValueAccessor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-5742">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__LevelField_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._LevelField*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__LevelField" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._LevelField">_LevelField</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataItemField _LevelField { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-5741">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__LevelName_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._LevelName*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__LevelName" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._LevelName">_LevelName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _LevelName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-5903">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__Name_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._Name*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__Name" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._Name">_Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-5745">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__NextLevelAccessor_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._NextLevelAccessor*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__NextLevelAccessor" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._NextLevelAccessor">_NextLevelAccessor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MultiLevelPropertyAccessor _NextLevelAccessor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.MultiLevelPropertyAccessor.html">MultiLevelPropertyAccessor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-5744">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__PrevLevelAccessor_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._PrevLevelAccessor*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__PrevLevelAccessor" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._PrevLevelAccessor">_PrevLevelAccessor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MultiLevelPropertyAccessor _PrevLevelAccessor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.MultiLevelPropertyAccessor.html">MultiLevelPropertyAccessor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-5749">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__TargetAccessor_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._TargetAccessor*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__TargetAccessor" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._TargetAccessor">_TargetAccessor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IValueAccessor _TargetAccessor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IValueAccessor.html">IValueAccessor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-5748">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__TargetField_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._TargetField*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__TargetField" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._TargetField">_TargetField</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataItemField _TargetField { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemField.html">DataItemField</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-5904">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__ValueType_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._ValueType*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor__ValueType" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor._ValueType">_ValueType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type _ValueType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-5995">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor_getDisplaySettings_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor.getDisplaySettings*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor_getDisplaySettings_Mc3s_Odos_Library_DisplaySettingVisualElement_Mc3s_Odos_Library_DisplaySettingUsage_Mc3s_Odos_Library_DataItem_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor.getDisplaySettings(Mc3s.Odos.Library.DisplaySettingVisualElement,Mc3s.Odos.Library.DisplaySettingUsage,Mc3s.Odos.Library.DataItem)">getDisplaySettings(DisplaySettingVisualElement, DisplaySettingUsage, DataItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DisplaySettings getDisplaySettings(DisplaySettingVisualElement vElement, DisplaySettingUsage usage, DataItem sourceItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DisplaySettingVisualElement.html">DisplaySettingVisualElement</a></td>
+        <td><span class="parametername">vElement</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DisplaySettingUsage.html">DisplaySettingUsage</a></td>
+        <td><span class="parametername">usage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">sourceItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DisplaySettings.html">DisplaySettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-6048">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor_getLevelValue_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor.getLevelValue*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor_getLevelValue_Mc3s_Odos_Library_DataItem_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor.getLevelValue(Mc3s.Odos.Library.DataItem)">getLevelValue(DataItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object getLevelValue(DataItem sourceItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">sourceItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-5905">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor_getValue_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor.getValue*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor_getValue_Mc3s_Odos_Library_DataItem_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor.getValue(Mc3s.Odos.Library.DataItem)">getValue(DataItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object getValue(DataItem sourceItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">sourceItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-6052">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor_setLevelValue_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor.setLevelValue*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor_setLevelValue_Mc3s_Odos_Library_DataItem_System_Object_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor.setLevelValue(Mc3s.Odos.Library.DataItem,System.Object)">setLevelValue(DataItem, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setLevelValue(DataItem targetItem, object val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">targetItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-5962">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_MultiLevelPropertyAccessor_setValue_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor.setValue*"></a>
+  <h4 id="Mc3s_Odos_Library_MultiLevelPropertyAccessor_setValue_Mc3s_Odos_Library_DataItem_System_Object_" data-uid="Mc3s.Odos.Library.MultiLevelPropertyAccessor.setValue(Mc3s.Odos.Library.DataItem,System.Object)">setValue(DataItem, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setValue(DataItem targetItem, object val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a></td>
+        <td><span class="parametername">targetItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IValueAccessor.html">IValueAccessor</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DataItemClassInfo.cs#lines-5730" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

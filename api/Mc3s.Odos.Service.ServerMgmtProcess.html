@@ -1,0 +1,753 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ServerMgmtProcess
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ServerMgmtProcess
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Service.ServerMgmtProcess">
+  
+  
+  <h1 id="Mc3s_Odos_Service_ServerMgmtProcess" data-uid="Mc3s.Odos.Service.ServerMgmtProcess" class="text-break">Class ServerMgmtProcess
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for ServerMgmtProcess.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html">ServiceStartupInfo</a>&lt;<a class="xref" href="Mc3s.Odos.Client.Engine.ProcessApplication.html">ProcessApplication</a>&gt;</div>
+    <div class="level2"><a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html">ProcessStartupInfoBase</a>&lt;<a class="xref" href="Mc3s.Odos.Client.Engine.ProcessApplication.html">ProcessApplication</a>&gt;</div>
+    <div class="level3"><span class="xref">ServerMgmtProcess</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mc3s.Odos.Client.IProcessStartupInfo-1.html">IProcessStartupInfo</a>&lt;<a class="xref" href="Mc3s.Odos.Client.Engine.ProcessApplication.html">ProcessApplication</a>&gt;</div>
+    <div><a class="xref" href="Mc3s.Odos.Client.IProcessStartupInfo.html">IProcessStartupInfo</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Client.IServiceStartupInfo-1.html">IServiceStartupInfo</a>&lt;<a class="xref" href="Mc3s.Odos.Client.Engine.ProcessApplication.html">ProcessApplication</a>&gt;</div>
+    <div><a class="xref" href="Mc3s.Odos.Client.IServiceStartupInfo.html">IServiceStartupInfo</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Client.IServiceAgent.html">IServiceAgent</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1__Client">ProcessStartupInfoBase&lt;ProcessApplication&gt;._Client</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1__ClientAppType">ProcessStartupInfoBase&lt;ProcessApplication&gt;._ClientAppType</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1__Library">ProcessStartupInfoBase&lt;ProcessApplication&gt;._Library</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1__Protocol">ProcessStartupInfoBase&lt;ProcessApplication&gt;._Protocol</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1__ServerDns">ProcessStartupInfoBase&lt;ProcessApplication&gt;._ServerDns</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1__ServerPort">ProcessStartupInfoBase&lt;ProcessApplication&gt;._ServerPort</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1__ClientConnectWay">ProcessStartupInfoBase&lt;ProcessApplication&gt;._ClientConnectWay</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1__MonitorAllServerRegisteredDomains">ProcessStartupInfoBase&lt;ProcessApplication&gt;._MonitorAllServerRegisteredDomains</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1__HasPrepared">ProcessStartupInfoBase&lt;ProcessApplication&gt;._HasPrepared</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1__RequiredDomains">ProcessStartupInfoBase&lt;ProcessApplication&gt;._RequiredDomains</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1__SkipCustomPrepareBeforeLoop">ProcessStartupInfoBase&lt;ProcessApplication&gt;._SkipCustomPrepareBeforeLoop</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1__ReThrowOnLoopException">ProcessStartupInfoBase&lt;ProcessApplication&gt;._ReThrowOnLoopException</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1__SkipCustomCleanUpAfterLoop">ProcessStartupInfoBase&lt;ProcessApplication&gt;._SkipCustomCleanUpAfterLoop</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1_collectAndRegisterRequiredDomains">ProcessStartupInfoBase&lt;ProcessApplication&gt;.collectAndRegisterRequiredDomains()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1_registerDomainToMonitor_Mc3s_Odos_Library_DomainLoadInfo_">ProcessStartupInfoBase&lt;ProcessApplication&gt;.registerDomainToMonitor(DomainLoadInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1_addRequiredDomain_Mc3s_Odos_Library_DomainLoadInfo_">ProcessStartupInfoBase&lt;ProcessApplication&gt;.addRequiredDomain(DomainLoadInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Client.Engine.ProcessStartupInfoBase-1.html#Mc3s_Odos_Client_Engine_ProcessStartupInfoBase_1_addRequiredDomain_Mc3s_Odos_Client_DataItemDomainFactory_">ProcessStartupInfoBase&lt;ProcessApplication&gt;.addRequiredDomain(DataItemDomainFactory)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1_ServiceStarted">ServiceStartupInfo&lt;ProcessApplication&gt;.ServiceStarted</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1_OnServiceStarted">ServiceStartupInfo&lt;ProcessApplication&gt;.OnServiceStarted()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1_ServiceStopped">ServiceStartupInfo&lt;ProcessApplication&gt;.ServiceStopped</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1_OnServiceStopped">ServiceStartupInfo&lt;ProcessApplication&gt;.OnServiceStopped()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__Application">ServiceStartupInfo&lt;ProcessApplication&gt;._Application</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__ProcessStartUpMode">ServiceStartupInfo&lt;ProcessApplication&gt;._ProcessStartUpMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__ApplicationStartMode">ServiceStartupInfo&lt;ProcessApplication&gt;._ApplicationStartMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__ProcessID">ServiceStartupInfo&lt;ProcessApplication&gt;._ProcessID</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__RoleID">ServiceStartupInfo&lt;ProcessApplication&gt;._RoleID</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__Name">ServiceStartupInfo&lt;ProcessApplication&gt;._Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__AppName">ServiceStartupInfo&lt;ProcessApplication&gt;._AppName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__AppInstanceID">ServiceStartupInfo&lt;ProcessApplication&gt;._AppInstanceID</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__AppDescription">ServiceStartupInfo&lt;ProcessApplication&gt;._AppDescription</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__AppURI">ServiceStartupInfo&lt;ProcessApplication&gt;._AppURI</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceApp">ServiceStartupInfo&lt;ProcessApplication&gt;._ServiceApp</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__AllowMultipleProcessInstances">ServiceStartupInfo&lt;ProcessApplication&gt;._AllowMultipleProcessInstances</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__SuppressDisplayLife">ServiceStartupInfo&lt;ProcessApplication&gt;._SuppressDisplayLife</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__SuppressInform">ServiceStartupInfo&lt;ProcessApplication&gt;._SuppressInform</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__SettingValues">ServiceStartupInfo&lt;ProcessApplication&gt;._SettingValues</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__IsServiceStarted">ServiceStartupInfo&lt;ProcessApplication&gt;._IsServiceStarted</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1_initializeSettings">ServiceStartupInfo&lt;ProcessApplication&gt;.initializeSettings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1_handleConfigurationSettingRead_System_Object_Mc3s_SharedLib_ConfigurationSettingReadEventArgs_">ServiceStartupInfo&lt;ProcessApplication&gt;.handleConfigurationSettingRead(Object, ConfigurationSettingReadEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1_handleServiceMainWindowClosed_System_Object_Mc3s_Odos_Client_WindowClosedEventArgs_">ServiceStartupInfo&lt;ProcessApplication&gt;.handleServiceMainWindowClosed(Object, WindowClosedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1_handleCtrlC_System_Object_Mc3s_SharedLib_SystemConsoleEventArgs_">ServiceStartupInfo&lt;ProcessApplication&gt;.handleCtrlC(Object, SystemConsoleEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1_onServiceStart">ServiceStartupInfo&lt;ProcessApplication&gt;.onServiceStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1_onServiceStop">ServiceStartupInfo&lt;ProcessApplication&gt;.onServiceStop()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1_addOverrideConfSettingValue_System_String_System_String_System_String_">ServiceStartupInfo&lt;ProcessApplication&gt;.addOverrideConfSettingValue(String, String, String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Service.html">Mc3s.Odos.Service</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Service_ServerMgmtProcess_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ServerMgmtProcess : ProcessStartupInfoBase&lt;ProcessApplication&gt;, IProcessStartupInfo&lt;ProcessApplication&gt;, IProcessStartupInfo, IServiceStartupInfo&lt;ProcessApplication&gt;, IServiceStartupInfo, IServiceAgent</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-73">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Service_ServerMgmtProcess__ctor_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Service_ServerMgmtProcess__ctor_System_Guid_Mc3s_SharedLib_IApplication_Mc3s_SharedLib_ApplicationStartMode_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.#ctor(System.Guid,Mc3s.SharedLib.IApplication,Mc3s.SharedLib.ApplicationStartMode)">ServerMgmtProcess(Guid, IApplication, ApplicationStartMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServerMgmtProcess(Guid parentServiceID, IApplication app, ApplicationStartMode applicationStartMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">parentServiceID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.SharedLib.IApplication</span></td>
+        <td><span class="parametername">app</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Mc3s.SharedLib.ApplicationStartMode</span></td>
+        <td><span class="parametername">applicationStartMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-21">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Service_ServerMgmtProcess_CONF_SRV_MGMT_ROLE_ID" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.CONF_SRV_MGMT_ROLE_ID">CONF_SRV_MGMT_ROLE_ID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CONF_SRV_MGMT_ROLE_ID = &quot;ODOS-SRV-MGMT&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-25">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Service_ServerMgmtProcess_SPH_SERVER_MGMT_REGISTERED" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.SPH_SERVER_MGMT_REGISTERED">SPH_SERVER_MGMT_REGISTERED</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SPH_SERVER_MGMT_REGISTERED</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-24">View Source</a>
+  </span>
+  <h4 id="Mc3s_Odos_Service_ServerMgmtProcess_SPH_SERVER_MGMT_THREAD_STARTED" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.SPH_SERVER_MGMT_THREAD_STARTED">SPH_SERVER_MGMT_THREAD_STARTED</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SPH_SERVER_MGMT_THREAD_STARTED</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-66">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Service_ServerMgmtProcess__CancellationToken_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess._CancellationToken*"></a>
+  <h4 id="Mc3s_Odos_Service_ServerMgmtProcess__CancellationToken" data-uid="Mc3s.Odos.Service.ServerMgmtProcess._CancellationToken">_CancellationToken</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CancellationToken _CancellationToken { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-63">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Service_ServerMgmtProcess__ParentServiceID_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess._ParentServiceID*"></a>
+  <h4 id="Mc3s_Odos_Service_ServerMgmtProcess__ParentServiceID" data-uid="Mc3s.Odos.Service.ServerMgmtProcess._ParentServiceID">_ParentServiceID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid _ParentServiceID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-64">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Service_ServerMgmtProcess__Server_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess._Server*"></a>
+  <h4 id="Mc3s_Odos_Service_ServerMgmtProcess__Server" data-uid="Mc3s.Odos.Service.ServerMgmtProcess._Server">_Server</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IServer _Server { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IServer.html">IServer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-65">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Service_ServerMgmtProcess__ServerAuthenticationProvider_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess._ServerAuthenticationProvider*"></a>
+  <h4 id="Mc3s_Odos_Service_ServerMgmtProcess__ServerAuthenticationProvider" data-uid="Mc3s.Odos.Service.ServerMgmtProcess._ServerAuthenticationProvider">_ServerAuthenticationProvider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IServerAuthenticationProvider _ServerAuthenticationProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Client.IServerAuthenticationProvider.html">IServerAuthenticationProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-228">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Service_ServerMgmtProcess_addHandler_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.addHandler*"></a>
+  <h4 id="Mc3s_Odos_Service_ServerMgmtProcess_addHandler_Mc3s_Odos_Service_ServerMgmtHandler_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.addHandler(Mc3s.Odos.Service.ServerMgmtHandler)">addHandler(ServerMgmtHandler)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void addHandler(ServerMgmtHandler handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Service.ServerMgmtHandler.html">ServerMgmtHandler</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-154">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Service_ServerMgmtProcess_execCustomCleanUpAfterLoop_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.execCustomCleanUpAfterLoop*"></a>
+  <h4 id="Mc3s_Odos_Service_ServerMgmtProcess_execCustomCleanUpAfterLoop_Mc3s_SharedLib_IThreadLoop_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.execCustomCleanUpAfterLoop(Mc3s.SharedLib.IThreadLoop)">execCustomCleanUpAfterLoop(IThreadLoop)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void execCustomCleanUpAfterLoop(IThreadLoop threadLoop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.SharedLib.IThreadLoop</span></td>
+        <td><span class="parametername">threadLoop</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Client.Engine.ProcessStartupInfoBase&lt;Mc3s.Odos.Client.Engine.ProcessApplication&gt;.execCustomCleanUpAfterLoop(Mc3s.SharedLib.IThreadLoop)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-139">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Service_ServerMgmtProcess_execCustomPrepareBeforeLoop_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.execCustomPrepareBeforeLoop*"></a>
+  <h4 id="Mc3s_Odos_Service_ServerMgmtProcess_execCustomPrepareBeforeLoop_Mc3s_SharedLib_IThreadLoop_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.execCustomPrepareBeforeLoop(Mc3s.SharedLib.IThreadLoop)">execCustomPrepareBeforeLoop(IThreadLoop)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void execCustomPrepareBeforeLoop(IThreadLoop threadLoop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.SharedLib.IThreadLoop</span></td>
+        <td><span class="parametername">threadLoop</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Client.Engine.ProcessStartupInfoBase&lt;Mc3s.Odos.Client.Engine.ProcessApplication&gt;.execCustomPrepareBeforeLoop(Mc3s.SharedLib.IThreadLoop)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-134">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Service_ServerMgmtProcess_execMainInLoop_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.execMainInLoop*"></a>
+  <h4 id="Mc3s_Odos_Service_ServerMgmtProcess_execMainInLoop_Mc3s_SharedLib_IThreadLoop_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.execMainInLoop(Mc3s.SharedLib.IThreadLoop)">execMainInLoop(IThreadLoop)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void execMainInLoop(IThreadLoop threadLoop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.SharedLib.IThreadLoop</span></td>
+        <td><span class="parametername">threadLoop</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Client.Engine.ProcessStartupInfoBase&lt;Mc3s.Odos.Client.Engine.ProcessApplication&gt;.execMainInLoop(Mc3s.SharedLib.IThreadLoop)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-31">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Service_ServerMgmtProcess_getServer_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.getServer*"></a>
+  <h4 id="Mc3s_Odos_Service_ServerMgmtProcess_getServer_Mc3s_Odos_Library_IClient_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.getServer(Mc3s.Odos.Library.IClient)">getServer(IClient)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IServer getServer(IClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IClient.html">IClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IServer.html">IServer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-91">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Service_ServerMgmtProcess_initializeClient_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.initializeClient*"></a>
+  <h4 id="Mc3s_Odos_Service_ServerMgmtProcess_initializeClient" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.initializeClient">initializeClient()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void initializeClient()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mc3s.Odos.Client.Engine.ProcessStartupInfoBase&lt;Mc3s.Odos.Client.Engine.ProcessApplication&gt;.initializeClient()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-244">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Service_ServerMgmtProcess_registerServer_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.registerServer*"></a>
+  <h4 id="Mc3s_Odos_Service_ServerMgmtProcess_registerServer_Mc3s_Odos_Library_IServer_" data-uid="Mc3s.Odos.Service.ServerMgmtProcess.registerServer(Mc3s.Odos.Library.IServer)">registerServer(IServer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void registerServer(IServer server)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IServer.html">IServer</a></td>
+        <td><span class="parametername">server</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Client.IProcessStartupInfo-1.html">IProcessStartupInfo&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Client.IProcessStartupInfo.html">IProcessStartupInfo</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Client.IServiceStartupInfo-1.html">IServiceStartupInfo&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Client.IServiceStartupInfo.html">IServiceStartupInfo</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Client.IServiceAgent.html">IServiceAgent</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Service/ServerMgmtProcess.cs#lines-16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

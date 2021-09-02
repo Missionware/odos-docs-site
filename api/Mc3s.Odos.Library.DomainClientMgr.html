@@ -1,0 +1,628 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DomainClientMgr
+   | ODOS website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DomainClientMgr
+   | ODOS website ">
+    <meta name="generator" content="docfx 2.58.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mc3s.Odos.Library.DomainClientMgr">
+  
+  
+  <h1 id="Mc3s_Odos_Library_DomainClientMgr" data-uid="Mc3s.Odos.Library.DomainClientMgr" class="text-break">Class DomainClientMgr
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for DomainClientMgr.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html">ClientProcessMgrBase</a></div>
+    <div class="level2"><span class="xref">DomainClientMgr</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Mc3s.SharedLib.IHostInfo</span></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.ILeaseAgent.html">ILeaseAgent</a></div>
+    <div><span class="xref">Mc3s.Odos.Security.IConnectedAuthorizationProvider</span></div>
+    <div><span class="xref">Mc3s.Odos.Security.IAuthorizationProvider</span></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.ITxnDispatchProxy.html">ITxnDispatchProxy</a></div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IRegistrationSubscriber-2.html">IRegistrationSubscriber</a>&lt;<span class="xref">System.String</span>, <a class="xref" href="Mc3s.Odos.Library.DataItemClassInfo.html">DataItemClassInfo</a>&gt;</div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IRegistrationSubscriber-2.html">IRegistrationSubscriber</a>&lt;<a class="xref" href="Mc3s.Odos.Library.DataItemKey.html">DataItemKey</a>, <a class="xref" href="Mc3s.Odos.Library.DataItem.html">DataItem</a>&gt;</div>
+    <div><a class="xref" href="Mc3s.Odos.Library.IRegistrationSubscriber.html">IRegistrationSubscriber</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_NoTXNTransmited">ClientProcessMgrBase.NoTXNTransmited</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_startUsingClientDataInThread_Mc3s_Odos_Library_ClientProcessMgrBase_">ClientProcessMgrBase.startUsingClientDataInThread(ClientProcessMgrBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_endUsingClientDataInThread">ClientProcessMgrBase.endUsingClientDataInThread()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_getThreadClientProcessMgr_System_Boolean_">ClientProcessMgrBase.getThreadClientProcessMgr(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__closeSync">ClientProcessMgrBase._closeSync</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__outgoingEventsSync">ClientProcessMgrBase._outgoingEventsSync</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__isClosing">ClientProcessMgrBase._isClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__ConnectionTicket">ClientProcessMgrBase._ConnectionTicket</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__Server">ClientProcessMgrBase._Server</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__ProcessPrincipal">ClientProcessMgrBase._ProcessPrincipal</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__IsClosing">ClientProcessMgrBase._IsClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__ClientProcessSignature">ClientProcessMgrBase._ClientProcessSignature</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__IsArchivedIncludedInRead">ClientProcessMgrBase._IsArchivedIncludedInRead</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__ClientInitialLeaseTime">ClientProcessMgrBase._ClientInitialLeaseTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__ClientReplyLeaseTime">ClientProcessMgrBase._ClientReplyLeaseTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__ClientCallLeaseTime">ClientProcessMgrBase._ClientCallLeaseTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__ClientGracePeriod">ClientProcessMgrBase._ClientGracePeriod</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__ClientMaxRecoverableCommErrors">ClientProcessMgrBase._ClientMaxRecoverableCommErrors</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__RecoverableCommErrorCount">ClientProcessMgrBase._RecoverableCommErrorCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__LastKnownTransID">ClientProcessMgrBase._LastKnownTransID</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__LastTransmittedTransID">ClientProcessMgrBase._LastTransmittedTransID</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__HostName">ClientProcessMgrBase._HostName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__DNS">ClientProcessMgrBase._DNS</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__MachineName">ClientProcessMgrBase._MachineName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__IPAddress">ClientProcessMgrBase._IPAddress</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__Library">ClientProcessMgrBase._Library</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__Protocol">ClientProcessMgrBase._Protocol</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__ListeningPort">ClientProcessMgrBase._ListeningPort</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__URI">ClientProcessMgrBase._URI</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_LeaseStateChange">ClientProcessMgrBase.LeaseStateChange</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__ClientLease">ClientProcessMgrBase._ClientLease</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_onLeaseStateChange_Mc3s_Odos_Library_LeaseStateChangedEventArgs_">ClientProcessMgrBase.onLeaseStateChange(LeaseStateChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__Authorization">ClientProcessMgrBase._Authorization</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__ServiceSecurity">ClientProcessMgrBase._ServiceSecurity</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__ObjMgr">ClientProcessMgrBase._ObjMgr</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__IsHandling">ClientProcessMgrBase._IsHandling</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_linkAsSubscriber_Mc3s_Odos_Library_IRegistrationInfoContainer_System_String_Mc3s_Odos_Library_DataItemClassInfo__System_Int32_">ClientProcessMgrBase.linkAsSubscriber(IRegistrationInfoContainer&lt;String, DataItemClassInfo&gt;, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_unlinkAsSubscriber_Mc3s_Odos_Library_IRegistrationInfoContainer_System_String_Mc3s_Odos_Library_DataItemClassInfo__">ClientProcessMgrBase.unlinkAsSubscriber(IRegistrationInfoContainer&lt;String, DataItemClassInfo&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_getSubscriptionIndex_Mc3s_Odos_Library_IRegistrationInfoContainer_System_String_Mc3s_Odos_Library_DataItemClassInfo__">ClientProcessMgrBase.getSubscriptionIndex(IRegistrationInfoContainer&lt;String, DataItemClassInfo&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_handleRegistrationSubscribersChanged_System_Object_Mc3s_Odos_Library_RegistrationSubscribersChangedEventArgs_System_String_Mc3s_Odos_Library_DataItemClassInfo__">ClientProcessMgrBase.handleRegistrationSubscribersChanged(Object, RegistrationSubscribersChangedEventArgs&lt;String, DataItemClassInfo&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_handleRegistrationSubscriptionChanged_System_Object_Mc3s_Odos_Library_RegistrationSubscriptionChangedEventArgs_System_String_Mc3s_Odos_Library_DataItemClassInfo__">ClientProcessMgrBase.handleRegistrationSubscriptionChanged(Object, RegistrationSubscriptionChangedEventArgs&lt;String, DataItemClassInfo&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_linkAsSubscriber_Mc3s_Odos_Library_IRegistrationInfoContainer_Mc3s_Odos_Library_DataItemKey_Mc3s_Odos_Library_DataItem__System_Int32_">ClientProcessMgrBase.linkAsSubscriber(IRegistrationInfoContainer&lt;DataItemKey, DataItem&gt;, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_unlinkAsSubscriber_Mc3s_Odos_Library_IRegistrationInfoContainer_Mc3s_Odos_Library_DataItemKey_Mc3s_Odos_Library_DataItem__">ClientProcessMgrBase.unlinkAsSubscriber(IRegistrationInfoContainer&lt;DataItemKey, DataItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_getSubscriptionIndex_Mc3s_Odos_Library_IRegistrationInfoContainer_Mc3s_Odos_Library_DataItemKey_Mc3s_Odos_Library_DataItem__">ClientProcessMgrBase.getSubscriptionIndex(IRegistrationInfoContainer&lt;DataItemKey, DataItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_handleRegistrationSubscribersChanged_System_Object_Mc3s_Odos_Library_RegistrationSubscribersChangedEventArgs_Mc3s_Odos_Library_DataItemKey_Mc3s_Odos_Library_DataItem__">ClientProcessMgrBase.handleRegistrationSubscribersChanged(Object, RegistrationSubscribersChangedEventArgs&lt;DataItemKey, DataItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_handleRegistrationSubscriptionChanged_System_Object_Mc3s_Odos_Library_RegistrationSubscriptionChangedEventArgs_Mc3s_Odos_Library_DataItemKey_Mc3s_Odos_Library_DataItem__">ClientProcessMgrBase.handleRegistrationSubscriptionChanged(Object, RegistrationSubscriptionChangedEventArgs&lt;DataItemKey, DataItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_evaluateTxnForDispatch_System_Boolean_Mc3s_Odos_Library_TransactionEventArgs_">ClientProcessMgrBase.evaluateTxnForDispatch(Boolean, TransactionEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_linkServiceSecurity_Mc3s_Odos_Security_IServiceSecurityObject_">ClientProcessMgrBase.linkServiceSecurity(IServiceSecurityObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_checkIfClientIsListening">ClientProcessMgrBase.checkIfClientIsListening()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_discardDeadClient">ClientProcessMgrBase.discardDeadClient()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_registerServerEventHandler_Mc3s_Odos_Library_ServerEventHandler_">ClientProcessMgrBase.registerServerEventHandler(ServerEventHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_startServerEventQueueCheck">ClientProcessMgrBase.startServerEventQueueCheck()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_enqueueOutgoingServerEvent_Mc3s_Odos_Library_ServerEventArgs_">ClientProcessMgrBase.enqueueOutgoingServerEvent(ServerEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_dequeueEventsAndSend_System_Collections_Generic_List_Mc3s_Odos_Library_ServerEventArgs__System_Boolean_">ClientProcessMgrBase.dequeueEventsAndSend(List&lt;ServerEventArgs&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_Close">ClientProcessMgrBase.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_registerClassInfoToProcess_Mc3s_Odos_Library_DataItemClassInfo_">ClientProcessMgrBase.registerClassInfoToProcess(DataItemClassInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_unRegisterClassInfoFromProcess_Mc3s_Odos_Library_DataItemClassInfo_">ClientProcessMgrBase.unRegisterClassInfoFromProcess(DataItemClassInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_registerDataItemToProcess_Mc3s_Odos_Library_DataItem_">ClientProcessMgrBase.registerDataItemToProcess(DataItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_unRegisterDataItemFromProcess_Mc3s_Odos_Library_DataItem_">ClientProcessMgrBase.unRegisterDataItemFromProcess(DataItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_ConnectionCheckup">ClientProcessMgrBase.ConnectionCheckup()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mc3s.Odos.Library.html">Mc3s.Odos.Library</a></h6>
+  <h6><strong>Assembly</strong>: Mc3s.Odos.dll</h6>
+  <h5 id="Mc3s_Odos_Library_DomainClientMgr_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DomainClientMgr : ClientProcessMgrBase, IHostInfo, ILeaseAgent, IConnectedAuthorizationProvider, IAuthorizationProvider, ITxnDispatchProxy, IRegistrationSubscriber&lt;string, DataItemClassInfo&gt;, IRegistrationSubscriber&lt;DataItemKey, DataItem&gt;, IRegistrationSubscriber</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DomainClientMgr.cs#lines-26">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DomainClientMgr__ctor_" data-uid="Mc3s.Odos.Library.DomainClientMgr.#ctor*"></a>
+  <h4 id="Mc3s_Odos_Library_DomainClientMgr__ctor_Mc3s_Odos_Library_DataItemDomain_Mc3s_Odos_Library_IServer_Mc3s_Odos_Library_ClientKey_" data-uid="Mc3s.Odos.Library.DomainClientMgr.#ctor(Mc3s.Odos.Library.DataItemDomain,Mc3s.Odos.Library.IServer,Mc3s.Odos.Library.ClientKey)">DomainClientMgr(DataItemDomain, IServer, ClientKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DomainClientMgr(DataItemDomain domain, IServer server, ClientKey connectionTicket)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.DataItemDomain.html">DataItemDomain</a></td>
+        <td><span class="parametername">domain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.IServer.html">IServer</a></td>
+        <td><span class="parametername">server</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mc3s.Odos.Library.ClientKey.html">ClientKey</a></td>
+        <td><span class="parametername">connectionTicket</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DomainClientMgr.cs#lines-51">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DomainClientMgr__ConnectedAuthorization_" data-uid="Mc3s.Odos.Library.DomainClientMgr._ConnectedAuthorization*"></a>
+  <h4 id="Mc3s_Odos_Library_DomainClientMgr__ConnectedAuthorization" data-uid="Mc3s.Odos.Library.DomainClientMgr._ConnectedAuthorization">_ConnectedAuthorization</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IConnectedAuthorization _ConnectedAuthorization { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mc3s.Odos.Security.IConnectedAuthorization</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__ConnectedAuthorization">ClientProcessMgrBase._ConnectedAuthorization</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DomainClientMgr.cs#lines-53">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DomainClientMgr__IsRegistered_" data-uid="Mc3s.Odos.Library.DomainClientMgr._IsRegistered*"></a>
+  <h4 id="Mc3s_Odos_Library_DomainClientMgr__IsRegistered" data-uid="Mc3s.Odos.Library.DomainClientMgr._IsRegistered">_IsRegistered</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool _IsRegistered { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__IsRegistered">ClientProcessMgrBase._IsRegistered</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DomainClientMgr.cs#lines-52">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DomainClientMgr__IsRegistrationRequired_" data-uid="Mc3s.Odos.Library.DomainClientMgr._IsRegistrationRequired*"></a>
+  <h4 id="Mc3s_Odos_Library_DomainClientMgr__IsRegistrationRequired" data-uid="Mc3s.Odos.Library.DomainClientMgr._IsRegistrationRequired">_IsRegistrationRequired</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool _IsRegistrationRequired { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__IsRegistrationRequired">ClientProcessMgrBase._IsRegistrationRequired</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DomainClientMgr.cs#lines-38">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DomainClientMgr__IsServiceSecurityEnabled_" data-uid="Mc3s.Odos.Library.DomainClientMgr._IsServiceSecurityEnabled*"></a>
+  <h4 id="Mc3s_Odos_Library_DomainClientMgr__IsServiceSecurityEnabled" data-uid="Mc3s.Odos.Library.DomainClientMgr._IsServiceSecurityEnabled">_IsServiceSecurityEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool _IsServiceSecurityEnabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase__IsServiceSecurityEnabled">ClientProcessMgrBase._IsServiceSecurityEnabled</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DomainClientMgr.cs#lines-71">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DomainClientMgr_isAuthorizedTo_" data-uid="Mc3s.Odos.Library.DomainClientMgr.isAuthorizedTo*"></a>
+  <h4 id="Mc3s_Odos_Library_DomainClientMgr_isAuthorizedTo_System_Exception__System_Collections_Generic_IEnumerable_Mc3s_Odos_Security_ISecurityObject__" data-uid="Mc3s.Odos.Library.DomainClientMgr.isAuthorizedTo(System.Exception@,System.Collections.Generic.IEnumerable{Mc3s.Odos.Security.ISecurityObject})">isAuthorizedTo(out Exception, IEnumerable&lt;ISecurityObject&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool isAuthorizedTo(out Exception ex, IEnumerable&lt;ISecurityObject&gt; securityObjectsToAssess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">ex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Mc3s.Odos.Security.ISecurityObject</span>&gt;</td>
+        <td><span class="parametername">securityObjectsToAssess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_isAuthorizedTo_System_Exception__System_Collections_Generic_IEnumerable_Mc3s_Odos_Security_ISecurityObject__">ClientProcessMgrBase.isAuthorizedTo(out Exception, IEnumerable&lt;ISecurityObject&gt;)</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DomainClientMgr.cs#lines-56">View Source</a>
+  </span>
+  <a id="Mc3s_Odos_Library_DomainClientMgr_isAuthorizedToAccessRequiredDomains_" data-uid="Mc3s.Odos.Library.DomainClientMgr.isAuthorizedToAccessRequiredDomains*"></a>
+  <h4 id="Mc3s_Odos_Library_DomainClientMgr_isAuthorizedToAccessRequiredDomains_System_Exception__" data-uid="Mc3s.Odos.Library.DomainClientMgr.isAuthorizedToAccessRequiredDomains(System.Exception@)">isAuthorizedToAccessRequiredDomains(out Exception)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool isAuthorizedToAccessRequiredDomains(out Exception ex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">ex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mc3s.Odos.Library.ClientProcessMgrBase.html#Mc3s_Odos_Library_ClientProcessMgrBase_isAuthorizedToAccessRequiredDomains_System_Exception__">ClientProcessMgrBase.isAuthorizedToAccessRequiredDomains(out Exception)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Mc3s.SharedLib.IHostInfo</span>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.ILeaseAgent.html">ILeaseAgent</a>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Odos.Security.IConnectedAuthorizationProvider</span>
+  </div>
+  <div>
+      <span class="xref">Mc3s.Odos.Security.IAuthorizationProvider</span>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.ITxnDispatchProxy.html">ITxnDispatchProxy</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationSubscriber-2.html">IRegistrationSubscriber&lt;K, T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationSubscriber-2.html">IRegistrationSubscriber&lt;K, T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mc3s.Odos.Library.IRegistrationSubscriber.html">IRegistrationSubscriber</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/missionware-core/odos/src/develop/src/Mc3s.Odos/Library/DomainClientMgr.cs#lines-14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Missionware.
+            
+          </span></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
