@@ -44,6 +44,8 @@ button, a, .btn-primary {
 }
 .toc .nav > li > a, .affix ul > li > a, .affix ul > li > a:hover {
   color: #666666;
+  padding-left: 10px;
+  text-indent: -10px;
 }
 
 svg:hover path {
