@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ServiceStartupInfo&lt;T&gt;
    | ODOS Documentation ">
-    <meta name="generator" content="docfx 2.58.2.0">
+    <meta name="generator" content="docfx 2.58.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -172,7 +172,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ServiceStartupInfo(IApplication app, ApplicationStartMode applicationStartMode, ProcessStartUpMode processStartUpMode, string processID, string roleID, string appName)</code></pre>
+    <pre><code class="lang-csharp hljs">public ServiceStartupInfo(IApplication app, ApplicationStartMode applicationStartMode, ProcessStartUpMode processStartUpMode, string processID, string roleID, string serviceAppTypeID)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -211,7 +211,7 @@
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">appName</span></td>
+        <td><span class="parametername">serviceAppTypeID</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -222,7 +222,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ServiceStartupInfo(IApplication app, ApplicationStartMode applicationStartMode, ProcessStartUpMode processStartUpMode, string processID, string roleID, string appName, string appInstanceID)</code></pre>
+    <pre><code class="lang-csharp hljs">public ServiceStartupInfo(IApplication app, ApplicationStartMode applicationStartMode, ProcessStartUpMode processStartUpMode, string processID, string roleID, string serviceAppTypeID, string serviceAppInstanceID)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -261,72 +261,12 @@
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">appName</span></td>
+        <td><span class="parametername">serviceAppTypeID</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">appInstanceID</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Mc3s_Odos_Service_ServiceStartupInfo_1__ctor_" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1.#ctor*"></a>
-  <h4 id="Mc3s_Odos_Service_ServiceStartupInfo_1__ctor_Mc3s_SharedLib_IApplication_Mc3s_SharedLib_ApplicationStartMode_Mc3s_SharedLib_ProcessStartUpMode_System_String_System_String_System_String_System_String_System_String_" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1.#ctor(Mc3s.SharedLib.IApplication,Mc3s.SharedLib.ApplicationStartMode,Mc3s.SharedLib.ProcessStartUpMode,System.String,System.String,System.String,System.String,System.String)">ServiceStartupInfo(IApplication, ApplicationStartMode, ProcessStartUpMode, String, String, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ServiceStartupInfo(IApplication app, ApplicationStartMode applicationStartMode, ProcessStartUpMode processStartUpMode, string processID, string roleID, string appName, string appInstanceID, string appDescription)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Mc3s.SharedLib.IApplication</span></td>
-        <td><span class="parametername">app</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Mc3s.SharedLib.ApplicationStartMode</span></td>
-        <td><span class="parametername">applicationStartMode</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Mc3s.SharedLib.ProcessStartUpMode</span></td>
-        <td><span class="parametername">processStartUpMode</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">processID</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">roleID</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">appName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">appInstanceID</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">appDescription</span></td>
+        <td><span class="parametername">serviceAppInstanceID</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -352,52 +292,6 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Mc3s_Odos_Service_ServiceStartupInfo_1__AppDescription_" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._AppDescription*"></a>
-  <h4 id="Mc3s_Odos_Service_ServiceStartupInfo_1__AppDescription" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._AppDescription">_AppDescription</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string _AppDescription { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Mc3s_Odos_Service_ServiceStartupInfo_1__AppInstanceID_" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._AppInstanceID*"></a>
-  <h4 id="Mc3s_Odos_Service_ServiceStartupInfo_1__AppInstanceID" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._AppInstanceID">_AppInstanceID</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual string _AppInstanceID { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -444,52 +338,6 @@
     <tbody>
       <tr>
         <td><span class="xref">Mc3s.SharedLib.ApplicationStartMode</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Mc3s_Odos_Service_ServiceStartupInfo_1__AppName_" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._AppName*"></a>
-  <h4 id="Mc3s_Odos_Service_ServiceStartupInfo_1__AppName" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._AppName">_AppName</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual string _AppName { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Mc3s_Odos_Service_ServiceStartupInfo_1__AppURI_" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._AppURI*"></a>
-  <h4 id="Mc3s_Odos_Service_ServiceStartupInfo_1__AppURI" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._AppURI">_AppURI</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual string _AppURI { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -628,6 +476,121 @@
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceAppDescription_" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._ServiceAppDescription*"></a>
+  <h4 id="Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceAppDescription" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._ServiceAppDescription">_ServiceAppDescription</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string _ServiceAppDescription { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceAppInstanceID_" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._ServiceAppInstanceID*"></a>
+  <h4 id="Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceAppInstanceID" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._ServiceAppInstanceID">_ServiceAppInstanceID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string _ServiceAppInstanceID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceAppName_" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._ServiceAppName*"></a>
+  <h4 id="Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceAppName" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._ServiceAppName">_ServiceAppName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string _ServiceAppName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceAppTypeID_" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._ServiceAppTypeID*"></a>
+  <h4 id="Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceAppTypeID" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._ServiceAppTypeID">_ServiceAppTypeID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string _ServiceAppTypeID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceAppURI_" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._ServiceAppURI*"></a>
+  <h4 id="Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceAppURI" data-uid="Mc3s.Odos.Service.ServiceStartupInfo`1._ServiceAppURI">_ServiceAppURI</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string _ServiceAppURI { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DataItem
    | ODOS Documentation ">
-    <meta name="generator" content="docfx 2.58.2.0">
+    <meta name="generator" content="docfx 2.58.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -3175,6 +3175,7 @@ public long _TransID { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static T _GetOrCreateDataItem&lt;T&gt;(IClient client, object[] ids)
+
     where T : DataItem</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -3296,6 +3297,7 @@ public long _TransID { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static T _GetOrDefaultDataItem&lt;T&gt;(IClient client, object[] ids, T defaultVal)
+
     where T : DataItem</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -3414,6 +3416,7 @@ public long _TransID { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static T _GetOrNullDataItem&lt;T&gt;(IClient client, object[] ids)
+
     where T : DataItem</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -5281,6 +5284,7 @@ public long _TransID { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static List&lt;DataItemType&gt; extractHierarchyGraphDataItemTypes&lt;DataItemType&gt;(DataItemType root, bool leavesOnly = false)
+
     where DataItemType : DataItem</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -9025,6 +9029,7 @@ public long _TransID { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool IsContainedIn&lt;T&gt;(IEnumerable&lt;T&gt; items, params SearchArg[] sArgs)
+
     where T : DataItem</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -9086,6 +9091,7 @@ public long _TransID { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool IsContainedIn&lt;T&gt;(IEnumerable&lt;T&gt; items, bool includeSubTypes, params SearchArg[] sArgs)
+
     where T : DataItem</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -10959,6 +10965,7 @@ public long _TransID { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static ICollection&lt;T&gt; Read&lt;T&gt;(IClient client, IWhereExpression whereExpression)
+
     where T : DataItem</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -11020,6 +11027,7 @@ public long _TransID { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static ICollection&lt;T&gt; Read&lt;T&gt;(IClient client, IWhereExpression whereExpression, QueryExecutionScope preferredValidationScope)
+
     where T : DataItem</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -11191,6 +11199,7 @@ public long _TransID { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static async Task&lt;ICollection&lt;T&gt;&gt; ReadAsync&lt;T&gt;(IClient client, IWhereExpression whereExpression)
+
     where T : DataItem</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -11252,6 +11261,7 @@ public long _TransID { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static async Task&lt;ICollection&lt;T&gt;&gt; ReadAsync&lt;T&gt;(IClient client, IWhereExpression whereExpression, QueryExecutionScope preferredValidationScope)
+
     where T : DataItem</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -11747,6 +11757,7 @@ public long _TransID { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static List&lt;T&gt; Search&lt;T&gt;(IEnumerable&lt;T&gt; items, params SearchArg[] sArgs)
+
     where T : DataItem</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -11808,6 +11819,7 @@ public long _TransID { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static List&lt;T&gt; Search&lt;T&gt;(IEnumerable&lt;T&gt; items, bool includeSubTypes, params SearchArg[] sArgs)
+
     where T : DataItem</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -11979,6 +11991,7 @@ public long _TransID { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static T SearchFirst&lt;T&gt;(IEnumerable&lt;T&gt; items, params SearchArg[] sArgs)
+
     where T : DataItem</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -12040,6 +12053,7 @@ public long _TransID { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static T SearchFirst&lt;T&gt;(IEnumerable&lt;T&gt; items, bool includeSubTypes, params SearchArg[] sArgs)
+
     where T : DataItem</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

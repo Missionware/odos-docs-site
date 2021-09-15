@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ProcessLoopStartupInfoBase&lt;T&gt;
    | ODOS Documentation ">
-    <meta name="generator" content="docfx 2.58.2.0">
+    <meta name="generator" content="docfx 2.58.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -195,16 +195,19 @@
       <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__Name">ServiceStartupInfo&lt;T&gt;._Name</a>
     </div>
     <div>
-      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__AppName">ServiceStartupInfo&lt;T&gt;._AppName</a>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceAppTypeID">ServiceStartupInfo&lt;T&gt;._ServiceAppTypeID</a>
     </div>
     <div>
-      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__AppInstanceID">ServiceStartupInfo&lt;T&gt;._AppInstanceID</a>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceAppInstanceID">ServiceStartupInfo&lt;T&gt;._ServiceAppInstanceID</a>
     </div>
     <div>
-      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__AppDescription">ServiceStartupInfo&lt;T&gt;._AppDescription</a>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceAppURI">ServiceStartupInfo&lt;T&gt;._ServiceAppURI</a>
     </div>
     <div>
-      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__AppURI">ServiceStartupInfo&lt;T&gt;._AppURI</a>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceAppName">ServiceStartupInfo&lt;T&gt;._ServiceAppName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceAppDescription">ServiceStartupInfo&lt;T&gt;._ServiceAppDescription</a>
     </div>
     <div>
       <a class="xref" href="Mc3s.Odos.Service.ServiceStartupInfo-1.html#Mc3s_Odos_Service_ServiceStartupInfo_1__ServiceApp">ServiceStartupInfo&lt;T&gt;._ServiceApp</a>
@@ -430,71 +433,6 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">appInstanceID</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Mc3s_Odos_Client_Engine_ProcessLoopStartupInfoBase_1__ctor_" data-uid="Mc3s.Odos.Client.Engine.ProcessLoopStartupInfoBase`1.#ctor*"></a>
-  <h4 id="Mc3s_Odos_Client_Engine_ProcessLoopStartupInfoBase_1__ctor_Mc3s_SharedLib_IApplication_Mc3s_SharedLib_ApplicationStartMode_Mc3s_SharedLib_ProcessStartUpMode_System_String_System_String_Mc3s_Odos_Library_ClientAppType_System_String_System_String_System_String_" data-uid="Mc3s.Odos.Client.Engine.ProcessLoopStartupInfoBase`1.#ctor(Mc3s.SharedLib.IApplication,Mc3s.SharedLib.ApplicationStartMode,Mc3s.SharedLib.ProcessStartUpMode,System.String,System.String,Mc3s.Odos.Library.ClientAppType,System.String,System.String,System.String)">ProcessLoopStartupInfoBase(IApplication, ApplicationStartMode, ProcessStartUpMode, String, String, ClientAppType, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ProcessLoopStartupInfoBase(IApplication app, ApplicationStartMode applicationStartMode, ProcessStartUpMode processStartUpMode, string processID, string roleID, ClientAppType clientAppType, string appName, string appInstanceID, string appDescription)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Mc3s.SharedLib.IApplication</span></td>
-        <td><span class="parametername">app</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Mc3s.SharedLib.ApplicationStartMode</span></td>
-        <td><span class="parametername">applicationStartMode</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Mc3s.SharedLib.ProcessStartUpMode</span></td>
-        <td><span class="parametername">processStartUpMode</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">processID</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">roleID</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Mc3s.Odos.Library.ClientAppType.html">ClientAppType</a></td>
-        <td><span class="parametername">clientAppType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">appName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">appInstanceID</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">appDescription</span></td>
         <td></td>
       </tr>
     </tbody>
