@@ -9036,6 +9036,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/NorthwindServerRunning.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/NorthwindServerRunning.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/ODOS-Framework.png",
       "output": {
         "resource": {
@@ -9058,10 +9069,54 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/category-prop-form1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/category-prop-form1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/northwind-app1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/northwind-app1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/northwind-app2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/northwind-app2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/ntierapp.png",
       "output": {
         "resource": {
           "relative_path": "images/ntierapp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/odos-authentication.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/odos-authentication.png"
         }
       },
       "is_incremental": false,
@@ -9120,7 +9175,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/odos_cilentapplications.html",
-          "hash": "wSU3uvIxca3ybXvaHs83HptybpnY3/Vvd8mELt2O/kk="
+          "hash": "NI+99tkVxheN9Muxc9lgq5Qs9JQRNLO83Z1ClwpAkGs="
         }
       },
       "is_incremental": false,
@@ -9248,11 +9303,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/odos_northwwind.md",
+      "source_relative_path": "manual/odos_northwind.md",
       "output": {
         ".html": {
-          "relative_path": "manual/odos_northwwind.html",
-          "hash": "X7Z3T/gAacHi+vT15315JIq1VkG3OUHiTQHoPdIHFZk="
+          "relative_path": "manual/odos_northwind.html",
+          "hash": "Y6/gvbRGvi37dpn4ibSup5gdi4gUHSInTAV5l4ykbu4="
         }
       },
       "is_incremental": false,
@@ -9276,7 +9331,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/odos_objectserver.html",
-          "hash": "Itw4cxDXhRBDpyDGpKHQGZfeZOkbGU11oadzImiyRPo="
+          "hash": "47+XZwu0B1OrGLiAvODFqQ2Xk2xGuYARDLBXm44JKJk="
         }
       },
       "is_incremental": false,
@@ -9300,7 +9355,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/odos_quickstart.html",
-          "hash": "DeQV1mqCoHVYVFGjqqvAwMBwBxOK4wPOkWKREiDk900="
+          "hash": "7Ul8653sRSU1BojTYYJ6EhZBa5uIVkA5IvhJTd6u4VQ="
         }
       },
       "is_incremental": false,
@@ -9384,7 +9439,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "BQJJ25Q+sxVoRc+NHtXxKkZTFYucIPFtCRmC/nulrcE="
+          "hash": "nLUAJnyupWZxZ3759M1X9P+yB/sUkPgcVjGlpeXNKVc="
         }
       },
       "is_incremental": false,
@@ -9416,13 +9471,13 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 26,
-          "skipped_file_count": 26
+          "skipped_file_count": 25
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 747,
-          "skipped_file_count": 260
+          "skipped_file_count": 747
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

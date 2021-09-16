@@ -79,6 +79,121 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="quick-start">Quick Start</h1>
 
+<h2 id="introduction">Introduction</h2>
+<p>This quick start guide will use the Northwind sample that can be found at the ODOS Sample applications repository <a href="https://github.com/Missionware/odos-samples-public" target="_blank">https://github.com/Missionware/odos-samples-public</a>. The Northwind sample contains a ready made data model (ODOS Domain) of the popular Northwind database, as well as some test data that you can be easily imported. So feel free to download or clone this repo.</p>
+<h2 id="setup">Setup</h2>
+<p>Before downloading the source code of the sample you have to setup the ODOS nuget feeds in your Visual Studio installation. There is one feed for the ODOS nuget files and one for some Third Party libraries we use. So setup the two feeds you have been given using this <a href="https://docs.microsoft.com/en-us/azure/devops/artifacts/nuget/consume?view=azure-devops&tabs=windows" target="_blank">guide</a>.</p>
+<p>Then download the source code and open the Northwind solution in Visual Studio. The Northwind sample application solution consists of three projects:</p>
+<ul>
+<li>The Northwind Domain project (Mc3s.Odos.Domain.Northwind)</li>
+<li>The Northwind Object Server (NorthwindServer)</li>
+<li>The Northwind Windows Forms Application (NorthwindWinFormsApp)</li>
+</ul>
+<p>In NorthwindServer project head over to the app.config file.</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;configuration&gt;
+    &lt;!-- Here we define the ODOS configuration sections for the server. 
+     The sections are: one per registered domain, one for Communication libraries and one for the Identity Store Configuration  --&gt;
+    &lt;configSections&gt;
+        &lt;section name=&quot;IdentityStoreSetup&quot; type=&quot;ODOS&quot;/&gt;
+        &lt;section name=&quot;CommunicationSetup&quot; type=&quot;ODOS&quot;/&gt;
+        &lt;section name=&quot;Mc3s.Odos.Domain&quot; type=&quot;ODOS&quot;/&gt;
+        &lt;section name=&quot;Mc3s.Odos.Security.Identity.Domain&quot; type=&quot;ODOS&quot;/&gt;
+        &lt;section name=&quot;Mc3s.Odos.Domain.Northwind&quot; type=&quot;ODOS&quot;/&gt;
+    &lt;/configSections&gt;
+
+    &lt;!-- Here we set various settings for the process (both ODOS defined and custom application ones) --&gt;
+    &lt;appSettings&gt;
+        &lt;!-- ODOS Setting: Output/Console Logging Level { Debug, Full, Info, Warning, Error, Any, None } --&gt;
+        &lt;!--&lt;add key=&quot;Output Level&quot; value=&quot;Full&quot;/&gt;--&gt;
+
+        &lt;!-- ODOS Setting: File Logging Level { Debug, Full, Info, Warning, Error, Any, None } --&gt;
+        &lt;!--&lt;add key=&quot;Log Level&quot; value=&quot;Full&quot;/&gt;--&gt;
+
+        &lt;!-- ODOS Setting: SecurityImmutableAccountsMode { None, Registered, Configured, OSDefined, All } --&gt;
+        &lt;add key=&quot;Security Immutable Accounts Mode&quot; value=&quot;OSDefined&quot;/&gt;
+
+        &lt;!-- Custom Setting: Set to true to create test data (set it to true on second run of the server) --&gt;
+        &lt;add key=&quot;Create Test Data On Init&quot; value=&quot;false&quot;/&gt;
+
+    &lt;/appSettings&gt;
+
+    &lt;!-- Defined the security accounts. Here we define that the security accounts are coming from the
+         Operating System. --&gt;
+    &lt;IdentityStoreSetup Name=&quot;Northwind&quot; availableversion=&quot;1&quot;&gt;
+        &lt;!-- OSDefined SourceType { ProcessAuthenticatingDomain, Machine, ActiveDirectory, Other } --&gt;
+        &lt;ImportedDomain sourcetype=&quot;Machine&quot;  availableversion=&quot;1&quot; /&gt;
+    &lt;/IdentityStoreSetup&gt;
+
+    &lt;!-- This is the configuration for the data store of internal ODOS domain named Mc3s.Odos.Domain. 
+         The server will use the MS SQL Server driver to write in localhost DB Server in Database Northwind_SystemDb --&gt;
+    &lt;Mc3s.Odos.Domain
+      Mandatory=&quot;true&quot;
+      PersistanceMgrType=&quot;MSSQL.OODB&quot;
+      DomainDBSyncMode=&quot;Auto&quot;
+      WriterConnectionStr=&quot;Server=localhost;Database=Northwind_SystemDb;Integrated Security=sspi;MultipleActiveResultSets=True&quot;
+    /&gt;
+
+    &lt;!-- This is the configuration for the data store of internal identiy domain named Mc3s.Odos.Security.Identity.Domain  
+         The server will use the MS SQL Server driver to write in localhost DB Server in Database Northwind_IdentityDb --&gt;
+    &lt;Mc3s.Odos.Security.Identity.Domain
+      Mandatory=&quot;true&quot;
+      PersistanceMgrType=&quot;MSSQL.OODB&quot;
+      DomainDBSyncMode=&quot;Auto&quot;
+      WriterConnectionStr=&quot;Server=localhost;Database=Northwind_IdentityDb;Integrated Security=sspi;MultipleActiveResultSets=True&quot;
+    /&gt;
+
+    &lt;!-- This is the configuration for the data store of the actual Northwind Domain named Mc3s.Odos.Domain.Northwind  
+         The server will use the MS SQL Server driver to write in localhost DB Server in Database Northwind_MainDb --&gt;
+    &lt;Mc3s.Odos.Domain.Northwind
+      Mandatory=&quot;true&quot;
+      PersistanceMgrType=&quot;MSSQL.OODB&quot;
+      DomainDBSyncMode=&quot;Auto&quot;
+      WriterConnectionStr=&quot;Server=localhost;Database=Northwind_MainDb;Integrated Security=sspi;MultipleActiveResultSets=True&quot;
+    &gt;
+    &lt;/Mc3s.Odos.Domain.Northwind&gt;
+
+    &lt;!-- Here we set the settings for the communication method. Each library may have more than one protocols. 
+         For example &quot;Streaming&quot; library contains the NamedPipes (pipe) and the Web Socket (ws) implementation --&gt;
+    &lt;CommunicationSetup&gt;
+        &lt;server&gt;
+            &lt;!-- Here we define in which protocols does the Server Object Manager listens for new connections from clients --&gt;
+            &lt;agent library=&quot;streaming&quot; protocol=&quot;ws&quot;/&gt;
+            &lt;agent library=&quot;streaming&quot; protocol=&quot;pipe&quot;/&gt;
+        &lt;/server&gt;
+        &lt;!-- Although this is a server, we still define client communication protocol, because the server contains and embedded 
+             Client Object Manager for internal management use. Here we define with which protocol will this client connect to the server. --&gt;
+        &lt;client library=&quot;streaming&quot; protocol=&quot;pipe&quot;/&gt;
+    &lt;/CommunicationSetup&gt;
+&lt;/configuration&gt;
+</code></pre>
+<p>In app.config you can see that there are some custom (ODOS) configuration sections are declared in the top of the file.  Specifically, there are three ODOS configuration sections for the 3 domains and other two, one for the communication setup and one for the IdentityStore setup.</p>
+<p>Now we are going to setup the data storage in MS SQl Server for the 3 ODOS Domains. Open SQL Server Management Studio and create 3 databases with names as shown in the app.config file</p>
+<ul>
+<li>Northwind_SystemDb: This is for the systemic Mc3s.Odos.Domain domain.</li>
+<li>Northwind_IdentityDb: This is for the Identity domain (Mc3s.Odos.Security.Identity.Domain)</li>
+<li>Northwind_MainDb: This is for the actual Northwind domain</li>
+</ul>
+<p>... and That's it!</p>
+<p>Now you can build the solution and run NorthwindServer and the MS SQL Server database schema will be created automatically.</p>
+<h2 id="running-the-application">Running the Application</h2>
+<p>So, now you should run NorthwindServer either directly from the executable or within Visual Studio debugger</p>
+<p><img src="../images/NorthwindServerRunning.png" alt="NorthwindServerRunning"></p>
+<p>Eventually you will see the server console window starting and in few seconds will build the database schemas and be ready to server clients.</p>
+<p>The final step is to run the NorthwindWinFormsApp application that is a windows forms application. This will connect to the server and be ready to read data and send transactions to the server.</p>
+<p>After running the application, the deafult authentication dialog will popup. Northwind is configured to use the local Operating System accounts (SAM database) so  you can enter your local account's credentials to authenticate.</p>
+<p><img src="../images/odos-authentication.png" alt=""></p>
+<p>When clicking OK the Northwind client application will show up.</p>
+<p><img src="../images/northwind-app1.png" alt=""></p>
+<h2 id="application-usage">Application Usage</h2>
+<p>The application consists of a simple DataGrid of the Category object and the standard CRUD actions on top of it.</p>
+<p>When clicking the &quot;Add&quot; button a new popup window will open to add a new Category.</p>
+<p><img src="../images/category-prop-form1.png" alt=""></p>
+<p>Enter some data and hit Save. A transaction will be performed and the data will be saved. Additionally the DataGrid will automatically reflect the additional Category.</p>
+<p><img src="../images/northwind-app2.png" alt=""></p>
+<p>To update a Category select the desired datagrid row and click the &quot;Edit&quot; button. The same form will open and you can edit the Category data and click save.</p>
+<p>If you want to remove a Category then click the row and hit the &quot;Remove&quot; button.</p>
+<p>You can also experiment trying to add a new Category having ID the same with an existing one.</p>
 </article>
           </div>
           
