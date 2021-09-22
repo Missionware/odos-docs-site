@@ -1987,7 +1987,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual TSearch findOpenControlledWindowByID&lt;TSearch&gt;(WindowControlData&lt;TWindowType, TControlType&gt; data)
-
     where TSearch : class, IControlledWindow&lt;TWindowType, TControlType&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2904,7 +2903,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RegistrationResult registerAuthenticationDialogType&lt;TActualType&gt;(Type registeredBy, RegistrationBehavior registrationBehavior, Platform platform, CLRuntime runtime, string context, params Type[] overridableRegistrators)
-
     where TActualType : TWindowType, IAuthenticationDialog, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -3291,7 +3289,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RegistrationResult registerLicenseActivationWindowType&lt;TActualType&gt;(Type registeredBy, RegistrationBehavior registrationBehavior, Platform platform, CLRuntime runtime, string context, params Type[] overridableRegistrators)
-
     where TActualType : TWindowType, IActivationWindow, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -3483,7 +3480,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void registerMainWindowType&lt;F&gt;()
-
     where F : TWindowType</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
@@ -3508,7 +3504,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void registerMainWindowType&lt;F&gt;(Dictionary&lt;string, object&gt; mainWindowProperties)
-
     where F : TWindowType</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -3925,7 +3920,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RegistrationResult registerSplashWindowType&lt;TActualType&gt;(Type registeredBy, RegistrationBehavior registrationBehavior, Platform platform, CLRuntime runtime, string context, params Type[] overridableRegistrators)
-
     where TActualType : TWindowType, ISplashWindow, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -4007,7 +4001,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RegistrationResult registerTypeOfWindowForWindowActionTypeAndContext&lt;FType&gt;(WindowActionType actionType, string actionContext, Type registeredBy, RegistrationBehavior registrationBehavior, Platform platform, CLRuntime runtime, string environment, params Type[] overridableRegistrators)
-
     where FType : TWindowType</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -4169,7 +4162,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RegistrationResult registerWaitWindowType&lt;TActualType&gt;(Type registeredBy, RegistrationBehavior registrationBehavior, Platform platform, CLRuntime runtime, string context, params Type[] overridableRegistrators)
-
     where TActualType : TWindowType, IWaitWindow, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
