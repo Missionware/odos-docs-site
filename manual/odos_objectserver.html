@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | ODOS Documentation </title>
+    <title>Object Server | ODOS Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | ODOS Documentation ">
+    <meta name="title" content="Object Server | ODOS Documentation ">
     <meta name="generator" content="docfx 2.58.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -77,8 +77,90 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="object-server">Object Server</h1>
 
-<p>TBD</p>
+<p>ODOS Object Server is the component that orchestrates the clients, their operations as well as the storing of data to the appropriate data store. Main modules of the Object Server are:</p>
+<ul>
+<li><p>Client Manager</p>
+</li>
+<li><p>Server Object Manager</p>
+<ul>
+<li><p>Transaction Manager</p>
+</li>
+<li><p>Persistency Manager</p>
+</li>
+<li><p>Transaction Publisher</p>
+</li>
+<li><p>Object Cache</p>
+</li>
+</ul>
+</li>
+<li><p>RPC Broker</p>
+</li>
+<li><p>Authentication Manager</p>
+</li>
+</ul>
+<h2 id="client-manager">Client Manager</h2>
+<p>The Client Manager module is responsible to handle the sessions of the client applications. It is continuously monitoring that the connections are live by sending &quot;heartbeats&quot; to the clients.</p>
+<blockquote>
+<p>Note: Typically also the client applications are continuously monitoring the server connection.</p>
+</blockquote>
+<p>In case a client's connection gets broken the server cleanups any resources that retained for this client.</p>
+<p>The Client Manager uses the configured communication library and the Authentication Manager to perform connection and authentication.</p>
+<p>The communication library to be used is pluggable. Currently the following methods are supported:</p>
+<ul>
+<li><p>WebSocket (Missionware's implementation)</p>
+</li>
+<li><p>Named Pipes (IPC)</p>
+</li>
+<li><p>Remoting (IPC, Socket) - deprecated</p>
+</li>
+<li><p>WCF - deprecated</p>
+</li>
+</ul>
+<p>Selecting a different communication library is very easy, just change a setting in the app.config file.</p>
+<h2 id="server-object-manager">Server Object Manager</h2>
+<h3 id="transaction-manager">Transaction Manager</h3>
+<p>The Transaction Manager is responsible to receive the transactions from the clients, to perform in-memory transaction, validating all the rules that retain the object model consistent, to use the Persistency Manager to store the updated data to the appropriate data store, to update the in-memory cache and then push the changes to the Transaction Publisher.</p>
+<h3 id="persistency-manager">Persistency Manager</h3>
+<p>The Persistency Manager manages the various data stores that can be used. Each managed domain may have a different data store. Currently various data stores are supported:</p>
+<ul>
+<li><p>Standard SQL 92 RDBMS through the built-in code-first ORM in what we call the OODB mapping schema:</p>
+<ul>
+<li><p>MS SQL Server</p>
+</li>
+<li><p>Azure SQL Database</p>
+</li>
+<li><p>PostgreSQL</p>
+</li>
+</ul>
+</li>
+<li><p>Binary Files</p>
+</li>
+</ul>
+<p>Additional SQL Databases are very easy to be supported with the standard code-first OODB schema.</p>
+<p>Additionally support custom schema for the data store is under development in that we call RMDB schema.</p>
+<p>The plugging of the persistency library is done, similar to the communication one, by just setting the appropriate settings in app.config file.</p>
+<h2 id="transaction-publisher">Transaction Publisher</h2>
+<p>The Transaction Publisher is the module responsible to forward the transaction to the appropriate clients. Filtering of which transactions are routed to which clients can be configured programmatically or using the built-in object subscription.</p>
+<h3 id="object-cache">Object Cache</h3>
+<p>The Object Cache of the Server keeps track of the subscriptions of the various Client Object Managers (COMs) to objects and in this way the Transaction Publisher can forward the transactions based on these subscriptions.</p>
+<h2 id="rpc-broker">RPC Broker</h2>
+<p>The RPC Broker is the component responsible to forward commands from one client to another. P2P remote calls are also under development. The RPC can be easily constructed using the appropriate SDK and standard .NET interfaces implemented by both ends.</p>
+<h2 id="authentication-manager">Authentication Manager</h2>
+<p>The Authentication Manager (AM) is the component that manages the internal identity domain. AM can communicate with various identity stores such as:</p>
+<ul>
+<li><p>Active Directory</p>
+</li>
+<li><p>Any LDAP</p>
+</li>
+<li><p>Windows Local (SAM DB)</p>
+</li>
+<li><p>Linux Local (PAM)</p>
+</li>
+<li><p>Open-ID Connect</p>
+</li>
+</ul>
 </article>
           </div>
           
